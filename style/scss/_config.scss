@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+/*------------------------------------*\     
+RESPONSIVE 
+\*------------------------------------*/ 
+$enable-responsive: true; 
+$desktop-large:    1920; 
+$desktop-medium:   1440; 
+$desktop-small:    1280; 
+$tablet-landscape: 1024; 
+$tablet-portrait:  768; 
+$mobile-landscape: 640; 
+$mobile-portrait:  320;
+
+/*------------------------------------*\     
+COLOR
+\*------------------------------------*/ 
+$primary-color: blue;
+$second-color: green;
+$third-color: orange;
+$dark-grey: #231F20;
+$gold: #A57B1B;
+
+$primary-text-color: #0E1111;
+
+/*------------------------------------*\     
+WIDTH
+\*------------------------------------*/ 
+$navbarSize: 200px;
+
+/*------------------------------------*\     
+WIDTH
+\*------------------------------------*/ 
+
+@mixin border-shadow-left() {
+    -moz-box-shadow: 1px 0px 2px 1px #656565;
+    -webkit-box-shadow: 1px 0px 2px 1px #656565;
+    -o-box-shadow: 1px 0px 2px 1px #656565;
+    box-shadow: 1px 0px 2px 1px #656565;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=90, Strength=2);
+  }
