@@ -185,6 +185,9 @@ header {
       font-family: 'Quicksand', sans-serif; }
       .rooms-available figure.swiper-slide figcaption.book-room .booking {
         line-height: 50px; }
+        .rooms-available figure.swiper-slide figcaption.book-room .booking a {
+          color: #fff;
+          text-decoration: none; }
   .rooms-available .swiper-nav {
     width: 100px; }
     .rooms-available .swiper-nav .swiper-button-next {

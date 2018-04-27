@@ -8,7 +8,7 @@
         loop: true,
         speed: 400,
         autoplay: {
-            delay: 3500,
+            delay: 20000,
         },
         autoHeight: true,
         navigation: {
@@ -16,7 +16,7 @@
         },
         breakpoints: {
             1920: {
-                slidesPerView: 5,
+                slidesPerView: 4,
                 spaceBetween: 60
             },
             1440: {
