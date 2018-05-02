@@ -42,7 +42,11 @@ EFFECT
     -o-box-shadow: 1px 0px 2px 1px #656565;
     box-shadow: 1px 0px 2px 1px #656565;
     filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=90, Strength=2);
-  }
+}
+
+@mixin background-color(){
+    background: linear-gradient(to right, #84fab0 , #8fd3f4);
+}
 
 .button-visual {
     display: inline-block;
