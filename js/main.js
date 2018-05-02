@@ -66,5 +66,17 @@
         customMonths: ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Jui', 'Jui', 'Aou', 'Sep', 'Oct', 'Nov', 'Dec'],
         customDays: ['D', 'L', 'M', 'M', 'J', 'V', 'S']
     });
+
+    // NAVBAR BURGER
+
+    var burgerEls = document.getElementsByClassName('burger-bar'),
+        navBurgerEl = document.getElementById('navbar-burger'),
+        navlistEl = document.getElementById('navbar-list');
+    navBurgerEl.addEventListener('click', function() {
+        for (i=0; burgerEls[i]; i++){
+            burgerEls[i].classList.toggle("change");
+        }
+        navlistEl.classList.toggle("visible");
+    });
  
  })();

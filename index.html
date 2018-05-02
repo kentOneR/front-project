@@ -15,7 +15,12 @@
 
 <body>
     <nav class="side-navbar">
-        <ul>
+        <div id="navbar-burger">
+            <div class="burger-bar bar1"></div>
+            <div class="burger-bar bar2"></div>
+            <div class="burger-bar bar3"></div>
+        </div>
+        <ul id="navbar-list" class="">
             <li>
                 <a class="underline--magical" href="#">L'HÔTEL</a>
             </li>
@@ -67,7 +72,7 @@
                         </select>
                     </div>
                 </div>
-                <input type="submit" value="RÉSERVER">
+                <button class="button-visual" type="submit" data-hover="JE RÉSERVE" data-active=""><span>RÉSERVER</span></button>
             </form>
         </section>
         <main>
@@ -78,8 +83,8 @@
                         <figure class="swiper-slide">
                             <img src="img/hotel/room/room-1.jpg" alt="">
                             <figcaption class="book-room">
-                                <div class="star-ratings-sprite">
-                                    <span style="width:78%" class="star-ratings-sprite-rating"></span>
+                                <div class="book-name">
+                                    <h3>SUITE ROYALE</h3>
                                 </div>
                                 <div class="booking">
                                     <a class="underline--magical" href="#">RÉSERVER</a>
@@ -89,8 +94,8 @@
                         <figure class="swiper-slide">
                             <img src="img/hotel/room/room-2.jpg" alt="">
                             <figcaption class="book-room">
-                                <div class="star-ratings-sprite">
-                                    <span style="width:82%" class="star-ratings-sprite-rating"></span>
+                                <div class="book-name">
+                                    <h3>SUITE ROYALE</h3>
                                 </div>
                                 <div class="booking">
                                     <a class="underline--magical" href="#">RÉSERVER</a>
@@ -100,8 +105,8 @@
                         <figure class="swiper-slide">
                             <img src="img/hotel/room/room-3.jpg" alt="">
                             <figcaption class="book-room">
-                                <div class="star-ratings-sprite">
-                                    <span style="width:92%" class="star-ratings-sprite-rating"></span>
+                                <div class="book-name">
+                                    <h3>SUITE ROYALE</h3>
                                 </div>
                                 <div class="booking">
                                     <a class="underline--magical" href="#">RÉSERVER</a>
@@ -111,8 +116,8 @@
                         <figure class="swiper-slide">
                             <img src="img/hotel/room/room-4.jpg" alt="">
                             <figcaption class="book-room">
-                                <div class="star-ratings-sprite">
-                                    <span style="width:87%" class="star-ratings-sprite-rating"></span>
+                                <div class="book-name">
+                                    <h3>SUITE ROYALE</h3>
                                 </div>
                                 <div class="booking">
                                     <a class="underline--magical" href="#">RÉSERVER</a>
@@ -122,8 +127,8 @@
                         <figure class="swiper-slide">
                             <img src="img/hotel/room/room-5.jpg" alt="">
                             <figcaption class="book-room">
-                                <div class="star-ratings-sprite">
-                                    <span style="width:85%" class="star-ratings-sprite-rating"></span>
+                                <div class="book-name">
+                                    <h3>SUITE ROYALE</h3>
                                 </div>
                                 <div class="booking">
                                     <a class="underline--magical" href="#">RÉSERVER</a>
@@ -133,8 +138,8 @@
                         <figure class="swiper-slide">
                             <img src="img/hotel/room/room-6.jpg" alt="">
                             <figcaption class="book-room">
-                                <div class="star-ratings-sprite">
-                                    <span style="width:82%" class="star-ratings-sprite-rating"></span>
+                                <div class="book-name">
+                                    <h3>SUITE ROYALE</h3>
                                 </div>
                                 <div class="booking">
                                     <a class="underline--magical" href="#">RÉSERVER</a>
@@ -144,8 +149,8 @@
                         <figure class="swiper-slide">
                             <img src="img/hotel/room/room-7.jpg" alt="">
                             <figcaption class="book-room">
-                                <div class="star-ratings-sprite">
-                                    <span style="width:100%" class="star-ratings-sprite-rating"></span>
+                                <div class="book-name">
+                                    <h3>SUITE ROYALE</h3>
                                 </div>
                                 <div class="booking">
                                     <a class="underline--magical" href="#">RÉSERVER</a>
@@ -155,8 +160,8 @@
                         <figure class="swiper-slide">
                             <img src="img/hotel/room/room-8.jpg" alt="">
                             <figcaption class="book-room">
-                                <div class="star-ratings-sprite">
-                                    <span style="width:82%" class="star-ratings-sprite-rating"></span>
+                                <div class="book-name">
+                                    <h3>SUITE ROYALE</h3>
                                 </div>
                                 <div class="booking">
                                     <a class="underline--magical" href="#">RÉSERVER</a>
@@ -177,7 +182,17 @@
             </section>
         </main>
         <footer>
-
+            <form action="">
+                <label for="newsletter-subscribe">Pour recevoir nos offres spéciales inscrivez-vous à la newsletter</label>
+                <input type="email" name="newsletter-subscribe" placeholder="Votre adresse mail">
+                <button class="button-visual" type="submit" data-hover="JE M'INSCRIS" data-active=""><span>INSCRIVEZ-VOUS</span></button>
+            </form>
+            <ul class="footer-nav">
+                <li>&#169; Parimis hôtel 2018</li>
+                <li>- Mentions Légales</li>
+                <li>- Conditions Générales de Vente</li>
+                <li>- Plan du site</li>
+            </ul>
         </footer>
     </div>
 

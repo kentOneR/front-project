@@ -59,8 +59,87 @@ COLOR
 WIDTH
 \*------------------------------------*/
 /*------------------------------------*\     
-WIDTH
+EFFECT
 \*------------------------------------*/
+.button-visual {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid blue;
+  overflow: hidden;
+  text-decoration: none;
+  outline: none;
+  color: #FFF;
+  background: blue; }
+  .button-visual span {
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s; }
+  .button-visual:before, .button-visual:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: .4s,opacity .6s;
+    -moz-transition: .4s,opacity .6s;
+    -o-transition: .4s,opacity .6s;
+    transition: .4s,opacity .6s; }
+  .button-visual:before {
+    content: attr(data-hover);
+    -webkit-transform: translate(-150%, 0);
+    -moz-transform: translate(-150%, 0);
+    -ms-transform: translate(-150%, 0);
+    -o-transform: translate(-150%, 0);
+    transform: translate(-150%, 0); }
+  .button-visual:after {
+    content: attr(data-active);
+    -webkit-transform: translate(150%, 0);
+    -moz-transform: translate(150%, 0);
+    -ms-transform: translate(150%, 0);
+    -o-transform: translate(150%, 0);
+    transform: translate(150%, 0); }
+  .button-visual:hover span, .button-visual:active span {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    transform: scale(0.3); }
+  .button-visual:hover:before, .button-visual:active:after {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s; }
+  .button-visual:active:before {
+    -webkit-transform: translate(-150%, 0);
+    -moz-transform: translate(-150%, 0);
+    -ms-transform: translate(-150%, 0);
+    -o-transform: translate(-150%, 0);
+    transform: translate(-150%, 0);
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s; }
+
+/*------------------------------------*\     
+FONT
+\*------------------------------------*/
+p, h1, h3, h3, h4, ul, li, a, span, label {
+  font-family: 'Quicksand', sans-serif; }
+
 /*================================================
 Underline--Magical
 ==================================================*/
@@ -100,12 +179,13 @@ nav.side-navbar {
   box-shadow: 1px 0px 2px 1px #656565;
   filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=90, Strength=2);
   z-index: 2000; }
+  nav.side-navbar #navbar-burger {
+    display: none; }
   nav.side-navbar ul li {
     margin: 30px 0; }
     nav.side-navbar ul li a {
       text-decoration: none;
       color: #0E1111;
-      font-family: 'Quicksand', sans-serif;
       font-size: 18px; }
 
 @media screen and (max-width: 1024px) {
@@ -123,7 +203,37 @@ nav.side-navbar {
         margin: 20px 0; }
         nav.side-navbar ul li a {
           text-decoration: none;
-          color: #0E1111; } }
+          color: #0E1111;
+          font-size: 16px; } }
+@media screen and (max-width: 768px) {
+  nav.side-navbar {
+    height: 50px;
+    width: 100%; }
+    nav.side-navbar #navbar-burger {
+      display: inline-block;
+      margin: 9px 15px 6px;
+      cursor: pointer; }
+      nav.side-navbar #navbar-burger .bar1, nav.side-navbar #navbar-burger .bar2, nav.side-navbar #navbar-burger .bar3 {
+        width: 35px;
+        height: 3px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s; }
+      nav.side-navbar #navbar-burger .bar1.change {
+        -webkit-transform: rotate(-45deg) translate(-9px, 5px);
+        transform: rotate(-45deg) translate(-9px, 5px); }
+      nav.side-navbar #navbar-burger .bar2.change {
+        opacity: 0; }
+      nav.side-navbar #navbar-burger .bar3.change {
+        -webkit-transform: rotate(45deg) translate(-7px, -5px);
+        transform: rotate(45deg) translate(-7px, -5px); }
+    nav.side-navbar ul {
+      display: none;
+      background-color: #fff;
+      width: 100%;
+      padding: 20px; }
+      nav.side-navbar ul.visible {
+        display: block; } }
 header {
   margin: 0;
   padding: 0; }
@@ -138,17 +248,25 @@ header {
 .search-bar {
   position: sticky;
   top: 0;
-  padding: 10px;
+  padding: 10px 50px;
   min-height: 50px;
   background-color: #231F20;
   color: #fff;
   z-index: 1000; }
   .search-bar form {
     margin: auto;
-    display: inline-block; }
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end; }
+    .search-bar form input,
+    .search-bar form select {
+      height: 30px;
+      width: 100px;
+      margin: 0 10px; }
     .search-bar form #select-invite {
       position: relative;
-      display: inline-block; }
+      margin: 0 10px;
+      line-height: 30px; }
       .search-bar form #select-invite .dropdown-content {
         display: none;
         position: absolute;
@@ -159,6 +277,10 @@ header {
         z-index: 1; }
         .search-bar form #select-invite .dropdown-content:hover .dropdown-content {
           display: block; }
+    .search-bar form .button-visual {
+      height: 30px;
+      min-width: 100px;
+      margin: 0 10px; }
 
 @media screen and (max-width: 1024px) {
   .search-bar {
@@ -174,31 +296,78 @@ header {
     .rooms-available figure.swiper-slide figcaption.book-room {
       position: absolute;
       display: flex;
+      flex-direction: column;
       justify-content: space-around;
-      align-items: center;
+      align-items: flex-end;
       width: 100%;
       height: 50px;
       bottom: 0;
       left: 0;
+      padding-right: 15px;
       background-color: #231F20;
       color: #fff;
       font-family: 'Quicksand', sans-serif; }
-      .rooms-available figure.swiper-slide figcaption.book-room .booking {
-        line-height: 50px; }
-        .rooms-available figure.swiper-slide figcaption.book-room .booking a {
-          color: #fff;
-          text-decoration: none; }
+      .rooms-available figure.swiper-slide figcaption.book-room h3 {
+        font-weight: bold; }
+      .rooms-available figure.swiper-slide figcaption.book-room .booking a {
+        color: #fff;
+        text-decoration: none; }
   .rooms-available .swiper-nav {
     width: 100px; }
     .rooms-available .swiper-nav .swiper-button-next {
       position: relative;
-      right: 0; }
+      right: 0;
+      margin-left: 20px;
+      background-image: url("../../img/asset/arrowR.svg"); }
 
 footer {
-  height: 200px;
   margin-top: 150px;
-  background-color: black; }
+  background-color: black;
+  padding: 30px 0 10px;
+  color: #fff; }
+  footer form {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap; }
+    footer form label {
+      width: 100%;
+      text-align: center; }
+    footer form input {
+      height: 35px;
+      margin: 10px 0;
+      width: 334px; }
+    footer form .button-visual {
+      margin: 10px 0;
+      font-size: 14px;
+      line-height: 33px;
+      height: 35px; }
+  footer .footer-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; }
+    footer .footer-nav li {
+      text-transform: uppercase; }
 
+@media screen and (max-width: 640px) {
+  footer form {
+    width: calc(100% - 40px); }
+    footer form input,
+    footer form .button-visual {
+      width: 100%;
+      margin: 0; }
+
+  .footer-nav {
+    flex-flow: column nowrap;
+    align-items: center; }
+    .footer-nav li {
+      width: calc(100% - 40px);
+      text-align: center;
+      line-height: 35px;
+      margin: 5px 0;
+      color: #0E1111;
+      background-color: #A57B1B; } }
 .paramis-intro {
   margin-top: 80px;
   height: 500px;

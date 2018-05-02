@@ -1,5 +1,61 @@
 footer {
-    height: 200px;
     margin-top: 150px;
     background-color: black;
+    padding: 30px 0 10px;
+    color: #fff;
+    form{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+        label{
+            width: 100%;
+            text-align: center;
+        }
+        input{
+            height: 35px;
+            margin: 10px 0;
+            width: 334px;
+        }
+        .button-visual{
+            margin: 10px 0;
+            font-size: 14px;
+            line-height: 33px;
+            height: 35px;
+        }
+    }
+    .footer-nav{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        li{
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-landscape + px){
+    footer{
+        form{
+            width: calc(100% - 40px);
+            input,
+            .button-visual{
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+    .footer-nav{
+        flex-flow: column nowrap;
+        align-items: center;
+        li {
+            width: calc(100% - 40px);
+            text-align: center;
+            line-height: 35px;
+            margin: 5px 0;
+            color: $primary-text-color;
+            background-color: $gold;
+        }
+    }
 }
