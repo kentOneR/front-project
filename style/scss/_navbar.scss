@@ -19,6 +19,22 @@ nav.side-navbar{
             }
         }
     }
+    .select-lang{
+        position: absolute;
+        bottom: 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        div{
+            padding: 0 10px;
+            img{
+                transform: translateY(2px);
+            }
+            &:last-child{
+                border-left: 1px solid grey;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: $tablet-landscape + px){
