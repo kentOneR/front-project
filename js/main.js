@@ -78,5 +78,20 @@
         }
         navlistEl.classList.toggle("visible");
     });
+
+    // SEARCH-BAR DROPDOWN
+
+    var selectInvEl = document.getElementById('who-invite'),
+        InvDropdownEl = document.getElementById('dropdown-invite'),
+        buttonInvEl = document.getElementById('check-number-invite');
+
+    selectInvEl.addEventListener('click', function() {
+        InvDropdownEl.classList.toggle("visible");
+    });
+
+    buttonInvEl.addEventListener('click', function() {
+        InvDropdownEl.classList.toggle("visible");
+    });
+
  
  })();

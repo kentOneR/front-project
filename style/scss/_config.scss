@@ -22,6 +22,8 @@ $second-color: green;
 $third-color: orange;
 $dark-grey: #231F20;
 $gold: #A57B1B;
+$button-border-color:  #A57B1B;
+$button-bgk-color:  #A57B1B;
 
 $primary-text-color: #0E1111;
 
@@ -46,13 +48,17 @@ EFFECT
     display: inline-block;
     position: relative;
     cursor: pointer;
-    border: 2px solid $primary-color;
+    border: 2px solid $button-border-color;
     overflow: hidden;
     text-decoration: none;
     outline: none;
     color:#FFF;
-    background: $primary-color;
+    background: $button-bgk-color;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
     span {
+        font-size: 14px;
+        font-family: 'Quicksand', sans-serif;
         -webkit-transition: 0.6s;
         -moz-transition: 0.6s;
         -o-transition: 0.6s;
@@ -132,6 +138,16 @@ EFFECT
 FONT
 \*------------------------------------*/ 
 
-p, h1, h3, h3, h4,ul, li, a, span, label {
+p, h2, h3, h4,ul, li, a, span, label {
     font-family: 'Quicksand', sans-serif;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+}
+
+p{
+    line-height: 20px;
+    margin: 10px 0;
 }

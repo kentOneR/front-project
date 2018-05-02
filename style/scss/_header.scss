@@ -8,3 +8,11 @@ header{
     background-size: cover; /* version standardisée */
     }
 }
+
+@media screen and (max-width: $tablet-landscape + px){
+    header{
+        .parimis-head{
+            min-height: 300px;
+        }
+    }
+}

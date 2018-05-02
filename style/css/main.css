@@ -65,13 +65,17 @@ EFFECT
   display: inline-block;
   position: relative;
   cursor: pointer;
-  border: 2px solid blue;
+  border: 2px solid #A57B1B;
   overflow: hidden;
   text-decoration: none;
   outline: none;
   color: #FFF;
-  background: blue; }
+  background: #A57B1B;
+  font-size: 14px;
+  font-family: 'Quicksand', sans-serif; }
   .button-visual span {
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
     -webkit-transition: 0.6s;
     -moz-transition: 0.6s;
     -o-transition: 0.6s;
@@ -137,8 +141,16 @@ EFFECT
 /*------------------------------------*\     
 FONT
 \*------------------------------------*/
-p, h1, h3, h3, h4, ul, li, a, span, label {
+p, h2, h3, h4, ul, li, a, span, label {
   font-family: 'Quicksand', sans-serif; }
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem; }
+
+p {
+  line-height: 20px;
+  margin: 10px 0; }
 
 /*================================================
 Underline--Magical
@@ -245,6 +257,9 @@ header {
     background-size: cover;
     /* version standardis├®e */ }
 
+@media screen and (max-width: 1024px) {
+  header .parimis-head {
+    min-height: 300px; } }
 .search-bar {
   position: sticky;
   top: 0;
@@ -260,23 +275,41 @@ header {
     justify-content: flex-end; }
     .search-bar form input,
     .search-bar form select {
+      cursor: pointer;
       height: 30px;
       width: 100px;
       margin: 0 10px; }
     .search-bar form #select-invite {
+      cursor: pointer;
       position: relative;
       margin: 0 10px;
       line-height: 30px; }
-      .search-bar form #select-invite .dropdown-content {
+      .search-bar form #select-invite #dropdown-invite {
         display: none;
         position: absolute;
+        width: calc(100% + 20px);
+        height: 180px;
         background-color: #f9f9f9;
+        color: #0E1111;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         padding: 12px 16px;
         z-index: 1; }
-        .search-bar form #select-invite .dropdown-content:hover .dropdown-content {
-          display: block; }
+        .search-bar form #select-invite #dropdown-invite.visible {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: space-around; }
+        .search-bar form #select-invite #dropdown-invite .adulte-invite,
+        .search-bar form #select-invite #dropdown-invite .child-invite {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: flex-end; }
+          .search-bar form #select-invite #dropdown-invite .adulte-invite span,
+          .search-bar form #select-invite #dropdown-invite .child-invite span {
+            font-size: 14px; }
+          .search-bar form #select-invite #dropdown-invite .adulte-invite select,
+          .search-bar form #select-invite #dropdown-invite .child-invite select {
+            width: 40px; }
     .search-bar form .button-visual {
       height: 30px;
       min-width: 100px;
@@ -284,7 +317,18 @@ header {
 
 @media screen and (max-width: 1024px) {
   .search-bar {
-    top: 50px; } }
+    top: 50px; }
+    .search-bar form {
+      margin: auto;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-end; }
+      .search-bar form input,
+      .search-bar form select {
+        cursor: pointer;
+        height: 30px;
+        width: 100px;
+        margin: 0 10px; } }
 .rooms-available {
   display: flex;
   justify-content: space-between;
@@ -323,7 +367,7 @@ header {
 footer {
   margin-top: 150px;
   background-color: black;
-  padding: 30px 0 10px;
+  padding: 30px 0 20px;
   color: #fff; }
   footer form {
     width: 80%;
@@ -348,7 +392,14 @@ footer {
     justify-content: center;
     margin-top: 30px; }
     footer .footer-nav li {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      list-style: inside;
+      margin: 0 8px;
+      font-size: 14px; }
+      footer .footer-nav li a {
+        color: #fff; }
+      footer .footer-nav li:first-child {
+        list-style: none; }
 
 @media screen and (max-width: 640px) {
   footer form {
@@ -357,31 +408,70 @@ footer {
     footer form .button-visual {
       width: 100%;
       margin: 0; }
-
-  .footer-nav {
+    footer form label {
+      margin: 10px 0; }
+  footer .footer-nav {
     flex-flow: column nowrap;
     align-items: center; }
-    .footer-nav li {
+    footer .footer-nav li {
       width: calc(100% - 40px);
+      list-style: none;
       text-align: center;
       line-height: 35px;
       margin: 5px 0;
       color: #0E1111;
-      background-color: #A57B1B; } }
-.paramis-intro {
-  margin-top: 80px;
-  height: 500px;
-  background-color: cadetblue; }
-
-.paramis-services {
-  margin-top: 80px;
-  height: 500px;
-  background-color: burlywood; }
-
+      background-color: #A57B1B;
+      transition: all 0.4s ease-out; }
+      footer .footer-nav li:last-child {
+        background-color: transparent;
+        color: #fff; }
+      footer .footer-nav li.footer-link {
+        cursor: pointer; }
+        footer .footer-nav li.footer-link:hover {
+          background-color: #fff; }
+          footer .footer-nav li.footer-link:hover a {
+            color: #A57B1B; } }
 .main-container {
   width: calc(100% - ($navbarSize));
   margin-left: 200px; }
   .main-container main {
+    max-width: 1240px;
+    width: calc(100% - 100px);
+    margin: 0 auto; }
+    .main-container main .parimis-intro,
+    .main-container main .parimis-rooms,
+    .main-container main .parimis-services {
+      margin-top: 80px;
+      max-width: 800px; }
+      .main-container main .parimis-intro img,
+      .main-container main .parimis-rooms img,
+      .main-container main .parimis-services img {
+        width: 100%; }
+      .main-container main .parimis-intro h1,
+      .main-container main .parimis-rooms h1,
+      .main-container main .parimis-services h1 {
+        margin-top: -2rem; }
+    .main-container main .parimis-rooms {
+      margin-left: calc(100% - 800px);
+      text-align: right; }
+
+@media screen and (max-width: 1280px) {
+  .main-container main .parimis-intro,
+  .main-container main .parimis-rooms,
+  .main-container main .parimis-services {
+    max-width: 600px; }
+    .main-container main .parimis-intro h1,
+    .main-container main .parimis-rooms h1,
+    .main-container main .parimis-services h1 {
+      margin-top: -1.8rem;
+      font-size: 2.5rem; }
+  .main-container main .parimis-rooms {
+    margin-left: calc(100% - 600px); } }
+.main-container {
+  width: calc(100% - ($navbarSize));
+  margin-left: 200px; }
+  .main-container main {
+    max-width: 1240px;
     width: calc(100% - 100px);
     margin: 0 auto; }
 
@@ -389,5 +479,11 @@ footer {
   .main-container {
     width: 100%;
     margin: 0; } }
+a {
+  text-decoration: none;
+  color: #0E1111; }
+  a:active, a:hover, a:visited {
+    text-decoration: none;
+    color: #0E1111; }
 
 /*# sourceMappingURL=main.css.map */
