@@ -59,6 +59,33 @@ COLOR
 WIDTH
 \*------------------------------------*/
 /*------------------------------------*\     
+FONT
+\*------------------------------------*/
+p, h2, h3, h4, ul, li, a, span, label {
+  font-family: 'Quicksand', sans-serif; }
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem; }
+
+p {
+  line-height: 20px;
+  margin: 10px 0; }
+
+@media screen and (max-width: 1280px) {
+  h1 {
+    font-size: 2.5rem; } }
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem; } }
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 1.8rem; }
+
+  p {
+    line-height: 18px;
+    font-size: 15px; } }
+/*------------------------------------*\     
 EFFECT
 \*------------------------------------*/
 .button-visual {
@@ -147,24 +174,6 @@ EFFECT
 .fade-in-element {
   animation: fade-in .8s; }
 
-/*------------------------------------*\     
-FONT
-\*------------------------------------*/
-p, h2, h3, h4, ul, li, a, span, label {
-  font-family: 'Quicksand', sans-serif; }
-
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem; }
-
-p {
-  line-height: 20px;
-  margin: 10px 0; }
-
-@media screen and (max-width: 640px) {
-  p {
-    line-height: 18px;
-    font-size: 15px; } }
 /*================================================
 Underline--Magical
 ==================================================*/
@@ -367,39 +376,64 @@ header {
         margin: 10px; }
       .search-bar form button#check-number-invite {
         width: 100%; } }
-.rooms-available {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px; }
-  .rooms-available figure.swiper-slide {
-    position: relative; }
-    .rooms-available figure.swiper-slide img {
-      width: 100%; }
-    .rooms-available figure.swiper-slide figcaption.book-room {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: flex-end;
-      width: 100%;
-      height: 50px;
-      bottom: 0;
-      left: 0;
-      padding-right: 15px;
-      background-color: #000;
-      color: #fff;
-      font-family: 'Quicksand', sans-serif; }
-      .rooms-available figure.swiper-slide figcaption.book-room .booking a {
-        color: #fff;
-        text-decoration: none; }
-  .rooms-available .swiper-nav {
-    width: 100px; }
-    .rooms-available .swiper-nav .swiper-button-next {
+.special-offer {
+  padding: 40px 50px;
+  margin: 0 auto;
+  background-color: #ededed; }
+  .special-offer .rooms-available {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; }
+    .special-offer .rooms-available .swiper-container {
+      padding: 5px; }
+    .special-offer .rooms-available figure.swiper-slide {
       position: relative;
-      right: 0;
-      margin-left: 20px;
-      background-image: url("../../img/asset/arrowR.svg"); }
+      cursor: pointer;
+      -moz-box-shadow: 0px 0px 2px 1px #656565;
+      -webkit-box-shadow: 0px 0px 2px 1px #656565;
+      -o-box-shadow: 0px 0px 2px 1px #656565;
+      box-shadow: 0px 0px 2px 1px #656565;
+      filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=2); }
+      .special-offer .rooms-available figure.swiper-slide img {
+        width: 100%; }
+      .special-offer .rooms-available figure.swiper-slide figcaption.book-room {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+        height: 80px;
+        bottom: 0;
+        left: 0;
+        padding: 7px 15px;
+        background-color: #fff;
+        color: #000;
+        font-family: 'Quicksand', sans-serif; }
+        .special-offer .rooms-available figure.swiper-slide figcaption.book-room h3 {
+          font-family: 'Playfair Display', serif;
+          font-size: 18px;
+          padding: 7px 0; }
+        .special-offer .rooms-available figure.swiper-slide figcaption.book-room h4 {
+          font-size: 12px;
+          color: #A57B1B; }
+        .special-offer .rooms-available figure.swiper-slide figcaption.book-room .booking {
+          align-self: flex-end; }
+          .special-offer .rooms-available figure.swiper-slide figcaption.book-room .booking a {
+            font-size: 12px;
+            color: #000;
+            text-decoration: none; }
+    .special-offer .rooms-available .swiper-nav {
+      width: 100px; }
+      .special-offer .rooms-available .swiper-nav .swiper-button-next {
+        position: relative;
+        right: 0;
+        margin-left: 20px;
+        background-image: url("../../img/asset/arrowR.svg"); }
 
+@media screen and (max-width: 768px) {
+  .special-offer {
+    padding: 40px 20px; } }
 footer {
   margin-top: 150px;
   background-color: #000;
