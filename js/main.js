@@ -1,13 +1,6 @@
 (function () {
 
     /*------------------------------------*\     
-    HIDE LOADER
-    \*------------------------------------*/
-    var loaderEl = document.getElementById('loader');
-    loaderEl.classList.add('slide-up-element');
-    setTimeout(function(){ loaderEl.classList.replace('slide-up-element', 'hidden'); }, 600);
-
-    /*------------------------------------*\     
     SWIPER ROOMS
     \*------------------------------------*/
     var mySwiper = new Swiper('.swiper-container', {
@@ -15,7 +8,7 @@
         loop: true,
         speed: 400,
         autoplay: {
-            delay: 20000,
+            delay: 3500,
         },
         autoHeight: true,
         navigation: {

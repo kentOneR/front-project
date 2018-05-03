@@ -6,7 +6,7 @@
         </div>
         <ul id="navbar-list" class="">
             <li>
-                <a class="underline--magical" href="#">L'HÔTEL</a>
+                <a class="underline--magical" href="hotel.php">L'HÔTEL</a>
             </li>
             <li>
                 <a class="underline--magical" href="#">CHAMBRES</a>
