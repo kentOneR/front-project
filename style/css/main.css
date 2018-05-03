@@ -497,10 +497,21 @@ footer {
   margin: 120px auto 0;
   max-width: 800px;
   display: flex;
-  flex-flow: row nowrap; }
+  flex-flow: row nowrap;
+  justify-content: center; }
+  .main-container main .parimis-contact #map {
+    height: 300px;
+    width: 400px; }
   .main-container main .parimis-contact .parimis-adress {
-    width: 200px;
-    margin-left: 20px; }
+    margin-left: 20px;
+    max-width: 250px;
+    padding: 20px;
+    border: 2px solid #A57B1B; }
+    .main-container main .parimis-contact .parimis-adress p {
+      text-align: center;
+      line-height: 25px; }
+      .main-container main .parimis-contact .parimis-adress p a:hover {
+        text-decoration: underline; }
 
 @media screen and (max-width: 1280px) {
   .main-container main .parimis-intro,

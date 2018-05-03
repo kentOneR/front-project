@@ -24,22 +24,23 @@
             max-width: 800px;
             display: flex;
             flex-flow: row nowrap;
-            // .map-responsive {
-            //     overflow:hidden;
-            //     padding-bottom:56.25%;
-            //     position:relative;
-            //     height:0;
-            //     iframe {
-            //         left:0;
-            //         top:0;
-            //         height:100%;
-            //         width:100%;
-            //         position:absolute;
-            //     }
-            // }
+            justify-content: center;
+            #map {
+                height: 300px;
+                width: 400px;
+              }
             .parimis-adress{
-                width: 200px;
                 margin-left: 20px;
+                max-width: 250px;
+                padding: 20px;
+                border: 2px solid $gold;
+                p{
+                    text-align: center;
+                    line-height: 25px;
+                    a:hover{
+                        text-decoration: underline;
+                    }
+                }
             }
         }
     }
