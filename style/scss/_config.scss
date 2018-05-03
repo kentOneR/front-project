@@ -166,3 +166,10 @@ p{
     line-height: 20px;
     margin: 10px 0;
 }
+
+@media screen and (max-width: $mobile-landscape + px) {
+    p{
+        line-height: 18px;
+        font-size: 15px;
+    }
+}

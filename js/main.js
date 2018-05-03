@@ -81,16 +81,31 @@
 
     // SEARCH-BAR DROPDOWN
 
-    var selectInvEl = document.getElementById('who-invite'),
+    var selectContainerInvEl = document.getElementById('select-invite'),
+        selectInvEl = document.getElementById('who-invite'),
         InvDropdownEl = document.getElementById('dropdown-invite'),
-        buttonInvEl = document.getElementById('check-number-invite');
+        buttonInvEl = document.getElementById('check-invite'),
+        buttonNbrInvEl = document.getElementById('check-number-invite');
+
+    // window.addEventListener('click', function (e) {
+    //     e.stopPropagation();
+    //     if (e.target == selectContainerInvEl) {
+    //         InvDropdownEl.classList.add("visible");
+    //     } else {
+    //         InvDropdownEl.classList.remove("visible");
+    //     }
+    // });
 
     selectInvEl.addEventListener('click', function () {
         InvDropdownEl.classList.toggle("visible");
     });
 
     buttonInvEl.addEventListener('click', function () {
-        InvDropdownEl.classList.toggle("visible");
+        InvDropdownEl.classList.remove("visible");
+    });
+
+    buttonNbrInvEl.addEventListener('click', function () {
+        InvDropdownEl.classList.remove("visible");
     });
 
     // FADE-IN EFFECT

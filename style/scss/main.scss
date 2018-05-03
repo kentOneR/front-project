@@ -27,6 +27,14 @@
     }
 }
 
+@media screen and (max-width: $tablet-portrait + px){
+    .main-container{
+        main{
+            width: calc(100% - 40px);
+        }
+    }
+}
+
 a{
     text-decoration: none;
     color: $primary-text-color;

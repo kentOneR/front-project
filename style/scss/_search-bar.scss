@@ -1,7 +1,7 @@
 .search-bar{
     position: sticky;
     top: 0;
-    padding: 10px 50px;
+    padding: 10px 40px;
     min-height: 50px;
     background-color: #000;
     color: #fff;
@@ -15,7 +15,7 @@
         select{
             cursor: pointer;
             height: 30px;
-            width: 100px;
+            width: 90px;
             margin: 0 10px;
         }
         #select-invite{
@@ -64,17 +64,23 @@
 @media screen and (max-width: $tablet-landscape + px){
     .search-bar{
         top: 50px;
+    }
+}
+
+@media screen and (max-width: $tablet-portrait + px){
+    .search-bar{
+        padding: 10px 20px;
         form{
-            margin: auto;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: flex-end;
-            input, 
-            select{
-                cursor: pointer;
-                height: 30px;
-                width: 100px;
-                margin: 0 10px;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            input,
+            select,
+            div#select-invite,
+            button#check-number-invite{
+                margin: 10px;
+            }
+            button#check-number-invite{
+                width: 100%;
             }
         }
     }
