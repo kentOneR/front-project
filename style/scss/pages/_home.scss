@@ -19,6 +19,29 @@
             margin-left: calc(100% - 800px);
             text-align: right;
         }
+        .parimis-contact{
+            margin: 120px auto 0;
+            max-width: 800px;
+            display: flex;
+            flex-flow: row nowrap;
+            // .map-responsive {
+            //     overflow:hidden;
+            //     padding-bottom:56.25%;
+            //     position:relative;
+            //     height:0;
+            //     iframe {
+            //         left:0;
+            //         top:0;
+            //         height:100%;
+            //         width:100%;
+            //         position:absolute;
+            //     }
+            // }
+            .parimis-adress{
+                width: 200px;
+                margin-left: 20px;
+            }
+        }
     }
 }
 

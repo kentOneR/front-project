@@ -88,10 +88,13 @@
         buttonNbrInvEl = document.getElementById('check-number-invite');
 
     // window.addEventListener('click', function (e) {
-    //     e.stopPropagation();
-    //     if (e.target == selectContainerInvEl) {
+    //     e.preventDefault();
+    //     if (e.target == selectInvEl) {
+    //         InvDropdownEl.classList.toggle("visible");
+    //     } else if (e.target == InvDropdownEl || e.target == buttonInvEl) {
     //         InvDropdownEl.classList.add("visible");
-    //     } else {
+    //     }
+    //     else {
     //         InvDropdownEl.classList.remove("visible");
     //     }
     // });
