@@ -85,6 +85,42 @@ p {
   p {
     line-height: 18px;
     font-size: 15px; } }
+.grid-xl-1 {
+  width: 8.3333333333%; }
+
+.grid-xl-2 {
+  width: 16.6666666667%; }
+
+.grid-xl-3 {
+  width: 25%; }
+
+.grid-xl-4 {
+  width: 33.3333333333%; }
+
+.grid-xl-5 {
+  width: 41.6666666667%; }
+
+.grid-xl-6 {
+  width: 50%; }
+
+.grid-xl-7 {
+  width: 58.3333333333%; }
+
+.grid-xl-8 {
+  width: 66.6666666667%; }
+
+.grid-xl-9 {
+  width: 75%; }
+
+.grid-xl-10 {
+  width: 83.3333333333%; }
+
+.grid-xl-11 {
+  width: 91.6666666667%; }
+
+.grid-xl-12 {
+  width: 100%; }
+
 /*------------------------------------*\     
 EFFECT
 \*------------------------------------*/

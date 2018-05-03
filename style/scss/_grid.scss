@@ -1,0 +1,32 @@
+// $desktop-large:    1920; 
+// $desktop-medium:   1440; 
+// $desktop-small:    1280; 
+// $tablet-landscape: 1024; 
+// $tablet-portrait:  768; 
+// $mobile-landscape: 640; 
+// $mobile-portrait:  320;
+
+$col-number: 12;
+$with-size: 100%;
+
+@for $i from 1 through $col-number {
+    .grid-xl-#{$i} {
+        width: $with-size * $i / $col-number;
+    }
+}
+
+@media screen and (max-width: $desktop-medium + px){
+
+}
+
+@media screen and (max-width: $desktop-small + px){
+
+}
+
+@media screen and (max-width: $tablet-portrait + px){
+
+}
+
+@media screen and (max-width: $mobile-landscape + px) {
+
+}
