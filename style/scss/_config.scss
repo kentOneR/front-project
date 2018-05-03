@@ -138,6 +138,17 @@ EFFECT
     }
 }
 
+@keyframes fade-in {
+    from {opacity: 0; transform: translateY(80px);}
+    to {opacity: 1;}
+}
+.fade-in-element {
+  animation: fade-in .8s;
+}
+
+
+
+
 /*------------------------------------*\     
 FONT
 \*------------------------------------*/ 
