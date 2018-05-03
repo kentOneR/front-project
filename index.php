@@ -61,7 +61,7 @@
                             <figcaption class="book-room">
                                 <div class="book-name">
                                     <h4>SPA ET BIEN-ÊTRE</h4>
-                                    <h3>Perfection Parisienne</h3>
+                                    <h3>Soin Perfection</h3>
                                 </div>
                                 <div class="booking">
                                     <a class="underline--magical" href="#">EN SAVOIR +</a>

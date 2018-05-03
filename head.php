@@ -14,3 +14,10 @@
 </head>
 
 <body>
+    <div id="loader">
+        <img src="img/asset/loader.gif" alt="Loader">
+    </div>
+    <script>
+        var loaderEl = document.getElementById('loader');
+        loaderEl.classList.add('visible');
+    </script>

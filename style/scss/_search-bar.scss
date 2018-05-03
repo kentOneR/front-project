@@ -61,7 +61,7 @@
     }
 }
 
-@media screen and (max-width: $tablet-landscape + px){
+@media screen and (max-width: $desktop-small + px){
     .search-bar{
         top: 50px;
     }
@@ -83,5 +83,11 @@
                 width: 100%;
             }
         }
+    }
+}
+
+@media screen and (max-width: $tablet-portrait + px){
+    .search-bar{
+        position: static;
     }
 }

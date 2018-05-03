@@ -9,6 +9,28 @@
 @import 'footer';
 @import 'pages/home';
 
+#loader{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10000;
+    display: none;
+    &.visible{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &.hidden{
+        display: none;
+    }
+}
+
 .main-container{
     width: calc(100% - ($navbarSize));
     margin-left: $navbarSize;
