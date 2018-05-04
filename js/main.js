@@ -143,9 +143,23 @@
     // ROOM TOGGLE
     if(window.location.href.indexOf('chambre') > -1 ) {
         var filter = document.querySelectorAll('.filters > li');
+        var roomList = document.querySelectorAll(".room-list");
         for(var i=0; filter[i]; i++)
         filter[i].addEventListener('click', function(e){
-            console.log(e.target.getAttribute("data-roomtype"));
+            var roomType = e.target.getAttribute("data-roomtype");
+            for(var i=0; roomList[i]; i++) {
+                var roomListType = roomList[i].getAttribute("data-roomtype");
+                if(roomType != "all") {
+                    if(roomListType == roomType) {
+                        roomList[i].style.display = 'block';
+                    } else {
+                        roomList[i].style.display = 'none';
+                    }
+                } else {
+                    roomList[i].style.display = 'block';
+                }
+            }
+
         })
     }
 

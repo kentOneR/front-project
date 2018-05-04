@@ -120,6 +120,14 @@ EFFECT
 animation: fade-in .6s;
 }
 
+@keyframes fade-out {
+  from {opacity: 1; }
+  to {opacity: 0; transform: translateY(-10px);}
+}
+.fade-out-element {
+animation: fade-out .6s;
+}
+
 @keyframes slide-up {
     0% {height: 100vh;}
     75% {opacity: 1;}    
