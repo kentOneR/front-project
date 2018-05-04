@@ -27,12 +27,10 @@
         <div class="select-lang">
             <div>
                 <a href="">FR
-                    <img src="img/asset/flag-fr.jpg" alt="Drapeau français">
                 </a>
             </div>
             <div>
                 <a href="">EN
-                    <img src="img/asset/flag-en.jpg" alt="English flag">
                 </a>
             </div>
         </div>

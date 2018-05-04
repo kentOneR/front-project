@@ -489,10 +489,10 @@ nav.side-navbar {
   height: 100%;
   padding: 25px;
   background-color: #fff;
-  -moz-box-shadow: 1px 0px 2px 1px #656565;
-  -webkit-box-shadow: 1px 0px 2px 1px #656565;
-  -o-box-shadow: 1px 0px 2px 1px #656565;
-  box-shadow: 1px 0px 2px 1px #656565;
+  -moz-box-shadow: 0px 0px 1px 1px #656565;
+  -webkit-box-shadow: 0px 0px 1px 1px #656565;
+  -o-box-shadow: 0px 0px 1px 1px #656565;
+  box-shadow: 0px 0px 1px 1px #656565;
   filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=90, Strength=2);
   z-index: 2000; }
   nav.side-navbar #navbar-burger {
@@ -512,9 +512,6 @@ nav.side-navbar {
     nav.side-navbar .select-lang div {
       padding: 0 10px;
       font-size: 12px; }
-      nav.side-navbar .select-lang div img {
-        width: 20px;
-        transform: translateY(2px); }
       nav.side-navbar .select-lang div:last-child {
         border-left: 1px solid grey; }
 
@@ -538,7 +535,9 @@ nav.side-navbar {
     nav.side-navbar .select-lang {
       right: 10px;
       top: 18px;
-      bottom: 15px; } }
+      bottom: 15px; }
+      nav.side-navbar .select-lang div {
+        line-height: 17px; } }
 @media screen and (max-width: 1024px) {
   nav.side-navbar ul {
     width: calc(100% - 300px); }
@@ -815,6 +814,31 @@ footer {
       .main-container main .parimis-contact .parimis-adress p a:hover {
         text-decoration: underline; }
 
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.parimis-event {
+  margin-top: 120px; }
+  .parimis-event .all-video-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 40px; }
+
+.parimis-press {
+  margin-top: 120px; }
+
 #loader {
   width: 100%;
   height: 100vh;
@@ -834,7 +858,6 @@ footer {
     display: none; }
 
 .main-container {
-  width: calc(100% - ($navbarSize));
   margin-left: 200px; }
   .main-container main {
     max-width: 1240px;
@@ -855,6 +878,34 @@ footer {
       margin-left: calc(100% - 800px);
       text-align: right; }
 
+a {
+  text-decoration: none;
+  color: #0E1111; }
+  a:active, a:hover, a:visited {
+    text-decoration: none;
+    color: #0E1111; }
+
+.carrousel-simple {
+  position: relative;
+  width: 530px;
+  margin-left: 270px; }
+  .carrousel-simple img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
+    .carrousel-simple img.no-bckg {
+      position: relative; }
+    .carrousel-simple img.slide-1 {
+      animation: fade 8s infinite;
+      -webkit-animation: fade 10s infinite; }
+    .carrousel-simple img.slide-2 {
+      animation: fade2 8s infinite;
+      -webkit-animation: fade2 10s infinite; }
+    .carrousel-simple img.slide-3 {
+      animation: fade3 8s infinite;
+      -webkit-animation: fade3 10s infinite; }
+
 @media screen and (max-width: 1280px) {
   .main-container {
     width: 100%;
@@ -867,7 +918,10 @@ footer {
         margin-top: -1.8rem;
         font-size: 2.5rem; }
     .main-container main .section-right {
-      margin-left: calc(100% - 600px); } }
+      margin-left: calc(100% - 600px); }
+
+  .carrousel-simple {
+    margin-left: 70px; } }
 @media screen and (max-width: 768px) {
   .main-container main {
     width: calc(100% - 40px); }
@@ -879,32 +933,10 @@ footer {
       .main-container main .section-left h1,
       .main-container main .section-right h1 {
         margin-top: -1.4rem;
-        font-size: 1.8rem; } }
-a {
-  text-decoration: none;
-  color: #0E1111; }
-  a:active, a:hover, a:visited {
-    text-decoration: none;
-    color: #0E1111; }
+        font-size: 1.8rem; }
 
-.carrousel-simple {
-  position: relative;
-  width: 530px;
-  margin-left: 270px;
-  height: 300px; }
-  .carrousel-simple img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; }
-    .carrousel-simple img.slide-1 {
-      animation: fade 8s infinite;
-      -webkit-animation: fade 10s infinite; }
-    .carrousel-simple img.slide-2 {
-      animation: fade2 8s infinite;
-      -webkit-animation: fade2 10s infinite; }
-    .carrousel-simple img.slide-3 {
-      animation: fade3 8s infinite;
-      -webkit-animation: fade3 10s infinite; }
+  .carrousel-simple {
+    margin: 0 auto;
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

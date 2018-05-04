@@ -24,6 +24,7 @@
             </section>
             <section class="section-right">
                 <div class="carrousel-simple">
+                    <img class="no-bckg" src="img/hotel/histo/no-bckg.png" alt="Fond transparent">
                     <img class="slide-1" src="img/hotel/histo/parimis-sky.jpg" alt="L'hôtel Parimis vu du ciel">
                     <img class="slide-2" src="img/hotel/histo/hotel-heritage.jpg" alt="Archive de l'hôtel Parimis, 1952">
                     <img class="slide-3" src="img/hotel/histo/hotel-dance.jpg" alt="Galla de dance à l'hôtel Parimis, 1952">
@@ -47,7 +48,29 @@
                 </div>
             </section>
             <section class="parimis-event">
-                <h1>Des évènements </h1>
+                <h1>Des évènements majestueux
+                    <br>à l'ambiance contemporaine</h1>
+                    <div class="all-video-container">
+                        <div class="col-sm-12 col-lg-6 col-xl-3">
+                            <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/_mtIU2l6Nqk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6 col-xl-3">
+                            <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/_mtIU2l6Nqk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6 col-xl-3">
+                            <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/_mtIU2l6Nqk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6 col-xl-3">
+                            <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/_mtIU2l6Nqk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                        </div>
+                    </div>
+            </section>
+            <section class="parimis-press">
+                <h1>La presse parle du Parimis</h1>
             </section>
             <section class="parimis-contact">
                 <div id="map"></div>

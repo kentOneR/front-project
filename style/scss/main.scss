@@ -9,6 +9,7 @@
 @import 'swiper';
 @import 'footer';
 @import 'pages/home';
+@import 'pages/hotel';
 
 #loader{
     width: 100%;
@@ -33,7 +34,6 @@
 }
 
 .main-container{
-    width: calc(100% - ($navbarSize));
     margin-left: $navbarSize;
     main{
         max-width: 1240px;
@@ -58,6 +58,43 @@
     }
 }
 
+a{
+    text-decoration: none;
+    color: $primary-text-color;
+    &:active,
+    &:hover,
+    &:visited{
+        text-decoration: none;
+        color: $primary-text-color;
+    }
+}
+
+.carrousel-simple{
+    position: relative;
+    width: 530px;
+    margin-left: 270px;
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        &.no-bckg{
+            position: relative;
+        }
+        &.slide-1{
+            animation:fade 8s infinite;
+            -webkit-animation:fade 10s infinite;
+        }
+        &.slide-2{
+            animation:fade2 8s infinite;
+            -webkit-animation:fade2 10s infinite;
+        }
+        &.slide-3{
+            animation:fade3 8s infinite;
+            -webkit-animation:fade3 10s infinite;
+        }
+    }
+}
 
 @media screen and (max-width: $desktop-small + px){
     .main-container{
@@ -77,6 +114,9 @@
             }
         }
     }
+    .carrousel-simple{
+        margin-left: 70px;
+    }
 }
 
 @media screen and (max-width: $tablet-portrait + px){
@@ -95,40 +135,8 @@
             }
         }
     }
-}
-
-a{
-    text-decoration: none;
-    color: $primary-text-color;
-    &:active,
-    &:hover,
-    &:visited{
-        text-decoration: none;
-        color: $primary-text-color;
-    }
-}
-
-.carrousel-simple{
-    position: relative;
-    width: 530px;
-    margin-left: 270px;
-    height: 300px;
-    img{
-        position: absolute;
-        top: 0;
-        left: 0;
+    .carrousel-simple{
+        margin: 0 auto;
         width: 100%;
-        &.slide-1{
-            animation:fade 8s infinite;
-            -webkit-animation:fade 10s infinite;
-        }
-        &.slide-2{
-            animation:fade2 8s infinite;
-            -webkit-animation:fade2 10s infinite;
-        }
-        &.slide-3{
-            animation:fade3 8s infinite;
-            -webkit-animation:fade3 10s infinite;
-        }
     }
 }
