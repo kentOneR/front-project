@@ -9,7 +9,7 @@
                 <a class="underline--magical" href="hotel.php">L'HÔTEL</a>
             </li>
             <li>
-                <a class="underline--magical" href="#">CHAMBRES</a>
+                <a class="underline--magical" href="chambre.php">CHAMBRES</a>
             </li>
             <li>
                 <a class="underline--magical" href="#">RESTAURANT</a>

@@ -140,6 +140,15 @@
     }
     animateHTML().init();
 
+    // ROOM TOGGLE
+    if(window.location.href.indexOf('chambre') > -1 ) {
+        var filter = document.querySelectorAll('.filters > li');
+        for(var i=0; filter[i]; i++)
+        filter[i].addEventListener('click', function(e){
+            console.log(e.target.getAttribute("data-roomtype"));
+        })
+    }
+
 })();
 
 // Google Map API
@@ -234,5 +243,6 @@ function initMap() {
         position: { lat: 48.865847, lng: 2.301569 },
         map: map,
         title: 'Parimis Hôtel'
-      });
+    });
 }
+

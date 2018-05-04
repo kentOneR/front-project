@@ -15,7 +15,7 @@
                             <img src="img/hotel/room/room-1.jpg" alt="">
                             <figcaption class="book-room">
                                 <div class="book-name">
-                                    <h4>CHAMBRE ET SUITE</h4>
+                                    <h4>CHAMBRE : SUITE</h4>
                                     <h3>Luxury In Advance</h3>
                                 </div>
                                 <div class="booking">
@@ -27,7 +27,7 @@
                             <img src="img/hotel/room/room-2.jpg" alt="">
                             <figcaption class="book-room">
                                 <div class="book-name">
-                                    <h4>CHAMBRE ET SUITE</h4>
+                                    <h4>CHAMBRE : SUITE</h4>
                                     <h3>Suite Royale</h3>
                                 </div>
                                 <div class="booking">
@@ -51,7 +51,7 @@
                             <img src="img/hotel/room/room-4.jpg" alt="">
                             <figcaption class="book-room">
                                 <div class="book-name">
-                                    <h4>CHAMBRE ET SUITE</h4>
+                                    <h4>CHAMBRE : DELUXE</h4>
                                     <h3>Rooftop Garden</h3>
                                 </div>
                                 <div class="booking">
@@ -75,7 +75,7 @@
                             <img src="img/hotel/room/room-6.jpg" alt="">
                             <figcaption class="book-room">
                                 <div class="book-name">
-                                    <h4>CHAMBRE ET SUITE</h4>
+                                    <h4>CHAMBRE : CONFORT</h4>
                                     <h3>Escape Suite</h3>
                                 </div>
                                 <div class="booking">
