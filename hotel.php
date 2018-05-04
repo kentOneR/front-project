@@ -1,13 +1,13 @@
 
         <?php include ('head.php'); ?>
         <?php include ('navbar.php'); ?>
-        <?php include ('header.php'); ?>
+        <?php include ('search-bar.php'); ?>
         <main>
-            <section class="parimis-intro">
-                <img class="fade-el" src="img/hotel/hotel-inside.jpg" alt="Entrée de l'hôtel Parimis">
-                <div class="fade-el">
-                    <h1>Parimis, un hôtel d'exception
-                        <br> au cœur de Paris</h1>
+            <section class="section-left">
+                <img src="img/hotel/hotel-stairs.jpg" alt="Escalier l'hôtel Parimis">
+                <div>
+                    <h1>Parimis, un savoir-faire
+                        <br>unique et d'exception</h1>
                     <p>Situé au cœur de Paris, le
                         <strong>Parimis Hôtel</strong> se distingue par sa décoration intérieure et
                         <stron>sa cuisine renommé</stron> signé par un grand chef. Notre hôtel est
@@ -22,11 +22,15 @@
                         <strong>Parimis Hôtel</strong> vous aidera à rendre votre séjour inoubliable.</p>
                 </div>
             </section>
-            <section class="parimis-rooms">
-                <img class="fade-el" src="img/hotel/hotel-room-intro.jpg" alt="Chambres de l'hôtel Parimis">
-                <div class="fade-el">
-                    <h1>Les chambres du Parimis
-                        <br>conjuguent élégance et raffinement</h1>
+            <section class="section-right">
+                <div class="carrousel-simple">
+                    <img class="slide-1" src="img/hotel/histo/parimis-sky.jpg" alt="L'hôtel Parimis vu du ciel">
+                    <img class="slide-2" src="img/hotel/histo/hotel-heritage.jpg" alt="Archive de l'hôtel Parimis, 1952">
+                    <img class="slide-3" src="img/hotel/histo/hotel-dance.jpg" alt="Galla de dance à l'hôtel Parimis, 1952">
+                </div>
+                <div class="pos-relative">
+                    <h1>Parimis, une histoire ancrée
+                        <br>entre luxe et tradition</h1>
                     <p>Les 50 chambres et suites conjuguent
                         <strong>luxe élégant et sobre</strong>, avec technologie ultra performante.
                         <strong>Spacieuses et raffinées</strong>, les chambres du
@@ -42,43 +46,8 @@
                     </p>
                 </div>
             </section>
-            <section class="parimis-services">
-                <img class="fade-el" src="img/hotel/parimis-resto.jpg" alt="Restaurant de l'hôtel Parimis">
-                <div class="fade-el">
-                    <h1>Profitez d'une gastronimie
-                        <br>de renom</h1>
-                    <p>Le
-                        <strong>Parimis</strong> propose un service de restauration au quotidien, dans un décor raffiné. La grande
-                        salle à manger, qui était déjà celle d’un
-                        <strong>établissement prestigieux</strong> lors de son ouverture en 1908, avec ses hauts plafonds, ses panneaux
-                        méticuleusement restaurés à la feuille d'or, ses moulures ainsi que ses peintures, reflète la gloire
-                        de la
-                        <strong>Belle Époque</strong>, tandis que les panneaux contemporains avec leurs dorures et leurs miroirs,
-                        les meubles élégants et la musique jouée par un orchestre confèrent une atmosphère moderne à ce vaste
-                        espace.
-                    </p>
-                </div>
-            </section>
-            <section class="parimis-spa">
-                <img class="fade-el" src="img/hotel/parimis-spa.jpg" alt="Spa de l'hôtel Parimis">
-                <div class="fade-el">
-                    <h1>A la croisée de l’Orient
-                        <br>et de l’Occident</h1>
-                    <p>Niché dans au cœur du
-                        <strong>Parimsi Hôtel</strong>, cet espace entièrement dédié à la beauté et à la remise en forme où se mêlent
-                        culture et savoir-faire, abrite 6 cabines individuelles et 2 suites privatives, une superbe piscine
-                        intérieure de 20 mètres, 2 bassins de vitalité, des saunas, hammams et douches expérience.</p>
-                    <p>
-                        Fidèle à ses origines asiatiques, cet écrin bien-être permet une retraite urbaine au cœur de la Ville Lumière en associant
-                        savamment le meilleur de chaque culture. La décoration intérieure contemporaine et le mobilier du
-                        Spa, inspirés d’éléments traditionnels asiatiques, proposent une association raffinée de matériaux
-                        aux tons apaisants comme le bois, le granit ou le marbre, propices à la plénitude. L’expérience client
-                        débute dans l’Asian Tea Lounge, un espace d’accueil où une sélection de thés rares est proposée,
-                        avec la marque française Yemaya, ainsi que des jus de fruits et légumes détox de la marque Good Organic
-                        Only.
-                    </p>
-                    </p>
-                </div>
+            <section class="parimis-event">
+                <h1>Des évènements </h1>
             </section>
             <section class="parimis-contact">
                 <div id="map"></div>

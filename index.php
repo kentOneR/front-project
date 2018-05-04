@@ -3,7 +3,9 @@
         <?php include ('loader.php'); ?>
         <?php include ('navbar.php'); ?>
         <?php include ('header.php'); ?>
+        <?php include ('search-bar.php'); ?>
         <section class="special-offer">
+            <div class="offer-container">
             <h1>Nos offres spéciales</h1>
             <div class="rooms-available">
                 <!-- Slider main container -->
@@ -111,9 +113,10 @@
                     <div class="swiper-button-next"></div>
                 </div>
             </div>
+            </div>
         </section>
         <main>
-            <section class="parimis-intro">
+            <section class="parimis-intro section-left">
                 <img class="fade-el" src="img/hotel/hotel-inside.jpg" alt="Entrée de l'hôtel Parimis">
                 <div class="fade-el">
                     <h1>Parimis, un hôtel d'exception
@@ -132,7 +135,7 @@
                         <strong>Parimis Hôtel</strong> vous aidera à rendre votre séjour inoubliable.</p>
                 </div>
             </section>
-            <section class="parimis-rooms">
+            <section class="parimis-rooms section-right">
                 <img class="fade-el" src="img/hotel/hotel-room-intro.jpg" alt="Chambres de l'hôtel Parimis">
                 <div class="fade-el">
                     <h1>Les chambres du Parimis
@@ -152,7 +155,7 @@
                     </p>
                 </div>
             </section>
-            <section class="parimis-services">
+            <section class="parimis-services section-left">
                 <img class="fade-el" src="img/hotel/parimis-resto.jpg" alt="Restaurant de l'hôtel Parimis">
                 <div class="fade-el">
                     <h1>Profitez d'une gastronimie
@@ -169,7 +172,7 @@
                     </p>
                 </div>
             </section>
-            <section class="parimis-spa">
+            <section class="parimis-spa section-right">
                 <img class="fade-el" src="img/hotel/parimis-spa.jpg" alt="Spa de l'hôtel Parimis">
                 <div class="fade-el">
                     <h1>A la croisée de l’Orient

@@ -1,24 +1,5 @@
 .main-container{
     main{
-        .parimis-intro,
-        .parimis-rooms,
-        .parimis-services,
-        .parimis-spa{
-            margin-top: 120px;
-            max-width: 800px;
-            img{
-                width: 100%;
-            }
-            h1 {
-                margin-top: - 2rem;
-                margin-bottom: 30px;
-            }
-        }
-        .parimis-spa,
-        .parimis-rooms{
-            margin-left: calc(100% - 800px);
-            text-align: right;
-        }
         .parimis-contact{
             margin: 120px auto 0;
             max-width: 800px;
@@ -48,40 +29,12 @@
 
 @media screen and (max-width: $desktop-small + px){
     .main-container{
-        main{
-            .parimis-intro,
-            .parimis-rooms,
-            .parimis-services,
-            .parimis-spa,{
-                max-width: 600px;
-                h1 {
-                    margin-top: -1.8rem;
-                    font-size: 2.5rem;
-                }
-            }
-            .parimis-spa,
-            .parimis-rooms{
-                margin-left: calc(100% - 600px);
-            }
-        }
+
     }
 }
 
 @media screen and (max-width: $tablet-portrait + px){
     .main-container{
-        main{
-            .parimis-intro,
-            .parimis-rooms,
-            .parimis-services,
-            .parimis-spa,{
-                max-width: 600px;
-                width: 100%;
-                margin: 50px auto;
-                h1 {
-                    margin-top: -1.4rem;
-                    font-size: 1.8rem;
-                }
-            }
-        }
+
     }
 }

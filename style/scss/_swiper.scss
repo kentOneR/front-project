@@ -1,61 +1,66 @@
 .special-offer {
-    padding: 40px 50px;
+    padding: 40px 0;
     margin: 0 auto;
     background-color: $grey-lighter;
-   .rooms-available {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 30px;
-        .swiper-container{
-            padding: 5px;
-        }
-        figure.swiper-slide{
-            position: relative;
-            cursor: pointer;
-            @include border-shadow();
-            img{
-                width: 100%;
+    .offer-container{
+        max-width: 1240px;
+        width: calc(100% - 100px);
+        margin: 0 auto;
+        .rooms-available {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            .swiper-container{
+                padding: 5px;
             }
-            figcaption.book-room{
-                position: absolute;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: flex-start;
-                width: 100%;
-                height: 80px;
-                bottom: 0;
-                left: 0;
-                padding: 7px 15px;
-                background-color: #fff;
-                color: #000;
-                font-family: 'Quicksand', sans-serif;
-                h3{
-                    font-family: 'Playfair Display', serif;
-                    font-size: 18px;
-                    padding: 7px 0;
+            figure.swiper-slide{
+                position: relative;
+                cursor: pointer;
+                @include border-shadow();
+                img{
+                    width: 100%;
                 }
-                h4{
-                    font-size: 12px;
-                    color: $gold;
-                }
-                .booking{
-                    align-self: flex-end;
-                    a{
+                figcaption.book-room{
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    width: 100%;
+                    height: 80px;
+                    bottom: 0;
+                    left: 0;
+                    padding: 7px 15px;
+                    background-color: #fff;
+                    color: #000;
+                    font-family: 'Quicksand', sans-serif;
+                    h3{
+                        font-family: 'Playfair Display', serif;
+                        font-size: 18px;
+                        padding: 7px 0;
+                    }
+                    h4{
                         font-size: 12px;
-                        color: #000;
-                        text-decoration: none;
+                        color: $gold;
+                    }
+                    .booking{
+                        align-self: flex-end;
+                        a{
+                            font-size: 12px;
+                            color: #000;
+                            text-decoration: none;
+                        }
                     }
                 }
             }
-        }
-        .swiper-nav{
-            width: 100px;
-            .swiper-button-next{
-                position: relative;
-                right: 0;
-                margin-left: 20px;
-                background-image: url('../../img/asset/arrowR.svg');
+            .swiper-nav{
+                width: 100px;
+                .swiper-button-next{
+                    position: relative;
+                    right: 0;
+                    margin-left: 20px;
+                    background-image: url('../../img/asset/arrowR.svg');
+                }
             }
         }
     }

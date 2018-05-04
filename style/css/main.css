@@ -85,41 +85,248 @@ p {
   p {
     line-height: 18px;
     font-size: 15px; } }
-.grid-xl-1 {
-  width: 8.3333333333%; }
+.col-xl-1 {
+  width: 8.3333333333%;
+  padding: 10px; }
 
-.grid-xl-2 {
-  width: 16.6666666667%; }
+.col-xl-2 {
+  width: 16.6666666667%;
+  padding: 10px; }
 
-.grid-xl-3 {
-  width: 25%; }
+.col-xl-3 {
+  width: 25%;
+  padding: 10px; }
 
-.grid-xl-4 {
-  width: 33.3333333333%; }
+.col-xl-4 {
+  width: 33.3333333333%;
+  padding: 10px; }
 
-.grid-xl-5 {
-  width: 41.6666666667%; }
+.col-xl-5 {
+  width: 41.6666666667%;
+  padding: 10px; }
 
-.grid-xl-6 {
-  width: 50%; }
+.col-xl-6 {
+  width: 50%;
+  padding: 10px; }
 
-.grid-xl-7 {
-  width: 58.3333333333%; }
+.col-xl-7 {
+  width: 58.3333333333%;
+  padding: 10px; }
 
-.grid-xl-8 {
-  width: 66.6666666667%; }
+.col-xl-8 {
+  width: 66.6666666667%;
+  padding: 10px; }
 
-.grid-xl-9 {
-  width: 75%; }
+.col-xl-9 {
+  width: 75%;
+  padding: 10px; }
 
-.grid-xl-10 {
-  width: 83.3333333333%; }
+.col-xl-10 {
+  width: 83.3333333333%;
+  padding: 10px; }
 
-.grid-xl-11 {
-  width: 91.6666666667%; }
+.col-xl-11 {
+  width: 91.6666666667%;
+  padding: 10px; }
 
-.grid-xl-12 {
-  width: 100%; }
+.col-xl-12 {
+  width: 100%;
+  padding: 10px; }
+
+@media screen and (max-width: 1440px) {
+  .col-lg-1 {
+    width: 8.3333333333%;
+    padding: 10px; }
+
+  .col-lg-2 {
+    width: 16.6666666667%;
+    padding: 10px; }
+
+  .col-lg-3 {
+    width: 25%;
+    padding: 10px; }
+
+  .col-lg-4 {
+    width: 33.3333333333%;
+    padding: 10px; }
+
+  .col-lg-5 {
+    width: 41.6666666667%;
+    padding: 10px; }
+
+  .col-lg-6 {
+    width: 50%;
+    padding: 10px; }
+
+  .col-lg-7 {
+    width: 58.3333333333%;
+    padding: 10px; }
+
+  .col-lg-8 {
+    width: 66.6666666667%;
+    padding: 10px; }
+
+  .col-lg-9 {
+    width: 75%;
+    padding: 10px; }
+
+  .col-lg-10 {
+    width: 83.3333333333%;
+    padding: 10px; }
+
+  .col-lg-11 {
+    width: 91.6666666667%;
+    padding: 10px; }
+
+  .col-lg-12 {
+    width: 100%;
+    padding: 10px; } }
+@media screen and (max-width: 1280px) {
+  .col-md-1 {
+    width: 8.3333333333%;
+    padding: 10px; }
+
+  .col-md-2 {
+    width: 16.6666666667%;
+    padding: 10px; }
+
+  .col-md-3 {
+    width: 25%;
+    padding: 10px; }
+
+  .col-md-4 {
+    width: 33.3333333333%;
+    padding: 10px; }
+
+  .col-md-5 {
+    width: 41.6666666667%;
+    padding: 10px; }
+
+  .col-md-6 {
+    width: 50%;
+    padding: 10px; }
+
+  .col-md-7 {
+    width: 58.3333333333%;
+    padding: 10px; }
+
+  .col-md-8 {
+    width: 66.6666666667%;
+    padding: 10px; }
+
+  .col-md-9 {
+    width: 75%;
+    padding: 10px; }
+
+  .col-md-10 {
+    width: 83.3333333333%;
+    padding: 10px; }
+
+  .col-md-11 {
+    width: 91.6666666667%;
+    padding: 10px; }
+
+  .col-md-12 {
+    width: 100%;
+    padding: 10px; } }
+@media screen and (max-width: 768px) {
+  .col-sm-1 {
+    width: 8.3333333333%;
+    padding: 10px; }
+
+  .col-sm-2 {
+    width: 16.6666666667%;
+    padding: 10px; }
+
+  .col-sm-3 {
+    width: 25%;
+    padding: 10px; }
+
+  .col-sm-4 {
+    width: 33.3333333333%;
+    padding: 10px; }
+
+  .col-sm-5 {
+    width: 41.6666666667%;
+    padding: 10px; }
+
+  .col-sm-6 {
+    width: 50%;
+    padding: 10px; }
+
+  .col-sm-7 {
+    width: 58.3333333333%;
+    padding: 10px; }
+
+  .col-sm-8 {
+    width: 66.6666666667%;
+    padding: 10px; }
+
+  .col-sm-9 {
+    width: 75%;
+    padding: 10px; }
+
+  .col-sm-10 {
+    width: 83.3333333333%;
+    padding: 10px; }
+
+  .col-sm-11 {
+    width: 91.6666666667%;
+    padding: 10px; }
+
+  .col-sm-12 {
+    width: 100%;
+    padding: 10px; } }
+@media screen and (max-width: 640px) {
+  .col-xs-1 {
+    width: 8.3333333333%;
+    padding: 10px; }
+
+  .col-xs-2 {
+    width: 16.6666666667%;
+    padding: 10px; }
+
+  .col-xs-3 {
+    width: 25%;
+    padding: 10px; }
+
+  .col-xs-4 {
+    width: 33.3333333333%;
+    padding: 10px; }
+
+  .col-xs-5 {
+    width: 41.6666666667%;
+    padding: 10px; }
+
+  .col-xs-6 {
+    width: 50%;
+    padding: 10px; }
+
+  .col-xs-7 {
+    width: 58.3333333333%;
+    padding: 10px; }
+
+  .col-xs-8 {
+    width: 66.6666666667%;
+    padding: 10px; }
+
+  .col-xs-9 {
+    width: 75%;
+    padding: 10px; }
+
+  .col-xs-10 {
+    width: 83.3333333333%;
+    padding: 10px; }
+
+  .col-xs-11 {
+    width: 91.6666666667%;
+    padding: 10px; }
+
+  .col-xs-12 {
+    width: 100%;
+    padding: 10px; } }
+.pos-relative {
+  position: relative; }
 
 /*------------------------------------*\     
 EFFECT
@@ -211,14 +418,44 @@ EFFECT
   animation: fade-in .6s; }
 
 @keyframes slide-up {
-  from {
+  0% {
     height: 100vh; }
-  to {
+  75% {
+    opacity: 1; }
+  100% {
     height: 0;
+    opacity: 0;
     display: none; } }
 .slide-up-element {
   animation: slide-up .6s; }
 
+@keyframes fade {
+  0% {
+    opacity: 1; }
+  33.333% {
+    opacity: 0; }
+  66.666% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fade2 {
+  0% {
+    opacity: 0; }
+  33.333% {
+    opacity: 1; }
+  66.666% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@keyframes fade3 {
+  0% {
+    opacity: 0; }
+  33.333% {
+    opacity: 0; }
+  66.666% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 /*================================================
 Underline--Magical
 ==================================================*/
@@ -425,59 +662,63 @@ header {
   .search-bar {
     position: static; } }
 .special-offer {
-  padding: 40px 50px;
+  padding: 40px 0;
   margin: 0 auto;
   background-color: #ededed; }
-  .special-offer .rooms-available {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px; }
-    .special-offer .rooms-available .swiper-container {
-      padding: 5px; }
-    .special-offer .rooms-available figure.swiper-slide {
-      position: relative;
-      cursor: pointer;
-      -moz-box-shadow: 0px 0px 2px 1px #656565;
-      -webkit-box-shadow: 0px 0px 2px 1px #656565;
-      -o-box-shadow: 0px 0px 2px 1px #656565;
-      box-shadow: 0px 0px 2px 1px #656565;
-      filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=2); }
-      .special-offer .rooms-available figure.swiper-slide img {
-        width: 100%; }
-      .special-offer .rooms-available figure.swiper-slide figcaption.book-room {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
-        width: 100%;
-        height: 80px;
-        bottom: 0;
-        left: 0;
-        padding: 7px 15px;
-        background-color: #fff;
-        color: #000;
-        font-family: 'Quicksand', sans-serif; }
-        .special-offer .rooms-available figure.swiper-slide figcaption.book-room h3 {
-          font-family: 'Playfair Display', serif;
-          font-size: 18px;
-          padding: 7px 0; }
-        .special-offer .rooms-available figure.swiper-slide figcaption.book-room h4 {
-          font-size: 12px;
-          color: #A57B1B; }
-        .special-offer .rooms-available figure.swiper-slide figcaption.book-room .booking {
-          align-self: flex-end; }
-          .special-offer .rooms-available figure.swiper-slide figcaption.book-room .booking a {
-            font-size: 12px;
-            color: #000;
-            text-decoration: none; }
-    .special-offer .rooms-available .swiper-nav {
-      width: 100px; }
-      .special-offer .rooms-available .swiper-nav .swiper-button-next {
+  .special-offer .offer-container {
+    max-width: 1240px;
+    width: calc(100% - 100px);
+    margin: 0 auto; }
+    .special-offer .offer-container .rooms-available {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px; }
+      .special-offer .offer-container .rooms-available .swiper-container {
+        padding: 5px; }
+      .special-offer .offer-container .rooms-available figure.swiper-slide {
         position: relative;
-        right: 0;
-        margin-left: 20px;
-        background-image: url("../../img/asset/arrowR.svg"); }
+        cursor: pointer;
+        -moz-box-shadow: 0px 0px 2px 1px #656565;
+        -webkit-box-shadow: 0px 0px 2px 1px #656565;
+        -o-box-shadow: 0px 0px 2px 1px #656565;
+        box-shadow: 0px 0px 2px 1px #656565;
+        filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=2); }
+        .special-offer .offer-container .rooms-available figure.swiper-slide img {
+          width: 100%; }
+        .special-offer .offer-container .rooms-available figure.swiper-slide figcaption.book-room {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: flex-start;
+          width: 100%;
+          height: 80px;
+          bottom: 0;
+          left: 0;
+          padding: 7px 15px;
+          background-color: #fff;
+          color: #000;
+          font-family: 'Quicksand', sans-serif; }
+          .special-offer .offer-container .rooms-available figure.swiper-slide figcaption.book-room h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            padding: 7px 0; }
+          .special-offer .offer-container .rooms-available figure.swiper-slide figcaption.book-room h4 {
+            font-size: 12px;
+            color: #A57B1B; }
+          .special-offer .offer-container .rooms-available figure.swiper-slide figcaption.book-room .booking {
+            align-self: flex-end; }
+            .special-offer .offer-container .rooms-available figure.swiper-slide figcaption.book-room .booking a {
+              font-size: 12px;
+              color: #000;
+              text-decoration: none; }
+      .special-offer .offer-container .rooms-available .swiper-nav {
+        width: 100px; }
+        .special-offer .offer-container .rooms-available .swiper-nav .swiper-button-next {
+          position: relative;
+          right: 0;
+          margin-left: 20px;
+          background-image: url("../../img/asset/arrowR.svg"); }
 
 @media screen and (max-width: 768px) {
   .special-offer {
@@ -554,27 +795,6 @@ footer {
           footer .footer-nav li.footer-link:hover a {
             color: #A57B1B;
             text-decoration: none; } }
-.main-container main .parimis-intro,
-.main-container main .parimis-rooms,
-.main-container main .parimis-services,
-.main-container main .parimis-spa {
-  margin-top: 120px;
-  max-width: 800px; }
-  .main-container main .parimis-intro img,
-  .main-container main .parimis-rooms img,
-  .main-container main .parimis-services img,
-  .main-container main .parimis-spa img {
-    width: 100%; }
-  .main-container main .parimis-intro h1,
-  .main-container main .parimis-rooms h1,
-  .main-container main .parimis-services h1,
-  .main-container main .parimis-spa h1 {
-    margin-top: -2rem;
-    margin-bottom: 30px; }
-.main-container main .parimis-spa,
-.main-container main .parimis-rooms {
-  margin-left: calc(100% - 800px);
-  text-align: right; }
 .main-container main .parimis-contact {
   margin: 120px auto 0;
   max-width: 800px;
@@ -595,35 +815,6 @@ footer {
       .main-container main .parimis-contact .parimis-adress p a:hover {
         text-decoration: underline; }
 
-@media screen and (max-width: 1280px) {
-  .main-container main .parimis-intro,
-  .main-container main .parimis-rooms,
-  .main-container main .parimis-services,
-  .main-container main .parimis-spa {
-    max-width: 600px; }
-    .main-container main .parimis-intro h1,
-    .main-container main .parimis-rooms h1,
-    .main-container main .parimis-services h1,
-    .main-container main .parimis-spa h1 {
-      margin-top: -1.8rem;
-      font-size: 2.5rem; }
-  .main-container main .parimis-spa,
-  .main-container main .parimis-rooms {
-    margin-left: calc(100% - 600px); } }
-@media screen and (max-width: 768px) {
-  .main-container main .parimis-intro,
-  .main-container main .parimis-rooms,
-  .main-container main .parimis-services,
-  .main-container main .parimis-spa {
-    max-width: 600px;
-    width: 100%;
-    margin: 50px auto; }
-    .main-container main .parimis-intro h1,
-    .main-container main .parimis-rooms h1,
-    .main-container main .parimis-services h1,
-    .main-container main .parimis-spa h1 {
-      margin-top: -1.4rem;
-      font-size: 1.8rem; } }
 #loader {
   width: 100%;
   height: 100vh;
@@ -649,19 +840,71 @@ footer {
     max-width: 1240px;
     width: calc(100% - 100px);
     margin: 0 auto; }
+    .main-container main .section-left,
+    .main-container main .section-right {
+      margin-top: 120px;
+      max-width: 800px; }
+      .main-container main .section-left img,
+      .main-container main .section-right img {
+        width: 100%; }
+      .main-container main .section-left h1,
+      .main-container main .section-right h1 {
+        margin-top: -2rem;
+        margin-bottom: 30px; }
+    .main-container main .section-right {
+      margin-left: calc(100% - 800px);
+      text-align: right; }
 
 @media screen and (max-width: 1280px) {
   .main-container {
     width: 100%;
-    margin: 0; } }
+    margin: 0; }
+    .main-container main .section-left,
+    .main-container main .section-right {
+      max-width: 600px; }
+      .main-container main .section-left h1,
+      .main-container main .section-right h1 {
+        margin-top: -1.8rem;
+        font-size: 2.5rem; }
+    .main-container main .section-right {
+      margin-left: calc(100% - 600px); } }
 @media screen and (max-width: 768px) {
   .main-container main {
-    width: calc(100% - 40px); } }
+    width: calc(100% - 40px); }
+    .main-container main .section-left,
+    .main-container main .section-right {
+      max-width: 600px;
+      width: 100%;
+      margin: 50px auto; }
+      .main-container main .section-left h1,
+      .main-container main .section-right h1 {
+        margin-top: -1.4rem;
+        font-size: 1.8rem; } }
 a {
   text-decoration: none;
   color: #0E1111; }
   a:active, a:hover, a:visited {
     text-decoration: none;
     color: #0E1111; }
+
+.carrousel-simple {
+  position: relative;
+  width: 530px;
+  margin-left: 270px;
+  height: 300px; }
+  .carrousel-simple img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
+    .carrousel-simple img.slide-1 {
+      animation: fade 8s infinite;
+      -webkit-animation: fade 10s infinite; }
+    .carrousel-simple img.slide-2 {
+      animation: fade2 8s infinite;
+      -webkit-animation: fade2 10s infinite; }
+    .carrousel-simple img.slide-3 {
+      animation: fade3 8s infinite;
+      -webkit-animation: fade3 10s infinite; }
 
 /*# sourceMappingURL=main.css.map */

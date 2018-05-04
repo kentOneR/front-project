@@ -7,26 +7,54 @@
 // $mobile-portrait:  320;
 
 $col-number: 12;
-$with-size: 100%;
+$width-size: 100%;
+$padding: 10px;
 
 @for $i from 1 through $col-number {
-    .grid-xl-#{$i} {
-        width: $with-size * $i / $col-number;
+    .col-xl-#{$i} {
+        width: $width-size * $i / $col-number;
+        padding: $padding;
     }
 }
 
 @media screen and (max-width: $desktop-medium + px){
-
+    @for $i from 1 through $col-number {
+        .col-lg-#{$i} {
+            width: $width-size * $i / $col-number;
+            padding: $padding;
+        }
+    }
 }
 
 @media screen and (max-width: $desktop-small + px){
-
+    @for $i from 1 through $col-number {
+        .col-md-#{$i} {
+            width: $width-size * $i / $col-number;
+            padding: $padding;
+        }
+    }
 }
 
 @media screen and (max-width: $tablet-portrait + px){
-
+    @for $i from 1 through $col-number {
+        .col-sm-#{$i} {
+            width: $width-size * $i / $col-number;
+            padding: $padding;
+        }
+    }
 }
 
 @media screen and (max-width: $mobile-landscape + px) {
+    @for $i from 1 through $col-number {
+        .col-xs-#{$i} {
+            width: $width-size * $i / $col-number;
+            padding: $padding;
+        }
+    }
+}
 
+// Position
+
+.pos-relative{
+    position: relative;
 }
