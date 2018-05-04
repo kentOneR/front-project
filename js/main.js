@@ -1,7 +1,7 @@
 (function () {
 
     /*------------------------------------*\     
-    SWIPER ROOMS
+    HOME SWIPER
     \*------------------------------------*/
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
@@ -29,6 +29,45 @@
             },
             768: {
                 slidesPerView: 2,
+                spaceBetween: 30
+            },
+            560: {
+                slidesPerView: 1,
+                spaceBetween: 30
+            }
+        }
+    });
+
+    /*------------------------------------*\     
+    ROOM SWIPER
+    \*------------------------------------*/
+    var mySwiper = new Swiper('.swiper-room-container', {
+        direction: 'horizontal',
+        loop: true,
+        speed: 1200,
+        autoplay: {
+            delay: 6000,
+            reverseDirection: true
+        },
+        autoHeight: true,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        breakpoints: {
+            1920: {
+                slidesPerView: 1,
+                spaceBetween: 60
+            },
+            1440: {
+                slidesPerView: 1,
+                spaceBetween: 50
+            },
+            1240: {
+                slidesPerView: 1,
+                spaceBetween: 40
+            },
+            768: {
+                slidesPerView: 1,
                 spaceBetween: 30
             },
             560: {

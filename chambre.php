@@ -2,6 +2,66 @@
 <?php include ('navbar.php'); ?>
 <?php include ('search-bar.php'); ?>
 <main>
+    <section class="room-offer">
+        <h1>Nos offres spéciales</h1>
+        <div class="room-swiper">
+            <div class="swiper-room-container">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <figure>
+                            <img src="img/hotel/room/big/room-1.jpg" alt="">
+                            <figcaption class="book-room">
+                                <div class="book-name">
+                                    <h4>CHAMBRE : SUITE</h4>
+                                    <h3>Luxury In Advance</h3>
+                                    <p>Conçues pour des voyageurs modernes en quête de confort absolu, ces chambres font partie
+                                        des plus spacieuses de Paris et sont équipées d’une technologie de pointe.</p>
+                                </div>
+                                <div class="booking">
+                                    <a class="underline--magical" href="#">EN SAVOIR +</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure>
+                            <img src="img/hotel/room/big/room-2.jpg" alt="">
+                            <figcaption class="book-room">
+                                <div class="book-name">
+                                    <h4>CHAMBRE : DELUXE</h4>
+                                    <h3>Rooftop Garden</h3>
+                                    <p>Conçues pour des voyageurs modernes en quête de confort absolu, ces chambres font partie
+                                        des plus spacieuses de Paris et sont équipées d’une technologie de pointe.</p>
+                                </div>
+                                <div class="booking">
+                                    <a class="underline--magical" href="#">EN SAVOIR +</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure>
+                            <img src="img/hotel/room/big/room-2.jpg" alt="">
+                            <figcaption class="book-room">
+                                <div class="book-name">
+                                    <h4>CHAMBRE : SUITE</h4>
+                                    <h3>Suite Royale</h3>
+                                    <p>Conçues pour des voyageurs modernes en quête de confort absolu, ces chambres font partie
+                                        des plus spacieuses de Paris et sont équipées d’une technologie de pointe.</p>
+                                </div>
+                                <div class="booking">
+                                    <a class="underline--magical" href="#">EN SAVOIR +</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
     <section class="all-room">
         <h1>Découvrez nos chambres</h1>
         <ul class="filters">
@@ -107,7 +167,7 @@
                     </figcaption>
                 </figure>
             </div>
-            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="confort">
+            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="classique">
                 <figure>
                     <img src="img/hotel/room/room-11.jpg" alt="">
                     <figcaption class="book-room">
@@ -121,7 +181,7 @@
                     </figcaption>
                 </figure>
             </div>
-            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="confort">
+            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="classique">
                 <figure>
                     <img src="img/hotel/room/room-12.jpg" alt="">
                     <figcaption class="book-room">
