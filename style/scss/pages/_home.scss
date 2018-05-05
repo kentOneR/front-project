@@ -17,6 +17,13 @@
                 width: 100%;
                 padding: 20px;
                 background: $gold;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                img{
+                    max-width: 150px;
+                }
                 p{
                     text-align: center;
                     line-height: 25px;

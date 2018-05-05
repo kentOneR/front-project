@@ -4,6 +4,9 @@
             <div class="burger-bar bar2"></div>
             <div class="burger-bar bar3"></div>
         </div>
+        <div class="logo">
+            <img src="img/asset/logo/parimis-logo-NB.svg" alt="Logo Parimis noir">
+        </div>
         <ul id="navbar-list" class="">
             <li>
                 <a class="nav-link underline--magical" href="hotel.php">L'HÔTEL</a>

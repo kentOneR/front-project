@@ -196,6 +196,7 @@
             <section class="parimis-contact">
                 <div id="map"></div>
                 <div class="parimis-adress">
+                    <img src="img/asset/logo/parimis-logo-white.svg" alt="Logo Parimis Blanc">
                     <p>1, avenue Montaigne
                         <br>75008 Paris FRANCE
                         <br>+33 (1) 49 55 30 00
