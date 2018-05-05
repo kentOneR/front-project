@@ -69,5 +69,8 @@
 @media screen and (max-width: $tablet-portrait + px) {
     .special-offer {
         padding: 40px 20px;
+        .offer-container{
+            width: 100%;
+        }
     }
 }
