@@ -11,7 +11,7 @@
                     <a href="#">Accès</a>
                 </li>
                 <li class="footer-link">
-                    <a href="#">Contact</a>
+                    <a href="contact.php">Contact</a>
                 </li>
                 <li class="footer-link">
                     <a href="#">Recrutement</a>
