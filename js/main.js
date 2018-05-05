@@ -17,14 +17,6 @@
     /*------------------------------------*\     
     NAVBAR ACTIVE LINK
     \*------------------------------------*/
-    // var navLinkEls = document.querySelectorAll('.nav-link');
-    // for(var i=0; navLinkEls[i]; i++){
-    //     navLinkEls[i].addEventListener('click', function() {
-    //         this.classList.add('active');
-    //         console.log(window.location.href.indexOf('chambre'));
-    //     })
-    // }
-
 
     function setActiveLink() {
         var navLinkEls = document.querySelectorAll('.nav-link');

@@ -4,22 +4,25 @@
             margin: 120px auto 0;
             max-width: 800px;
             display: flex;
-            flex-flow: row nowrap;
+            flex-flow: column nowrap;
             justify-content: center;
             #map {
+                width: 100%;
                 height: 300px;
-                width: 400px;
               }
             .parimis-adress{
-                margin-left: 20px;
-                max-width: 250px;
+                width: 100%;
                 padding: 20px;
-                border: 2px solid $gold;
+                background: $gold;
                 p{
                     text-align: center;
                     line-height: 25px;
-                    a:hover{
-                        text-decoration: underline;
+                    color: #fff;
+                    a{
+                        color: #fff;
+                        &:hover{
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
