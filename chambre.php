@@ -63,7 +63,7 @@
         </div>
     </section>
     <section class="all-room">
-        <h1>Découvrez nos chambres</h1>
+        <h1>Découvrez toutes nos chambres</h1>
         <ul class="filters">
             <li class="selected" data-roomtype="all">
                 Afficher tout
@@ -82,6 +82,119 @@
             </li>
         </ul>
         <div class="all-room-container">
+            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="suite">
+                <figure>
+                    <img src="img/hotel/room/room-1.jpg" alt="">
+                    <figcaption class="book-room">
+                        <div class="book-name">
+                            <h4>CHAMBRE : SUITE</h4>
+                            <h3>Luxury In Advance</h3>
+                        </div>
+                        <div class="booking">
+                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="suite">
+                <figure>
+                    <img src="img/hotel/room/room-2.jpg" alt="">
+                    <figcaption class="book-room">
+                        <div class="book-name">
+                            <h4>CHAMBRE : SUITE</h4>
+                            <h3>Suite Royale</h3>
+                        </div>
+                        <div class="booking">
+                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                        </div>
+                    </figcaption>
+                </figure>
+                </figure>
+            </div>
+            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="deluxe">
+                <figure>
+                    <img src="img/hotel/room/room-4.jpg" alt="">
+                    <figcaption class="book-room">
+                        <div class="book-name">
+                            <h4>CHAMBRE : DELUXE</h4>
+                            <h3>Rooftop Garden</h3>
+                        </div>
+                        <div class="booking">
+                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="confort">
+                <figure>
+                    <img src="img/hotel/room/room-6.jpg" alt="">
+                    <figcaption class="book-room">
+                        <div class="book-name">
+                            <h4>CHAMBRE : CONFORT</h4>
+                            <h3>Escape Suite</h3>
+                        </div>
+                        <div class="booking">
+                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="confort">
+                <figure>
+                    <img src="img/hotel/room/room-9.jpg" alt="">
+                    <figcaption class="book-room">
+                        <div class="book-name">
+                            <h4>CHAMBRE : CONFORT</h4>
+                            <h3>Nuit et jour</h3>
+                        </div>
+                        <div class="booking">
+                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="confort">
+                <figure>
+                    <img src="img/hotel/room/room-10.jpg" alt="">
+                    <figcaption class="book-room">
+                        <div class="book-name">
+                            <h4>CHAMBRE : CONFORT</h4>
+                            <h3>Plaisir partagé</h3>
+                        </div>
+                        <div class="booking">
+                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="classique">
+                <figure>
+                    <img src="img/hotel/room/room-11.jpg" alt="">
+                    <figcaption class="book-room">
+                        <div class="book-name">
+                            <h4>CHAMBRE : CLASSIQUE</h4>
+                            <h3>Simplicité à deux</h3>
+                        </div>
+                        <div class="booking">
+                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="classique">
+                <figure>
+                    <img src="img/hotel/room/room-12.jpg" alt="">
+                    <figcaption class="book-room">
+                        <div class="book-name">
+                            <h4>CHAMBRE : CLASSIQUE</h4>
+                            <h3>Simplicité à quatre</h3>
+                        </div>
+                        <div class="booking">
+                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
             <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="suite">
                 <figure>
                     <img src="img/hotel/room/room-1.jpg" alt="">

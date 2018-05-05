@@ -6,22 +6,22 @@
         </div>
         <ul id="navbar-list" class="">
             <li>
-                <a class="underline--magical" href="hotel.php">L'HÔTEL</a>
+                <a class="nav-link underline--magical" href="hotel.php">L'HÔTEL</a>
             </li>
             <li>
-                <a class="underline--magical" href="chambre.php">CHAMBRES</a>
+                <a class="nav-link underline--magical" href="chambre.php">CHAMBRES</a>
             </li>
             <li>
-                <a class="underline--magical" href="#">RESTAURANT</a>
+                <a class="nav-link underline--magical" href="#">RESTAURANT</a>
             </li>
             <li>
-                <a class="underline--magical" href="#">SPA</a>
+                <a class="nav-link underline--magical" href="#">SPA</a>
             </li>
             <li>
-                <a class="underline--magical" href="#">RÉSERVATION</a>
+                <a class="nav-link underline--magical" href="#">RÉSERVATION</a>
             </li>
             <li>
-                <a class="underline--magical" href="#">ACTUALITÉ</a>
+                <a class="nav-link underline--magical" href="#">ACTUALITÉ</a>
             </li>
         </ul>
         <div class="select-lang">

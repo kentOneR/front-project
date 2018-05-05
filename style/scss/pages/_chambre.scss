@@ -1,3 +1,67 @@
+.room-offer{
+    h1{
+        margin: 80px 0 40px;
+    }
+    overflow: hidden;
+    .room-swiper{
+        border: 3px solid $gold;
+        max-width: 900px;
+        width: 100%;
+        overflow-x: hidden;
+        .swiper-room-container{
+            position: relative;
+            .swiper-wrapper{
+                .swiper-slide{
+                    figure{
+                        width: 100%;
+                        height: auto;
+                        img{
+                            width: 70%;
+                            height: auto;
+                            float: left;
+                        }
+                        figcaption {
+                            width: 30%;
+                            padding: 20px;
+                            height: auto;
+                            float: left;
+                            h3{
+                                font-family: 'Playfair Display', serif;
+                                font-size: 20px;
+                                padding: 7px 0;
+                            }
+                            h4{
+                                font-size: 16px;
+                                color: $gold;
+                            }
+                            p{
+                                font-size: 14px;
+                            }
+                            .booking{
+                                display: flex;
+                                justify-content: flex-end;
+                                a{
+                                    font-size: 16px;
+                                    color: #000;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                        &::after{
+                            clear: both;
+                        }
+                    }
+                }
+            }
+            .swiper-pagination-bullet{
+                background: #fff;
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+}
+
 .all-room{
     h1{
         margin: 80px 0 40px;
@@ -62,13 +126,13 @@
                         padding: 7px 0;
                     }
                     h4{
-                        font-size: 12px;
+                        font-size: 14px;
                         color: $gold;
                     }
                     .booking{
                         align-self: flex-end;
                         a{
-                            font-size: 12px;
+                            font-size: 14px;
                             color: #000;
                             text-decoration: none;
                         }
@@ -79,30 +143,62 @@
     }
 }
 
-.room-offer{
-    h1{
-        margin: 80px 0 40px;
-    }
-    overflow: hidden;
-    .room-swiper{
-        border: 3px solid $gold;
-        .swiper-room-container{
-            position: relative;
-            .swiper-wrapper{
-                .swiper-slide{
-                    figure{
-                        display: flex;
-                        flex-flow: row nowrap;
-                        height: auto;
-                        img{
-                            width: 100%;
-                        }
-                        figcaption {
-                            width: 330px;
+@media screen and (max-width: $tablet-landscape + px){
+    .room-offer{
+        .room-swiper{
+            .swiper-room-container{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        figure{
+                            img{
+                                width: 62%;
+                                height: auto;
+                                float: left;
+                            }
+                            figcaption {
+                                width: 38%;
+                                padding: 20px;
+                                height: auto;
+                                float: left;
+                                p{
+                                    font-size: 13px;
+                                    line-height: 15px;
+                                }
+                            }
                         }
                     }
                 }
             }
         }
-    }
+    }  
+}
+
+@media screen and (max-width: $tablet-portrait + px){
+    .room-offer{
+        .room-swiper{
+            .swiper-room-container{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        figure{
+                            img{
+                                width: 100%;
+                                height: auto;
+                                float: left;
+                            }
+                            figcaption {
+                                width: 100%;
+                                padding: 20px;
+                                height: auto;
+                                float: left;
+                                p{
+                                    font-size: 13px;
+                                    line-height: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }  
 }

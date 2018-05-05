@@ -1,11 +1,51 @@
 (function () {
 
     /*------------------------------------*\     
+    NAVBAR BURGER
+    \*------------------------------------*/
+
+    var burgerEls = document.getElementsByClassName('burger-bar'),
+        navBurgerEl = document.getElementById('navbar-burger'),
+        navlistEl = document.getElementById('navbar-list');
+    navBurgerEl.addEventListener('click', function () {
+        for (i = 0; burgerEls[i]; i++) {
+            burgerEls[i].classList.toggle("change");
+        }
+        navlistEl.classList.toggle("visible");
+    });
+
+    /*------------------------------------*\     
+    NAVBAR ACTIVE LINK
+    \*------------------------------------*/
+    // var navLinkEls = document.querySelectorAll('.nav-link');
+    // for(var i=0; navLinkEls[i]; i++){
+    //     navLinkEls[i].addEventListener('click', function() {
+    //         this.classList.add('active');
+    //         console.log(window.location.href.indexOf('chambre'));
+    //     })
+    // }
+
+
+    function setActiveLink() {
+        var navLinkEls = document.querySelectorAll('.nav-link');
+        for (i = 0; navLinkEls[i]; i++) {
+            if (document.location.href.indexOf(navLinkEls[i].href) >= 0) {
+                navLinkEls[i].classList.add('active');
+            }
+        }
+    }
+    setActiveLink();
+
+
+
+    /*------------------------------------*\     
     HOME SWIPER
     \*------------------------------------*/
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
         loop: true,
+        slidesPerView: 4,
+        spaceBetween: 60,
         speed: 400,
         autoplay: {
             delay: 3500,
@@ -43,37 +83,17 @@
     \*------------------------------------*/
     var mySwiper = new Swiper('.swiper-room-container', {
         direction: 'horizontal',
+        autoHeight: true,
         loop: true,
         speed: 1200,
+        slidesPerView: 1,
+        spaceBetween: 0,
         autoplay: {
-            delay: 6000,
-            reverseDirection: true
+            delay: 6000
         },
-        autoHeight: true,
         pagination: {
             el: '.swiper-pagination',
-        },
-        breakpoints: {
-            1920: {
-                slidesPerView: 1,
-                spaceBetween: 60
-            },
-            1440: {
-                slidesPerView: 1,
-                spaceBetween: 50
-            },
-            1240: {
-                slidesPerView: 1,
-                spaceBetween: 40
-            },
-            768: {
-                slidesPerView: 1,
-                spaceBetween: 30
-            },
-            560: {
-                slidesPerView: 1,
-                spaceBetween: 30
-            }
+            clickable: true
         }
     });
 
@@ -106,19 +126,10 @@
             customDays: ['D', 'L', 'M', 'M', 'J', 'V', 'S']
         });
 
-    // NAVBAR BURGER
 
-    var burgerEls = document.getElementsByClassName('burger-bar'),
-        navBurgerEl = document.getElementById('navbar-burger'),
-        navlistEl = document.getElementById('navbar-list');
-    navBurgerEl.addEventListener('click', function () {
-        for (i = 0; burgerEls[i]; i++) {
-            burgerEls[i].classList.toggle("change");
-        }
-        navlistEl.classList.toggle("visible");
-    });
-
-    // SEARCH-BAR DROPDOWN
+    /*------------------------------------*\     
+    SEARCH-BAR DROPDOWN
+    \*------------------------------------*/
 
     var selectContainerInvEl = document.getElementById('select-invite'),
         selectInvEl = document.getElementById('who-invite'),
@@ -150,7 +161,10 @@
         InvDropdownEl.classList.remove("visible");
     });
 
-    // FADE-IN EFFECT
+
+    /*------------------------------------*\     
+    FADE-IN EFFECT
+    \*------------------------------------*/
 
     function animateHTML() {
         var elems,
@@ -179,32 +193,38 @@
     }
     animateHTML().init();
 
-    // ROOM TOGGLE
-    if(window.location.href.indexOf('chambre') > -1 ) {
+
+    /*------------------------------------*\     
+    ROOM TOGGLE
+    \*------------------------------------*/
+
+    if (window.location.href.indexOf('chambre') > -1) {
         var filter = document.querySelectorAll('.filters > li');
         var roomList = document.querySelectorAll(".room-list");
-        for(var i=0; filter[i]; i++)
-        filter[i].addEventListener('click', function(e){
-            var roomType = e.target.getAttribute("data-roomtype");
-            for(var i=0; roomList[i]; i++) {
-                var roomListType = roomList[i].getAttribute("data-roomtype");
-                if(roomType != "all") {
-                    if(roomListType == roomType) {
-                        roomList[i].style.display = 'block';
+        for (var i = 0; filter[i]; i++)
+            filter[i].addEventListener('click', function (e) {
+                var roomType = e.target.getAttribute("data-roomtype");
+                for (var i = 0; roomList[i]; i++) {
+                    var roomListType = roomList[i].getAttribute("data-roomtype");
+                    if (roomType != "all") {
+                        if (roomListType == roomType) {
+                            roomList[i].style.display = 'block';
+                        } else {
+                            roomList[i].style.display = 'none';
+                        }
                     } else {
-                        roomList[i].style.display = 'none';
+                        roomList[i].style.display = 'block';
                     }
-                } else {
-                    roomList[i].style.display = 'block';
                 }
-            }
 
-        })
+            })
     }
 
 })();
 
-// Google Map API
+/*------------------------------------*\     
+Google Map API
+\*------------------------------------*/
 
 function initMap() {
     // Styles a map in night mode.
