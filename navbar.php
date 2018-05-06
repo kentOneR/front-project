@@ -18,7 +18,7 @@
                 <a class="nav-link underline--magical" href="restaurant.php">RESTAURANT</a>
             </li>
             <li>
-                <a class="nav-link underline--magical" href="#">SPA</a>
+                <a class="nav-link underline--magical" href="spa.php">SPA</a>
             </li>
             <li>
                 <a class="nav-link underline--magical" href="#">RÉSERVATION</a>

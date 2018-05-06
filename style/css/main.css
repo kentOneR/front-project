@@ -1064,11 +1064,14 @@ footer {
 .content-container .menu-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  align-items: stretch; }
   .content-container .menu-container .menu-wrapper {
     display: flex;
-    flex-flow: column nowrap;
-    border: 3px solid #A57B1B; }
+    flex-flow: column wrap;
+    border: 3px solid #A57B1B;
+    background: #ededed;
+    height: 100%; }
     .content-container .menu-container .menu-wrapper .menu-visual {
       overflow: hidden;
       max-height: 230px; }
@@ -1082,14 +1085,16 @@ footer {
           transform: scale(1.05); }
     .content-container .menu-container .menu-wrapper .menu-content {
       padding: 15px;
-      background: #ededed;
       display: flex;
       flex-flow: column nowrap;
       justify-content: flex-start; }
       .content-container .menu-container .menu-wrapper .menu-content h2 {
         margin: 0 0 15px; }
+      .content-container .menu-container .menu-wrapper .menu-content p {
+        margin: 5px 0; }
       .content-container .menu-container .menu-wrapper .menu-content a {
-        align-self: flex-end; }
+        align-self: flex-end;
+        margin-top: 10px; }
 
 @media screen and (max-width: 1024px) {
   .content-container .menu-container {

@@ -3,10 +3,13 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
+        align-items: stretch;
         .menu-wrapper{
             display: flex;
-            flex-flow: column nowrap;
+            flex-flow: column wrap;
             border: 3px solid $gold;
+            background: $grey-lighter;
+            height: 100%;
             .menu-visual{
                 overflow: hidden;
                 max-height: 230px;
@@ -23,15 +26,18 @@
             }
             .menu-content{
                 padding: 15px;
-                background: $grey-lighter;
                 display: flex;
                 flex-flow: column nowrap;
                 justify-content: flex-start;
                 h2{
                     margin: 0 0 15px;
                 }
+                p{
+                    margin: 5px 0;
+                }
                 a{
                     align-self: flex-end;
+                    margin-top: 10px;
                 }
             }
         }
