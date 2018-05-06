@@ -36,11 +36,11 @@
             cursor: pointer;
             position: relative;
             overflow: hidden;
-            -moz-transition: all 0.3s;
-            -webkit-transition: all 0.3s;
-            transition: all 0.3s;
             img{
                 width: 100%;
+                -moz-transition: all 0.3s;
+                -webkit-transition: all 0.3s;
+                transition: all 0.3s;
             }
             figcaption{
                 position: absolute;
@@ -52,11 +52,23 @@
                 -moz-transition: all 0.3s;
                 -webkit-transition: all 0.3s;
                 transition: all 0.3s;
+                h3{
+                    position: absolute;
+                    top: 45%;
+                    width: 100%;
+                    font-family: 'Playfair Display', serif;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    color: #fff;
+                }
             }
             &:hover{
-                -moz-transform: scale(1.05);
-                -webkit-transform: scale(1.05);
-                transform: scale(1.05);
+                img{
+                    -moz-transform: scale(1.05);
+                    -webkit-transform: scale(1.05);
+                    transform: scale(1.05);
+                }
+
                 figcaption{
                     background-color: $gold;
                     background-color: rgba(165, 123, 27, 0.7);
