@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="img/asset/logo/parimis-favicon.png" />
     <title>PARIMIS Hôtel - L'excellence parisienne</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
     <link rel="stylesheet" href="https://unpkg.com/js-datepicker/datepicker.css">

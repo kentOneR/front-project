@@ -5,7 +5,7 @@
             <div class="burger-bar bar3"></div>
         </div>
         <div class="logo">
-            <img src="img/asset/logo/parimis-logo-NB.svg" alt="Logo Parimis noir">
+            <a href="index.php"><img src="img/asset/logo/parimis-logo-NB.svg" alt="Logo Parimis noir"></a>
         </div>
         <ul id="navbar-list" class="">
             <li>

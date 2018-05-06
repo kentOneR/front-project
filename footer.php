@@ -8,16 +8,10 @@
             </form>
             <ul class="footer-nav">
                 <li class="footer-link">
-                    <a href="#">Accès</a>
+                    <a href="contact.php">Accès & Contact</a>
                 </li>
                 <li class="footer-link">
-                    <a href="contact.php">Contact</a>
-                </li>
-                <li class="footer-link">
-                    <a href="#">Recrutement</a>
-                </li>
-                <li class="footer-link">
-                    <a href="#">Mentions Légales</a>
+                    <a href="mention-legale.php">Mentions Légales</a>
                 </li>
                 <li class="footer-link">
                     <a href="#">Conditions Générales de Vente</a>
