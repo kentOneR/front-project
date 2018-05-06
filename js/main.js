@@ -33,7 +33,7 @@
     \*------------------------------------*/
 
     var searchBarEl = document.querySelector('.search-bar');
-    if (window.location.href.indexOf('index') > -1){
+    if (window.location.href.indexOf('index') > -1) {
         searchBarEl.classList.add('on-home');
     }
 
@@ -201,7 +201,7 @@
     if (window.location.href.indexOf('chambre') > -1) {
         var filter = document.querySelectorAll('.filters > li');
         var roomList = document.querySelectorAll(".room-list");
-        for (var i = 0; filter[i]; i++)
+        for (var i = 0; filter[i]; i++) {
             filter[i].addEventListener('click', function (e) {
                 var roomType = e.target.getAttribute("data-roomtype");
                 for (var i = 0; roomList[i]; i++) {
@@ -218,7 +218,56 @@
                 }
 
             })
+        }
     }
+
+    /*------------------------------------*\     
+    SCROLL TOP
+    \*------------------------------------*/
+    var scrollTopEl = document.getElementById('scroll-top');
+
+    function showScrollTop() {
+        if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+            scrollTopEl.style.display = "block";
+            scrollTopEl.style.opacity = 0.5;
+        } else {
+            scrollTopEl.style.display = "none";
+        }
+    }
+    window.onscroll = function () { showScrollTop() };
+
+    function scrollTo (to, duration) {
+        var element = document.scrollingElement || document.documentElement,
+            start = element.scrollTop,
+            change = to - start,
+            startDate = +new Date(),
+            // t = current time
+            // b = start value
+            // c = change in value
+            // d = duration
+            easeInOutQuad = function (t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return c / 2 * t * t + b;
+                t--;
+                return -c / 2 * (t * (t - 2) - 1) + b;
+            },
+            animateScroll = function () {
+                const currentDate = +new Date();
+                const currentTime = currentDate - startDate;
+                element.scrollTop = parseInt(easeInOutQuad(currentTime, start, change, duration));
+                if (currentTime < duration) {
+                    requestAnimationFrame(animateScroll);
+                }
+                else {
+                    element.scrollTop = to;
+                }
+            };
+        animateScroll();
+    };
+
+    scrollTopEl.addEventListener('click', () => {
+        scrollTo(0, 800);
+    });
 
 })();
 
