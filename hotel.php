@@ -97,9 +97,9 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
                 <figure class="press-wrapper">
-                    <img src="img/press/art-travel.jpg" alt="Couverture magazine Art Travel">
+                    <img src="img/press/artravel.jpg" alt="Couverture magazine Artravel">
                     <figcaption>
-                        <h3>Article in Art Travel</h3>
+                        <h3>Article in Artravel</h3>
                     </figcaption>
                 </figure>
             </div>
@@ -113,9 +113,9 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
                 <figure class="press-wrapper">
-                    <img src="img/press/millennials.jpg" alt="Couverture magazine Millennials">
+                    <img src="img/press/organic-spa.jpg" alt="Couverture magazine Organic Spa">
                     <figcaption>
-                        <h3>Article in Millennials</h3>
+                        <h3>Article in Organic Spa</h3>
                     </figcaption>
                 </figure>
             </div>
