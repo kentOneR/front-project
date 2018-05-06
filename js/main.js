@@ -252,8 +252,8 @@
                 return -c / 2 * (t * (t - 2) - 1) + b;
             },
             animateScroll = function () {
-                const currentDate = +new Date();
-                const currentTime = currentDate - startDate;
+                var currentDate = +new Date();
+                var currentTime = currentDate - startDate;
                 element.scrollTop = parseInt(easeInOutQuad(currentTime, start, change, duration));
                 if (currentTime < duration) {
                     requestAnimationFrame(animateScroll);
