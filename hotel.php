@@ -58,26 +58,76 @@
             </div>
             <div class="col-sm-12 col-lg-6 col-xl-3">
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_mtIU2l6Nqk" frameborder="0" allow="autoplay; encrypted-media"
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pyvqW6X4peI" frameborder="0" allow="autoplay; encrypted-media"
                         allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-sm-12 col-lg-6 col-xl-3">
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_mtIU2l6Nqk" frameborder="0" allow="autoplay; encrypted-media"
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wYHbv4Fpx_I" frameborder="0" allow="autoplay; encrypted-media"
                         allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-sm-12 col-lg-6 col-xl-3">
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_mtIU2l6Nqk" frameborder="0" allow="autoplay; encrypted-media"
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rAOXN35S93s" frameborder="0" allow="autoplay; encrypted-media"
                         allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </section>
-    <section class="parimis-press">
+    <section class="content-container">
         <h1>La presse parle du Parimis</h1>
+        <div class="press-container">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <figure class="press-wrapper">
+                    <img src="img/press/gq.jpg" alt="Couverture magazine GQ">
+                    <figcaption>
+                        <h3>Article in GQ</h3>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <figure class="press-wrapper">
+                    <img src="img/press/vogue.jpg" alt="Couverture magazine Vogue">
+                    <figcaption>
+                        <h3>Article in Vogue</h3>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <figure class="press-wrapper">
+                    <img src="img/press/art-travel.jpg" alt="Couverture magazine Art Travel">
+                    <figcaption>
+                        <h3>Article in Art Travel</h3>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <figure class="press-wrapper">
+                    <img src="img/press/hotel-lodge.jpg" alt="Couverture magazine Hotel and Lodge">
+                    <figcaption>
+                        <h3>Article in Hotel and Logde</h3>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <figure class="press-wrapper">
+                    <img src="img/press/millennials.jpg" alt="Couverture magazine Millennials">
+                    <figcaption>
+                        <h3>Article in Millennials</h3>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <figure class="press-wrapper">
+                    <img src="img/press/polka.jpg" alt="Couverture magazine Polka">
+                    <figcaption>
+                        <h3>Article Polka</h3>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
     </section>
     <section class="parimis-contact">
         <div class="parimis-adress">
