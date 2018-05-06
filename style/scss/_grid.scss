@@ -26,7 +26,7 @@ $padding: 10px;
     }
 }
 
-@media screen and (max-width: $desktop-small + px){
+@media screen and (max-width: $tablet-landscape + px){
     @for $i from 1 through $col-number {
         .col-md-#{$i} {
             width: $width-size * $i / $col-number;

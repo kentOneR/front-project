@@ -14,6 +14,8 @@
         <p>Vous pouvez réserver sur le site www.parimis.com jusqu’au jour de l’arrivée. Pas de limitation à l’avance, tant que nos tarifs et disponibilités sont renseignés. Vous pouvez également contacter notre réservation centrale au numéro de téléphone suivant : 01 02 03 04 05 depuis la France ou + 33 1 02 03 05 04 depuis tout autre pays.</p>
         <p>Les locations de chambres vont de 14h00 à 12h00 le lendemain.</p>
         <p>Si vous réservez une chambre, elle vous est attribuée quelle que soit votre heure d’arrivée. En cas d’arrivée après 20h, vous devez contacter l’hôtel par téléphone afin que vous soit communiqué le cas échéant le code d’accès à l'hôtel. Toute commande est garantie par carte de crédit.</p>
+        <h2>Affichage des prix</h2>
+        <p>Tous les prix sont affichés en Euros (€). La TVA est toujours comprise. Certaines prestations peuvent faire l'objet d'un supplément. Les tarifs peuvent être soumis à d'éventuelles modifications n'engageant en aucun cas la responsabilité de la Société Européenne d'Hôtellerie (SEH), ni celle des hôteliers qu'elle représente. Dans certaines villes, le prix affiché est majoré d'une taxe de séjour payable sur place.</p>
 
 
     </section>

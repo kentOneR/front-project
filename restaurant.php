@@ -35,43 +35,49 @@
     <section class="content-container">
         <h1>Découvrez nos menus</h1>
         <div class="menu-container">
-            <div class="menu-wrapper col-xs-12 col-md-6 col-xl-6">
-                <div class="menu-visual">
-                    <img src="img/hotel/resto/brasserie.jpg" alt="plat du midi de la brasserie">
-                </div>
-                <div class="menu-content">
-                    <h2>Brasserie : carte du midi</h2>
-                    <p>&#8226; Œuf poché à la crème d’asperges et jambon cru</p>
-                    <p>&#8226; Tartare de légumes à la façon du Chef</p>
-                    <p>&#8226; Pavé de cabillaud, patates douces et flan de légumes</p>
-                    <p>&#8226; Soufflé Camomille</p>
-                    <a class="underline--magical" href="#">TÉLÉCHARGER</a>
-                </div>
-            </div>
-            <div class="menu-wrapper col-xs-12 col-md-6 col-xl-6">
-                <div class="menu-visual">
-                    <img src="img/hotel/resto/degustation.jpg" alt="plat de l'après-midi">
-                </div>
-                <div class="menu-content">
-                    <h2>Dégustation : carte de l'après-midi</h2>
-                    <p>&#8226; Tartare de légumes à la façon du Chef</p>
-                    <p>&#8226; Œuf poché à la crème d’asperges et jambon cru</p>
-                    <p>&#8226; Suprême de volaille sauce bigarade, tian de légumes</p>
-                    <p>&#8226; Soufflé chocolat cardamone et coing</p>
-                    <a class="underline--magical" href="#">TÉLÉCHARGER</a>
+            <div class="col-xs-12 col-sm-10 col-md-8 col-xl-6">
+                <div class="menu-wrapper">
+                    <div class="menu-visual">
+                        <img src="img/hotel/resto/brasserie.jpg" alt="plat du midi de la brasserie">
+                    </div>
+                    <div class="menu-content">
+                        <h2>Brasserie : carte du midi</h2>
+                        <p>&#8226; Œuf poché à la crème d’asperges et jambon cru</p>
+                        <p>&#8226; Tartare de légumes à la façon du Chef</p>
+                        <p>&#8226; Pavé de cabillaud, patates douces et flan de légumes</p>
+                        <p>&#8226; Soufflé Camomille</p>
+                        <a class="underline--magical" href="#">TÉLÉCHARGER</a>
+                    </div>
                 </div>
             </div>
-            <div class="menu-wrapper col-xs-12 col-md-6 col-xl-6">
-                <div class="menu-visual">
-                    <img src="img/hotel/resto/restaurant.jpg" alt="plat du soir au restaurant">
+            <div class="col-xs-12 col-sm-10 col-md-8 col-xl-6">
+                <div class="menu-wrapper">
+                    <div class="menu-visual">
+                        <img src="img/hotel/resto/degustation.jpg" alt="plat de l'après-midi">
+                    </div>
+                    <div class="menu-content">
+                        <h2>Dégustation : carte de l'après-midi</h2>
+                        <p>&#8226; Tartare de légumes à la façon du Chef</p>
+                        <p>&#8226; Œuf poché à la crème d’asperges et jambon cru</p>
+                        <p>&#8226; Suprême de volaille sauce bigarade, tian de légumes</p>
+                        <p>&#8226; Soufflé chocolat cardamone et coing</p>
+                        <a class="underline--magical" href="#">TÉLÉCHARGER</a>
+                    </div>
                 </div>
-                <div class="menu-content">
-                    <h2>Restaurant : carte du soir</h2>
-                    <p>&#8226; Tartare de légumes à la façon du Chef</p>
-                    <p>&#8226; Œuf poché à la crème d’asperges et jambon cru</p>
-                    <p>&#8226; Suprême de volaille sauce bigarade, tian de légumes</p>
-                    <p>&#8226; Soufflé chocolat cardamone et coing</p>
-                    <a class="underline--magical" href="#">TÉLÉCHARGER</a>
+            </div>
+            <div class="col-xs-12 col-sm-10 col-md-8 col-xl-6">
+                <div class="menu-wrapper">
+                    <div class="menu-visual">
+                        <img src="img/hotel/resto/restaurant.jpg" alt="plat du soir au restaurant">
+                    </div>
+                    <div class="menu-content">
+                        <h2>Restaurant : carte du soir</h2>
+                        <p>&#8226; Tartare de légumes à la façon du Chef</p>
+                        <p>&#8226; Œuf poché à la crème d’asperges et jambon cru</p>
+                        <p>&#8226; Suprême de volaille sauce bigarade, tian de légumes</p>
+                        <p>&#8226; Soufflé chocolat cardamone et coing</p>
+                        <a class="underline--magical" href="#">TÉLÉCHARGER</a>
+                    </div>
                 </div>
             </div>
         </div>
