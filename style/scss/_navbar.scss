@@ -1,6 +1,8 @@
 nav.side-navbar{
     position: fixed;
     width: $navbarSize;
+    top:0;
+    left:0;
     height: 100%;
     padding: 25px;
     background-color: #fff;

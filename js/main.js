@@ -28,6 +28,14 @@
     }
     setActiveLink();
 
+    /*------------------------------------*\     
+    SEARCH BAR
+    \*------------------------------------*/
+
+    var searchBarEl = document.querySelector('.search-bar');
+    if (window.location.href.indexOf('index') > -1){
+        searchBarEl.classList.add('on-home');
+    }
 
 
     /*------------------------------------*\     

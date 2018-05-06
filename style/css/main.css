@@ -76,6 +76,11 @@ h2 {
 p {
   line-height: 20px;
   margin: 10px 0; }
+  p strong {
+    background-image: linear-gradient(120deg, #b2b2b2 0%, #ededed 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 88%;
+    background-position: 0 88%; }
 
 @media screen and (max-width: 1280px) {
   h1 {
@@ -505,6 +510,8 @@ Underline--Magical
 nav.side-navbar {
   position: fixed;
   width: 200px;
+  top: 0;
+  left: 0;
   height: 100%;
   padding: 25px;
   background-color: #fff;
@@ -684,7 +691,11 @@ header {
     top: 50px; } }
 @media screen and (max-width: 768px) {
   .search-bar {
-    padding: 10px 20px; }
+    padding: 10px 20px;
+    position: static;
+    margin-top: 50px; }
+    .search-bar.on-home {
+      margin-top: 0; }
     .search-bar form {
       flex-flow: row wrap;
       justify-content: space-between; }
@@ -695,9 +706,6 @@ header {
         margin: 10px; }
       .search-bar form button#check-number-invite {
         width: 100%; } }
-@media screen and (max-width: 768px) {
-  .search-bar {
-    position: static; } }
 .special-offer {
   padding: 40px 0;
   margin: 0 auto;
@@ -1053,6 +1061,36 @@ footer {
     .room-offer .room-swiper .swiper-room-container .swiper-wrapper .swiper-slide figure figcaption p {
       font-size: 13px;
       line-height: 15px; } }
+.content-container .menu-container {
+  display: flex;
+  flex-flow: row wrap; }
+  .content-container .menu-container .menu-wrapper {
+    display: flex;
+    flex-flow: row nowrap; }
+    .content-container .menu-container .menu-wrapper .menu-visual {
+      overflow: hidden; }
+      .content-container .menu-container .menu-wrapper .menu-visual img {
+        -moz-transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s; }
+        .content-container .menu-container .menu-wrapper .menu-visual img:hover {
+          -moz-transform: scale(1.25);
+          -webkit-transform: scale(1.25);
+          transform: scale(1.25); }
+    .content-container .menu-container .menu-wrapper .menu-content {
+      padding: 15px;
+      background: #ededed;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start; }
+      .content-container .menu-container .menu-wrapper .menu-content h2 {
+        margin: 0 0 15px; }
+      .content-container .menu-container .menu-wrapper .menu-content a {
+        align-self: flex-end; }
+
 #loader {
   width: 100%;
   height: 100vh;

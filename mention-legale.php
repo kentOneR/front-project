@@ -21,7 +21,7 @@
         <p>Aucune information personnelle de l'utilisateur du site n'est publiée à l'insu de l'utilisateur, échangée, transférée, cédée ou vendue sur un support quelconque à des tiers. Seule l'hypothèse du rachat de PARIMIS Hôtel & Spa et de ses droits permettrait la transmission des dites informations à l'éventuel acquéreur qui serait à son tour tenu de la même obligation de conservation et de modification des données vis à vis de l'utilisateur du site.</p>
         <p>Le site n'est pas déclaré à la CNIL car il ne recueille pas d'informations personnelles.</p>
         </div>
-
+    </section>
 
 </main>
 <?php include ('footer.php'); ?>

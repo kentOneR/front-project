@@ -2,6 +2,27 @@
 <?php include ('navbar.php'); ?>
 <?php include ('search-bar.php'); ?>
 <main>
+    <section class="section-left">
+        <img src="img/hotel/hotel-room-intro.jpg" alt="Chambres de l'hôtel Parimis">
+        <div>
+            <h1>Les chambres du Parimis
+                <br>conjuguent élégance et raffinement</h1>
+            <p>Les 50 chambres et suites conjuguent
+                <strong>luxe élégant et sobre</strong>, avec technologie ultra performante.
+                <strong>Spacieuses et raffinées</strong>, les chambres du
+                <strong>Parimsi Hôtel</strong> possèdent un espace salon, une chambre ainsi qu'un grand dressing. Le style
+                <strong>Art Déco</strong> fait ressortir habilement les matériaux précieux comme l'acajou, le marbre ou encore le
+                cuir.
+            </p>
+            <p>Chaque chambre est équipée d'une tablette digitale interactive, disponible en 11 langues, et donnant accès à
+                différents services : domotique de la chambre, room-service, informations touristiques, conciergerie.</p>
+            <p>La salle de bains,
+                <strong>tout en marbre</strong>, est équipée de doubles vasques, d'une douche à effet pluie, d'une vaste baignoire,
+                de produits d'accueil Oscar de la Renta, et d'
+                <strong>une télévision encastrée.</strong>
+            </p>
+        </div>
+    </section>
     <section class="room-offer">
         <h1>Nos offres spéciales</h1>
         <div class="room-swiper">
@@ -312,42 +333,4 @@
     </section>
 </main>
 
-<footer>
-    <form action="">
-        <label for="newsletter-subscribe">Pour recevoir nos offres spéciales inscrivez-vous à la newsletter</label>
-        <input type="email" name="newsletter-subscribe" placeholder="Votre adresse mail">
-        <button class="button-visual" type="submit" data-hover="JE M'INSCRIS" data-active="JE M'INSCRIS">
-            <span>INSCRIVEZ-VOUS</span>
-        </button>
-    </form>
-    <ul class="footer-nav">
-        <li class="footer-link">
-            <a href="#">Accès</a>
-        </li>
-        <li class="footer-link">
-            <a href="#">Contact</a>
-        </li>
-        <li class="footer-link">
-            <a href="#">Recrutement</a>
-        </li>
-        <li class="footer-link">
-            <a href="#">Mentions Légales</a>
-        </li>
-        <li class="footer-link">
-            <a href="#">Conditions Générales de Vente</a>
-        </li>
-        <li class="footer-link">
-            <a href="#">Plan du site</a>
-        </li>
-        <li>&#169; Parimis hôtel 2018 </li>
-    </ul>
-</footer>
-</div>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
-<script src="https://unpkg.com/js-datepicker"></script>
-<script src="js/main.js"></script>
-</body>
-
-</html>
+<?php include ('footer.php'); ?>

@@ -14,7 +14,7 @@
                     <a href="mention-legale.php">Mentions Légales</a>
                 </li>
                 <li class="footer-link">
-                    <a href="#">Conditions Générales de Vente</a>
+                    <a href="cgvente.php">Conditions Générales de Vente</a>
                 </li>
                 <li class="footer-link">
                     <a href="#">Plan du site</a>

@@ -179,15 +179,15 @@
                         <br>et de l’Occident</h1>
                     <p>Niché dans au cœur du
                         <strong>Parimsi Hôtel</strong>, cet espace entièrement dédié à la beauté et à la remise en forme où se mêlent
-                        culture et savoir-faire, abrite 6 cabines individuelles et 2 suites privatives, une superbe piscine
+                        <strong>culture et savoir-faire</strong>, abrite 6 cabines individuelles et 2 suites privatives, une superbe piscine
                         intérieure de 20 mètres, 2 bassins de vitalité, des saunas, hammams et douches expérience.</p>
                     <p>
-                        Fidèle à ses origines asiatiques, cet écrin bien-être permet une retraite urbaine au cœur de la Ville Lumière en associant
+                        Fidèle à ses origines asiatiques, cet <strong>écrin bien-être</strong> permet une retraite urbaine au cœur de la Ville Lumière en associant
                         savamment le meilleur de chaque culture. La décoration intérieure contemporaine et le mobilier du
-                        Spa, inspirés d’éléments traditionnels asiatiques, proposent une association raffinée de matériaux
-                        aux tons apaisants comme le bois, le granit ou le marbre, propices à la plénitude. L’expérience client
+                        Spa, inspirés d’éléments <strong>traditionnels asiatiques</strong>, proposent une association raffinée de matériaux
+                        aux <strong>tons apaisants</strong> comme le bois, le granit ou le marbre, propices à la plénitude. <strong>L’expérience client</strong>
                         débute dans l’Asian Tea Lounge, un espace d’accueil où une sélection de thés rares est proposée,
-                        avec la marque française Yemaya, ainsi que des jus de fruits et légumes détox de la marque Good Organic
+                        avec la marque française Yemaya, ainsi que des <strong>jus de fruits et légumes détox</strong> de la marque Good Organic
                         Only.
                     </p>
                     </p>
