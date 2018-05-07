@@ -229,7 +229,6 @@
     function showScrollTop() {
         if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
             scrollTopEl.style.display = "block";
-            scrollTopEl.style.opacity = 0.5;
         } else {
             scrollTopEl.style.display = "none";
         }
