@@ -104,6 +104,8 @@ nav.side-navbar{
         }
         #navbar-burger{
             display: inline-block;
+            position: absolute;
+            right: 0;
             margin: 9px 15px 6px;
             cursor: pointer;
             .bar1, .bar2, .bar3 {
@@ -125,12 +127,16 @@ nav.side-navbar{
                 transform: rotate(45deg) translate(-7px, -5px);
             }
         }
+        .select-lang{
+            left: 10px;
+            width: 50px;
+        }
         ul{
             position: fixed;
             display: flex;
             flex-flow: column nowrap;
             top: 51px;
-            left: 0;
+            right: 0;
             background-color: #fff;
             width: 0;
             overflow: hidden;

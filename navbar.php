@@ -1,9 +1,4 @@
     <nav class="side-navbar">
-        <div id="navbar-burger">
-            <div class="burger-bar bar1"></div>
-            <div class="burger-bar bar2"></div>
-            <div class="burger-bar bar3"></div>
-        </div>
         <div class="logo">
             <a href="index.php"><img src="img/asset/logo/parimis-logo-NB.svg" alt="Logo Parimis noir"></a>
         </div>
@@ -36,6 +31,11 @@
                 <a href="">EN
                 </a>
             </div>
+        </div>
+        <div id="navbar-burger">
+            <div class="burger-bar bar1"></div>
+            <div class="burger-bar bar2"></div>
+            <div class="burger-bar bar3"></div>
         </div>
     </nav>
     <div class="main-container">
