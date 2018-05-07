@@ -46,6 +46,38 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@media (max-width: 640px) {
+  * {
+    box-sizing: border-box; }
+
+  /* passer body (et tous les ├®l├®ments de largeur fixe) en largeur automatique */
+  body {
+    width: auto;
+    margin: 0;
+    padding: 0; }
+
+  /* fixer une largeur maximale de 100% aux ├®l├®ments potentiellement probl├®matiques */
+  img,
+  table,
+  td,
+  blockquote,
+  code,
+  pre,
+  textarea,
+  input,
+  iframe,
+  object,
+  embed,
+  video {
+    max-width: 100%; }
+
+  /* conserver le ratio des images */
+  img {
+    height: auto; } }
+@media (max-device-width: 768px) and (orientation: landscape) {
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%; } }
 * {
   box-sizing: border-box; }
 
@@ -451,7 +483,7 @@ EFFECT
     height: 0;
     opacity: 0; } }
 .slide-up-element {
-  animation: slide-up .6s; }
+  animation: slide-up .6s normal ease-in; }
 
 @keyframes fade {
   0% {
@@ -561,7 +593,7 @@ nav.side-navbar {
       display: flex;
       justify-content: space-between; }
       nav.side-navbar ul li {
-        margin: 20px 0; }
+        margin: 18px 0; }
         nav.side-navbar ul li a {
           text-decoration: none;
           color: #0E1111;
@@ -603,19 +635,22 @@ nav.side-navbar {
         -webkit-transform: rotate(45deg) translate(-7px, -5px);
         transform: rotate(45deg) translate(-7px, -5px); }
     nav.side-navbar ul {
-      display: none;
+      position: fixed;
+      display: flex;
       flex-flow: column nowrap;
+      top: 51px;
+      left: 0;
       background-color: #fff;
-      width: 100%;
-      padding: 20px;
-      transform: translateX(-100%);
-      transition: transform .3s ease-in; }
+      width: 0;
+      overflow: hidden;
+      padding: 20px 0;
+      transition: width .3s ease-in; }
       nav.side-navbar ul.visible {
-        display: flex; }
-        nav.side-navbar ul.visible.slide-left {
-          transform: translateX(0); }
+        width: 100%; }
       nav.side-navbar ul li {
-        margin: 10px 0; } }
+        margin: 10px 20px; }
+        nav.side-navbar ul li a {
+          font-size: 16px; } }
 header {
   position: relative;
   margin: 0;
@@ -1157,14 +1192,10 @@ footer {
   .content-container .menu-container {
     justify-content: center;
     margin: -10px; } }
-body {
-  padding: 0;
-  margin: 0;
-  overflow: hidden; }
-
 #loader {
   width: 100%;
   height: 100vh;
+  overflow-y: hidden;
   background-color: #fff;
   position: fixed;
   z-index: 10000;
@@ -1175,8 +1206,10 @@ body {
     justify-content: center;
     align-items: center; }
     #loader.visible img {
-      width: 30px;
-      height: 30px; }
+      margin: 80px; }
+      #loader.visible img.loader-gif {
+        width: 30px;
+        height: 30px; }
   #loader.hidden {
     display: none; }
 
