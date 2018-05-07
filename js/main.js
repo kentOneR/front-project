@@ -12,6 +12,7 @@
             burgerEls[i].classList.toggle("change");
         }
         navlistEl.classList.toggle("visible");
+        setTimeout(function(){ navlistEl.classList.toggle("slide-left"); }, 100);
     });
 
     /*------------------------------------*\     
