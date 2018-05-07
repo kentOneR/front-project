@@ -1,0 +1,29 @@
+.qs-datepicker {
+    border-radius: 0;
+    .qs-controls{
+        background-color: $gold;
+        color: #fff;
+        .qs-arrow{
+            &.qs-right{
+                &::after{
+                    border-left-color: #fff;
+                }
+            }
+            &.qs-left{
+                &::after{
+                    border-right-color: #fff;
+                }
+            }
+        }
+    }
+    .qs-square{
+        &.qs-active{
+            background: $gold;
+            color: #fff;
+        }
+        &:not(.qs-empty):not(.qs-disabled):not(.qs-day):hover {
+            background: $gold-lighter;
+        }
+    }
+
+}

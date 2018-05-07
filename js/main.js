@@ -12,8 +12,8 @@
             burgerEls[i].classList.toggle("change");
         }
         navlistEl.classList.toggle("visible");
-        // setTimeout(function(){ navlistEl.classList.toggle("slide-left"); }, 100);
     });
+
 
     /*------------------------------------*\     
     NAVBAR ACTIVE LINK
@@ -99,7 +99,7 @@
     });
 
     /*------------------------------------*\     
-    DATE PICKER
+    DATE PICKER from https://github.com/qodesmith/datepicker
     \*------------------------------------*/
     var today = new Date(),
         tomorrow = new Date(new Date().setDate(new Date().getDate() + 1));
@@ -117,6 +117,7 @@
 
     const secondPicker = datepicker('#second-date-picker',
         {
+            position: 'br',
             dateSelected: tomorrow,
             minDate: tomorrow,
             startDay: 1,

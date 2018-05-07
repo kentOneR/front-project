@@ -96,8 +96,6 @@ nav.side-navbar{
 
 @media screen and (max-width: $tablet-portrait + px){
     nav.side-navbar{
-        height: 50px;
-        width: 100%;
         .logo{
             top: 12px;
             left: calc(50% - 50px);
