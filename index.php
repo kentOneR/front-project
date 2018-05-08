@@ -9,7 +9,7 @@
             <h1>Nos offres spéciales</h1>
             <div class="rooms-available">
                 <!-- Slider main container -->
-                <div class="swiper-container">
+                <div id="home-swiper" class="swiper-container">
                     <div class="swiper-wrapper">
                         <figure class="swiper-slide">
                             <img src="img/hotel/room/room-1.jpg" alt="">

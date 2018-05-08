@@ -25,7 +25,7 @@
     </section>
     <section class="room-offer">
         <h1>Nos offres spéciales</h1>
-        <div class="room-swiper">
+        <div id="room-swiper" class="room-swiper">
             <div class="swiper-room-container">
                 <div class="swiper-wrapper">
                     <!-- Slides -->

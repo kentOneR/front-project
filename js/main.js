@@ -42,7 +42,9 @@
     /*------------------------------------*\     
     HOME SWIPER
     \*------------------------------------*/
+
     var mySwiper = new Swiper('.swiper-container', {
+        init: false,
         direction: 'horizontal',
         loop: true,
         slidesPerView: 4,
@@ -79,10 +81,15 @@
         }
     });
 
+    if(document.getElementById('home-swiper')  !== null) {
+        mySwiper.init();
+    }
+
     /*------------------------------------*\     
     ROOM SWIPER
     \*------------------------------------*/
     var mySwiper = new Swiper('.swiper-room-container', {
+        init: false,
         direction: 'horizontal',
         autoHeight: true,
         loop: true,
@@ -97,6 +104,10 @@
             clickable: true
         }
     });
+
+    if(document.getElementById('room-swiper')  !== null) {
+        mySwiper.init();
+    }
 
     /*------------------------------------*\     
     DATE PICKER from https://github.com/qodesmith/datepicker
