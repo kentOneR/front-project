@@ -4,7 +4,7 @@
 <main>
 
     <section class="content-container">
-        <h1>Toutes nos actualité</h1>
+        <h1>Toutes nos actualités</h1>
         <div class="article-container">
             <div class="col-xs-12 col-md-6 col-xl-4">
                 <article>
