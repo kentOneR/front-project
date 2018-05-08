@@ -133,36 +133,38 @@
     SEARCH-BAR DROPDOWN
     \*------------------------------------*/
 
-    var selectContainerInvEl = document.getElementById('select-invite'),
-        selectInvEl = document.getElementById('who-invite'),
-        InvDropdownEl = document.getElementById('dropdown-invite'),
-        buttonInvEl = document.getElementById('check-invite'),
-        buttonNbrInvEl = document.getElementById('check-number-invite');
+    if (document.getElementById('search-bar') !== null) {
+        var selectContainerInvEl = document.getElementById('select-invite'),
+            selectInvEl = document.getElementById('who-invite'),
+            InvDropdownEl = document.getElementById('dropdown-invite'),
+            buttonInvEl = document.getElementById('check-invite'),
+            buttonNbrInvEl = document.getElementById('check-number-invite');
 
-    // window.addEventListener('click', function (e) {
-    //     e.preventDefault();
-    //     if (e.target == selectInvEl) {
-    //         InvDropdownEl.classList.toggle("visible");
-    //     } else if (e.target == InvDropdownEl || e.target == buttonInvEl) {
-    //         InvDropdownEl.classList.add("visible");
-    //     }
-    //     else {
-    //         InvDropdownEl.classList.remove("visible");
-    //     }
-    // });
+        // window.addEventListener('click', function (e) {
+        //     e.preventDefault();
+        //     if (e.target == selectInvEl) {
+        //         InvDropdownEl.classList.toggle("visible");
+        //     } else if (e.target == InvDropdownEl || e.target == buttonInvEl) {
+        //         InvDropdownEl.classList.add("visible");
+        //     }
+        //     else {
+        //         InvDropdownEl.classList.remove("visible");
+        //     }
+        // });
 
-    selectInvEl.addEventListener('click', function () {
-        InvDropdownEl.classList.toggle("visible");
-    });
+        selectInvEl.addEventListener('click', function () {
+            InvDropdownEl.classList.toggle("visible");
+        });
 
-    buttonInvEl.addEventListener('click', function () {
-        InvDropdownEl.classList.remove("visible");
-    });
+        buttonInvEl.addEventListener('click', function () {
+            InvDropdownEl.classList.remove("visible");
+        });
 
-    buttonNbrInvEl.addEventListener('click', function () {
-        InvDropdownEl.classList.remove("visible");
-    });
+        buttonNbrInvEl.addEventListener('click', function () {
+            InvDropdownEl.classList.remove("visible");
+        });
 
+    }
 
     /*------------------------------------*\     
     FADE-IN EFFECT
@@ -237,7 +239,7 @@
     }
     window.onscroll = function () { showScrollTop() };
 
-    function scrollTo (to, duration) {
+    function scrollTo(to, duration) {
         var element = document.scrollingElement || document.documentElement,
             start = element.scrollTop,
             change = to - start,

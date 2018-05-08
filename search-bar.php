@@ -1,4 +1,4 @@
-        <section class="search-bar">
+        <section id="search-bar" class="search-bar">
             <form action="">
                 <input id="first-date-picker" type="text">
                 <input id="second-date-picker" type="text">

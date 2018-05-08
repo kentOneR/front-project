@@ -170,4 +170,4 @@
         </form>
     </section>
 </main>
-<?php include ('footer.php'); ?>
+<?php include ('footer-map.php'); ?>

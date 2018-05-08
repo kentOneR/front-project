@@ -47,6 +47,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
 <script src="https://unpkg.com/js-datepicker"></script>
 <script src="js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIAcWhcKEJXg7m1jfn_AbVDhZyXjXEn1I&callback=initMap" async
+    defer></script>
 </body>
 
 </html>
