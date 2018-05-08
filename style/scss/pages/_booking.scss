@@ -1,3 +1,40 @@
+.booking-step{
+    width: calc(100% - 200px);
+    min-height: 50px;
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    color: $grey-lighter;
+    display: flex;
+    justify-content: space-around;
+    div{
+        margin: auto;
+        p{
+            span.number{
+                display: inline-block;
+                margin: 0 5px;
+                width: 25px;
+                height: 25px;
+                border: 1px solid $grey-lighter;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 25px;
+            }
+        }
+        &.active{
+            p{
+                color: #fff;
+                span.number{
+                    border: 1px solid #fff;
+                    background: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+}
+
 .search-block{
     max-width: 300px;
     background-color: $grey-lighter;
@@ -19,6 +56,34 @@
             flex-flow: row nowrap;
             justify-content: space-between;
             margin: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: $desktop-small + px) {
+    .booking-step{
+        top: 50px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: $tablet-portrait + px) {
+
+    .booking-step{
+        position: relative;
+        div{
+            p{
+                span:not(.number){
+                    display: none;
+                }
+            }
+        }
+    }
+    .search-container {
+        margin-top: 100px;
+        .search-block{
+            width: 100%;
+            max-width: 100%;
         }
     }
 }

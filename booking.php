@@ -1,8 +1,29 @@
 <?php include ('head.php'); ?>
 <?php include ('navbar.php'); ?>
-<main>
+<section class="booking-step">
+    <div class="select-room active">
+        <p>
+            <span class="number">1</span>
+            <span>Sélectionner la chambre et les dates</span>
 
-    <section class="content-container">
+        </p>
+    </div>
+    <div class="pay-room">
+        <p>
+            <span class="number">2</span>
+            <span>Renseignement carte de crédit</span>
+
+        </p>
+    </div>
+    <div class="book-confirm">
+        <p>
+            <span class="number">3</span>
+            <span>Confirmation</span>
+        </p>
+    </div>
+</section>
+<main>
+    <section class="content-container search-container">
         <h1>Réservez la chambre de vos rêves</h1>
         <aside class="search-block">
             <form action="">
@@ -39,15 +60,15 @@
                     </div>
                 </div>
                 <div class="form-row">
-                        <label for="room-type">Type de chambre :</label>
-                        <select name="room-type">
-                            <option value="all">Toutes</option>
-                            <option value="classic">Classique</option>
-                            <option value="confort">Confort</option>
-                            <option value="deluxe">Deluxe</option>
-                            <option value="suite">Suite</option>
-                        </select>
-                    </div>
+                    <label for="room-type">Type de chambre :</label>
+                    <select name="room-type">
+                        <option value="all">Toutes</option>
+                        <option value="classic">Classique</option>
+                        <option value="confort">Confort</option>
+                        <option value="deluxe">Deluxe</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                </div>
                 <button id="check-number-invite" class="button-visual form-row" data-hover="JE RÉSERVE" data-active="JE RÉSERVE">
                     <span>RÉSERVER</span>
                 </button>
