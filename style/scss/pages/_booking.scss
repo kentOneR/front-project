@@ -34,31 +34,45 @@
     }
 
 }
-
-.search-block{
-    max-width: 300px;
-    background-color: $grey-lighter;
-    padding: 10px;
-    form{
-        display: flex;
-        flex-flow: column nowrap;
-        input, 
-        select{
-            cursor: pointer;
-            height: 30px;
-            width: 90px;
-        }
-        label{
-            line-height: 30px;
-        }
-        .form-row{
+.search-container{
+    display: flex;
+    flex-flow: row wrap;
+    h1{
+        width: 100%;
+    }
+    .search-block{
+        display: inline-block;
+        form{
             display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-            margin: 10px;
+            flex-flow: column nowrap;
+            background-color: $grey-lighter;
+            input, 
+            select{
+                cursor: pointer;
+                height: 30px;
+                width: 90px;
+            }
+            label{
+                line-height: 30px;
+            }
+            .form-row{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                margin: 10px;
+            }
+        }
+    }
+    .room-result{
+        .room-detail{
+            margin:0 0 10px;
+            img{
+                width: 330px;
+            }
         }
     }
 }
+
 
 @media screen and (max-width: $desktop-small + px) {
     .booking-step{

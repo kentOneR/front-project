@@ -23,9 +23,9 @@
     </div>
 </section>
 <main>
-    <section class="content-container search-container">
+    <div class="content-container search-container">
         <h1>Réservez la chambre de vos rêves</h1>
-        <aside class="search-block">
+        <aside class="search-block col-xl-3">
             <form action="">
                 <div class="form-row">
                     <label for="arrival-date">Date d'arrivée :</label>
@@ -74,7 +74,18 @@
                 </button>
             </form>
         </aside>
-    </section>
+        <section class="room-result col-xl-9">
+            <div class="room-detail">
+                <img src="img/hotel/room/big/room-1.jpg" alt="Intérieur chambre Luxury in Advance">
+            </div>
+            <div class="room-detail">
+                <img src="img/hotel/room/big/room-2.jpg" alt="Terrasse chambre Rooftop Garden">
+            </div>
+            <div class="room-detail">
+                <img src="img/hotel/room/big/room-3.jpg" alt="Intérieur chambre Suite Royale">
+            </div>
+        </section>
+    </div>
 
 </main>
 <?php include ('footer.php'); ?>

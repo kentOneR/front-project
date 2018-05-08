@@ -31,7 +31,7 @@
                     <!-- Slides -->
                     <div class="swiper-slide">
                         <figure>
-                            <img src="img/hotel/room/big/room-1.jpg" alt="">
+                            <img src="img/hotel/room/big/room-1.jpg" alt="Intérieur chambre Luxury in Advance">
                             <figcaption class="book-room">
                                 <div class="book-name">
                                     <h4>CHAMBRE : SUITE</h4>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="swiper-slide">
                         <figure>
-                            <img src="img/hotel/room/big/room-2.jpg" alt="">
+                            <img src="img/hotel/room/big/room-2.jpg" alt="Terrasse chambre Rooftop Garden">
                             <figcaption class="book-room">
                                 <div class="book-name">
                                     <h4>CHAMBRE : DELUXE</h4>
@@ -63,7 +63,7 @@
                     </div>
                     <div class="swiper-slide">
                         <figure>
-                            <img src="img/hotel/room/big/room-2.jpg" alt="">
+                            <img src="img/hotel/room/big/room-3.jpg" alt="Intérieur chambre Suite Royale">
                             <figcaption class="book-room">
                                 <div class="book-name">
                                     <h4>CHAMBRE : SUITE</h4>
