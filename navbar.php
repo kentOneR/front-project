@@ -16,10 +16,10 @@
                 <a class="nav-link underline--magical" href="spa.php">SPA</a>
             </li>
             <li>
-                <a class="nav-link underline--magical" href="#">RÉSERVATION</a>
+                <a class="nav-link underline--magical" href="booking.php">RÉSERVATION</a>
             </li>
             <li>
-                <a class="nav-link underline--magical" href="#">ACTUALITÉ</a>
+                <a class="nav-link underline--magical" href="actu.php">ACTUALITÉ</a>
             </li>
         </ul>
         <div class="select-lang">

@@ -13,6 +13,7 @@
 @import 'pages/hotel';
 @import 'pages/chambre';
 @import 'pages/resto';
+@import 'pages/actu';
 
 #loader{
     width: 100%;
@@ -152,7 +153,7 @@ a{
 @media screen and (max-width: $tablet-portrait + px){
     .main-container{
         main{
-            width: calc(100% - 40px);
+            width: calc(100% - 20px);
             .section-left,
             .section-right{
                 max-width: 600px;
