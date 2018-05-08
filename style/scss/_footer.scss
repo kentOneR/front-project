@@ -27,6 +27,33 @@ footer {
             height: 35px;
         }
     }
+    .social-media{
+        position: absolute;
+        top:-35px;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        .social-icons{
+            display: flex;
+            a{
+                i{
+                    width: 35px;
+                    height: 35px;
+                    font-size: 1.5rem;
+                    line-height: 35px;
+                    text-align: center;
+                    background-color: $gold;
+                    color: #fff;
+                    transition: all .3s ease-in;
+                    &:hover{
+                        background-color: #fff;
+                        color: $gold;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
     .footer-nav{
         display: flex;
         flex-flow: row wrap;
