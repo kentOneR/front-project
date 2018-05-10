@@ -8,6 +8,7 @@ header{
     width: 100%;
     height: 100vh;
     background: url(../../img/hotel/parimis-by-night.jpg) no-repeat  center fixed; 
+    background-attachment: fixed;
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
     background-size: cover; /* version standardisée */
         img{
@@ -18,10 +19,56 @@ header{
     }
 }
 
-@media screen and (max-width: $tablet-landscape + px){
-    header{
+/* fix iOS bug not displaying 100vh correctly */
+/* ipad */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	header {
         .parimis-head{
-            min-height: 300px;
+            height: 768px;
+            background-attachment: scroll;
         }
-    }
+	}
 }
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    header {
+        .parimis-head{
+            height: 1024px;
+            background-attachment: scroll;
+        }
+	}
+}
+/* iphone5 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+    header {
+        .parimis-head{
+            height: 320px;
+            background-attachment: scroll;
+        }
+	}
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+    header {
+        .parimis-head{
+            height: 568px;
+            background-attachment: scroll;
+        }
+	}
+}
+/* iPhone 4 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    header {
+        .parimis-head{
+            height: 320px;
+            background-attachment: scroll;
+        }
+	}
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    header {
+        .parimis-head{
+            height: 480px;
+            background-attachment: scroll;
+        }
+	}
+}
+
