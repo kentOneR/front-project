@@ -198,6 +198,11 @@
                         }
                     }
                 }
+                .swiper-pagination{
+                    .swiper-pagination-bullet{
+                        background: $gold;
+                    }
+                }
             }
         }
     }
