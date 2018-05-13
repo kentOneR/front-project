@@ -2,6 +2,7 @@
     width: calc(100% - 200px);
     min-height: 50px;
     position: fixed;
+    z-index: 1000;
     top: 0;
     background-color: #000;
     color: $grey-lighter;
@@ -66,12 +67,83 @@
     .room-result{
         .room-detail{
             margin:0 0 10px;
-            img{
-                width: 330px;
+            display: flex;
+            flex-flow: row wrap;
+            background-color: $grey-lighter;
+            .room-visual{
+                width: 60%;
+                overflow: hidden;
+                display: flex;
+                flex-flow: column nowrap;
+                .main-visual{
+                    display: flex;
+                    flex-flow: column nowrap;
+                    overflow: hidden;
+                    margin: 0;
+                    img{
+                        width: 100%;
+                        -moz-transition: all 0.3s;
+                        -webkit-transition: all 0.3s;
+                        transition: all 0.3s;
+                    }
+                    &:hover{
+                        img{
+                            -moz-transform: scale(1.05);
+                            -webkit-transform: scale(1.05);
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+                .all-thumbnail{
+                    width: 100%;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    .room-thumbnail{
+                        display: flex;
+                        flex-flow: column nowrap;
+                        overflow: hidden;
+                        margin-top: 5px;
+                        width: calc(20% - 5px);
+                        img{
+                            width: 100%;
+                            -moz-transition: all 0.3s;
+                            -webkit-transition: all 0.3s;
+                            transition: all 0.3s;
+                        }
+                        &:hover{
+                            img{
+                                -moz-transform: scale(1.1);
+                                -webkit-transform: scale(1.1);
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
+            .room-content{
+                width: 40%;
+                height: 200px;
+                padding: 10px;
+                h3{
+                    font-family: 'Playfair Display', serif;
+                    font-size: 18px;
+                    padding: 7px 0;
+                }
+                h4{
+                    font-size: 14px;
+                    color: $gold;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin:3px 0;
+                }
             }
         }
     }
 }
+
 
 
 @media screen and (max-width: $desktop-small + px) {
