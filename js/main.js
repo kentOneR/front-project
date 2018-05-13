@@ -34,7 +34,9 @@
     \*------------------------------------*/
 
     var searchBarEl = document.querySelector('.search-bar');
-    if (window.location.href.indexOf('index') > -1) {
+    var regIndex = /front\-project\/$|index/;
+    var checkIfIndex = window.location.href.match(regIndex);
+    if (checkIfIndex) {
         searchBarEl.classList.add('on-home');
     }
 
