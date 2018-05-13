@@ -40,7 +40,7 @@
                                         des plus spacieuses de Paris et sont équipées d’une technologie de pointe.</p>
                                 </div>
                                 <div class="booking">
-                                    <a class="underline--magical" href="#">EN SAVOIR +</a>
+                                    <a class="underline--magical" href="#">RÉSERVER</a>
                                 </div>
                             </figcaption>
                         </figure>
@@ -56,7 +56,7 @@
                                         des plus spacieuses de Paris et sont équipées d’une technologie de pointe.</p>
                                 </div>
                                 <div class="booking">
-                                    <a class="underline--magical" href="#">EN SAVOIR +</a>
+                                    <a class="underline--magical" href="#">RÉSERVER</a>
                                 </div>
                             </figcaption>
                         </figure>
@@ -72,7 +72,7 @@
                                         des plus spacieuses de Paris et sont équipées d’une technologie de pointe.</p>
                                 </div>
                                 <div class="booking">
-                                    <a class="underline--magical" href="#">EN SAVOIR +</a>
+                                    <a class="underline--magical" href="#">RÉSERVER</a>
                                 </div>
                             </figcaption>
                         </figure>
@@ -103,228 +103,260 @@
             </li>
         </ul>
         <div class="all-room-container">
-            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="suite">
+            <div class="room-list col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" data-roomtype="suite">
                 <figure>
                     <img src="img/hotel/room/room-1.jpg" alt="">
                     <figcaption class="book-room">
                         <div class="book-name">
                             <h4>CHAMBRE : SUITE</h4>
                             <h3>Luxury In Advance</h3>
+                            <p>TAILLE : 35 - 40 m²</p>
+                            <p>à partir de 925 € par nuit</p>
                         </div>
                         <div class="booking">
-                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                            <a class="underline--magical" href="#">RÉSERVER</a>
                         </div>
                     </figcaption>
                 </figure>
             </div>
-            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="suite">
+            <div class="room-list col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" data-roomtype="suite">
                 <figure>
                     <img src="img/hotel/room/room-2.jpg" alt="">
                     <figcaption class="book-room">
                         <div class="book-name">
                             <h4>CHAMBRE : SUITE</h4>
                             <h3>Suite Royale</h3>
+                            <p>TAILLE : 30 - 35 m²</p>
+                            <p>à partir de 765 € par nuit</p>
                         </div>
                         <div class="booking">
-                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                            <a class="underline--magical" href="#">RÉSERVER</a>
                         </div>
                     </figcaption>
                 </figure>
                 </figure>
             </div>
-            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="deluxe">
+            <div class="room-list col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" data-roomtype="deluxe">
                 <figure>
                     <img src="img/hotel/room/room-4.jpg" alt="">
                     <figcaption class="book-room">
                         <div class="book-name">
                             <h4>CHAMBRE : DELUXE</h4>
                             <h3>Rooftop Garden</h3>
+                            <p>TAILLE : 30 - 35 m²</p>
+                            <p>à partir de 765 € par nuit</p>
                         </div>
                         <div class="booking">
-                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                            <a class="underline--magical" href="#">RÉSERVER</a>
                         </div>
                     </figcaption>
                 </figure>
             </div>
-            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="confort">
+            <div class="room-list col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" data-roomtype="confort">
                 <figure>
                     <img src="img/hotel/room/room-6.jpg" alt="">
                     <figcaption class="book-room">
                         <div class="book-name">
                             <h4>CHAMBRE : CONFORT</h4>
                             <h3>Escape Suite</h3>
+                            <p>TAILLE : 30 - 35 m²</p>
+                            <p>à partir de 765 € par nuit</p>
                         </div>
                         <div class="booking">
-                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                            <a class="underline--magical" href="#">RÉSERVER</a>
                         </div>
                     </figcaption>
                 </figure>
             </div>
-            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="confort">
+            <div class="room-list col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" data-roomtype="confort">
                 <figure>
                     <img src="img/hotel/room/room-9.jpg" alt="">
                     <figcaption class="book-room">
                         <div class="book-name">
                             <h4>CHAMBRE : CONFORT</h4>
                             <h3>Nuit et jour</h3>
+                            <p>TAILLE : 25 - 30 m²</p>
+                            <p>à partir de 575 € par nuit</p>
                         </div>
                         <div class="booking">
-                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                            <a class="underline--magical" href="#">RÉSERVER</a>
                         </div>
                     </figcaption>
                 </figure>
             </div>
-            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="confort">
+            <div class="room-list col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" data-roomtype="confort">
                 <figure>
                     <img src="img/hotel/room/room-10.jpg" alt="">
                     <figcaption class="book-room">
                         <div class="book-name">
                             <h4>CHAMBRE : CONFORT</h4>
                             <h3>Plaisir partagé</h3>
+                            <p>TAILLE : 25 - 30 m²</p>
+                            <p>à partir de 765 € par nuit</p>
                         </div>
                         <div class="booking">
-                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                            <a class="underline--magical" href="#">RÉSERVER</a>
                         </div>
                     </figcaption>
                 </figure>
             </div>
-            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="classique">
+            <div class="room-list col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" data-roomtype="classique">
                 <figure>
                     <img src="img/hotel/room/room-11.jpg" alt="">
                     <figcaption class="book-room">
                         <div class="book-name">
                             <h4>CHAMBRE : CLASSIQUE</h4>
                             <h3>Simplicité à deux</h3>
+                            <p>TAILLE : 25 - 30 m²</p>
+                            <p>à partir de 465 € par nuit</p>
                         </div>
                         <div class="booking">
-                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                            <a class="underline--magical" href="#">RÉSERVER</a>
                         </div>
                     </figcaption>
                 </figure>
             </div>
-            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="classique">
+            <div class="room-list col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" data-roomtype="classique">
                 <figure>
                     <img src="img/hotel/room/room-12.jpg" alt="">
                     <figcaption class="book-room">
                         <div class="book-name">
                             <h4>CHAMBRE : CLASSIQUE</h4>
                             <h3>Simplicité à quatre</h3>
+                            <p>TAILLE : 25 - 30 m²</p>
+                            <p>à partir de 465 € par nuit</p>
                         </div>
                         <div class="booking">
-                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                            <a class="underline--magical" href="#">RÉSERVER</a>
                         </div>
                     </figcaption>
                 </figure>
             </div>
-            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="suite">
+            <div class="room-list col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" data-roomtype="suite">
                 <figure>
                     <img src="img/hotel/room/room-1.jpg" alt="">
                     <figcaption class="book-room">
                         <div class="book-name">
                             <h4>CHAMBRE : SUITE</h4>
                             <h3>Luxury In Advance</h3>
+                            <p>TAILLE : 30 - 35 m²</p>
+                            <p>à partir de 765 € par nuit</p>
                         </div>
                         <div class="booking">
-                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                            <a class="underline--magical" href="#">RÉSERVER</a>
                         </div>
                     </figcaption>
                 </figure>
             </div>
-            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="suite">
+            <div class="room-list col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" data-roomtype="suite">
                 <figure>
                     <img src="img/hotel/room/room-2.jpg" alt="">
                     <figcaption class="book-room">
                         <div class="book-name">
                             <h4>CHAMBRE : SUITE</h4>
                             <h3>Suite Royale</h3>
+                            <p>TAILLE : 40 - 50 m²</p>
+                            <p>à partir de 950 € par nuit</p>
                         </div>
                         <div class="booking">
-                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                            <a class="underline--magical" href="#">RÉSERVER</a>
                         </div>
                     </figcaption>
                 </figure>
                 </figure>
             </div>
-            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="deluxe">
+            <div class="room-list col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" data-roomtype="deluxe">
                 <figure>
                     <img src="img/hotel/room/room-4.jpg" alt="">
                     <figcaption class="book-room">
                         <div class="book-name">
                             <h4>CHAMBRE : DELUXE</h4>
                             <h3>Rooftop Garden</h3>
+                            <p>TAILLE : 35 - 40 m²</p>
+                            <p>à partir de 765 € par nuit</p>
                         </div>
                         <div class="booking">
-                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                            <a class="underline--magical" href="#">RÉSERVER</a>
                         </div>
                     </figcaption>
                 </figure>
             </div>
-            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="confort">
+            <div class="room-list col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" data-roomtype="confort">
                 <figure>
                     <img src="img/hotel/room/room-6.jpg" alt="">
                     <figcaption class="book-room">
                         <div class="book-name">
                             <h4>CHAMBRE : CONFORT</h4>
                             <h3>Escape Suite</h3>
+                            <p>TAILLE : 35 - 40 m²</p>
+                            <p>à partir de 765 € par nuit</p>
                         </div>
                         <div class="booking">
-                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                            <a class="underline--magical" href="#">RÉSERVER</a>
                         </div>
                     </figcaption>
                 </figure>
             </div>
-            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="confort">
+            <div class="room-list col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" data-roomtype="confort">
                 <figure>
                     <img src="img/hotel/room/room-9.jpg" alt="">
                     <figcaption class="book-room">
                         <div class="book-name">
                             <h4>CHAMBRE : CONFORT</h4>
                             <h3>Nuit et jour</h3>
+                            <p>TAILLE : 35 - 40 m²</p>
+                            <p>à partir de 765 € par nuit</p>
                         </div>
                         <div class="booking">
-                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                            <a class="underline--magical" href="#">RÉSERVER</a>
                         </div>
                     </figcaption>
                 </figure>
             </div>
-            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="confort">
+            <div class="room-list col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" data-roomtype="confort">
                 <figure>
                     <img src="img/hotel/room/room-10.jpg" alt="">
                     <figcaption class="book-room">
                         <div class="book-name">
                             <h4>CHAMBRE : CONFORT</h4>
                             <h3>Plaisir partagé</h3>
+                            <p>TAILLE : 35 - 40 m²</p>
+                            <p>à partir de 765 € par nuit</p>
                         </div>
                         <div class="booking">
-                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                            <a class="underline--magical" href="#">RÉSERVER</a>
                         </div>
                     </figcaption>
                 </figure>
             </div>
-            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="classique">
+            <div class="room-list col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" data-roomtype="classique">
                 <figure>
                     <img src="img/hotel/room/room-11.jpg" alt="">
                     <figcaption class="book-room">
                         <div class="book-name">
                             <h4>CHAMBRE : CLASSIQUE</h4>
                             <h3>Simplicité à deux</h3>
+                            <p>TAILLE : 25 - 30 m²</p>
+                            <p>à partir de 465 € par nuit</p>
                         </div>
                         <div class="booking">
-                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                            <a class="underline--magical" href="#">RÉSERVER</a>
                         </div>
                     </figcaption>
                 </figure>
             </div>
-            <div class="room-list col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" data-roomtype="classique">
+            <div class="room-list col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" data-roomtype="classique">
                 <figure>
                     <img src="img/hotel/room/room-12.jpg" alt="">
                     <figcaption class="book-room">
                         <div class="book-name">
                             <h4>CHAMBRE : CLASSIQUE</h4>
                             <h3>Simplicité à quatre</h3>
+                            <p>TAILLE : 25 - 30 m²</p>
+                            <p>à partir de 465 € par nuit</p>
                         </div>
                         <div class="booking">
-                            <a class="underline--magical" href="#">EN SAVOIR +</a>
+                            <a class="underline--magical" href="#">RÉSERVER</a>
                         </div>
                     </figcaption>
                 </figure>
