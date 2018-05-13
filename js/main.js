@@ -83,7 +83,7 @@
         }
     });
 
-    if(document.getElementById('home-swiper')  !== null) {
+    if (document.getElementById('home-swiper') !== null) {
         mySwiper.init();
     }
 
@@ -107,7 +107,7 @@
         }
     });
 
-    if(document.getElementById('room-swiper')  !== null) {
+    if (document.getElementById('room-swiper') !== null) {
         mySwiper.init();
     }
 

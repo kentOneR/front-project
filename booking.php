@@ -77,24 +77,24 @@
         <section class="room-result col-xl-9">
             <div class="room-detail">
                 <div class="room-visual">
-                    <div class="main-visual">
-                        <img src="img/hotel/room/big/room-1.jpg" alt="Intérieur chambre Luxury in Advance">
+                    <div class="main-visual" id="first-visual-room">
+                        <img src="img/hotel/room/big/room-1.jpg" alt="Intérieur chambre Luxury in Advance" data-room="escape">
                     </div>
                     <div class="all-thumbnail">
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="">
+                            <img src="http://via.placeholder.com/100x70" alt="" data-room="escape">
                         </div>
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="">
+                            <img src="http://via.placeholder.com/100x70" alt="" data-room="escape">
                         </div>
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="">
+                            <img src="http://via.placeholder.com/100x70" alt="" data-room="escape">
                         </div>
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="">
+                            <img src="http://via.placeholder.com/100x70" alt="" data-room="escape">
                         </div>
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="">
+                            <img src="http://via.placeholder.com/100x70" alt="" data-room="escape">
                         </div>
                     </div>
                 </div>

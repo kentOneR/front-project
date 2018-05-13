@@ -1,0 +1,50 @@
+{
+    "0": {
+        "title": "Luxury In Adavance",
+        "category": "suite",
+        "size": "35 - 40m²",
+        "price": 925,
+        "image": {
+            "big": [
+                "img/hotel/0-luxury/01-luxury.jpg",
+                "img/hotel/0-luxury/02-luxury.jpg",
+                "img/hotel/0-luxury/03-luxury.jpg",
+                "img/hotel/0-luxury/04-luxury.jpg",
+                "img/hotel/0-luxury/05-luxury.jpg",
+                "img/hotel/0-luxury/06-luxury.jpg"
+            ]
+        }
+    },
+    "1": {
+        "title": "Suite Royale",
+        "category": "suite",
+        "size": "30 - 35m²",
+        "price": 765,
+        "image": {
+            "big": [
+                "img/hotel/1-royale/01-royale.jpg",
+                "img/hotel/1-royale/02-royale.jpg",
+                "img/hotel/1-royale/03-royale.jpg",
+                "img/hotel/1-royale/04-royale.jpg",
+                "img/hotel/1-royale/05-royale.jpg",
+                "img/hotel/1-royale/06-royale.jpg"
+            ]
+        }
+    },
+    "2": {
+        "title": "Rooftop Garden",
+        "category": "deluxe",
+        "size": "30 - 35m²",
+        "price": 765,
+        "image": {
+            "big": [
+                "img/hotel/2-rooftop/01-rooftop.jpg",
+                "img/hotel/2-rooftop/02-rooftop.jpg",
+                "img/hotel/2-rooftop/03-rooftop.jpg",
+                "img/hotel/2-rooftop/04-rooftop.jpg",
+                "img/hotel/2-rooftop/05-rooftop.jpg",
+                "img/hotel/2-rooftop/06-rooftop.jpg"
+            ]
+        }
+    }
+}
