@@ -23,25 +23,27 @@
         req.send(null);
     }
 
+    var rooms;
     ajaxGet("data/room.json", function (reponse) {
         // Transforme la réponse en tableau d'objets JavaScript
-        var rooms = JSON.parse(reponse);
-        for(var i in rooms) {
-            console.log(rooms[i]);
-            console.log(rooms[i].title);
-            console.log(rooms[i].image.big);
-        }
-
+        rooms = JSON.parse(reponse);
     });
 
     if (window.location.href.indexOf('booking') > -1) {
 
         var thumbOverlayEl = document.getElementById('overlay-thumbnail'),
-            mainVisualEl = document.getElementById('first-visual-room');
+            mainVisualElS = document.getElementsByClassName('main-visual');
 
-        mainVisualEl.addEventListener('click', function (e) {
-            thumbOverlayEl.style.display = 'block';
-        })
+        for(let i=0; mainVisualElS[i]; i++) {
+            mainVisualElS[i].addEventListener('click', function(e){
+                thumbOverlayEl.style.display = 'block';
+                var imageList = rooms[i].image.big;
+                console.log(imageList);
+
+                
+            });
+
+        }
 
         thumbOverlayEl.addEventListener('click', function () {
             thumbOverlayEl.style.display = 'none';

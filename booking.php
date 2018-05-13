@@ -77,7 +77,7 @@
         <section class="room-result col-xl-9">
             <div class="room-detail">
                 <div class="room-visual">
-                    <div class="main-visual" id="first-visual-room">
+                    <div class="main-visual">
                         <img src="img/hotel/room/big/room-1.jpg" alt="Intérieur chambre Luxury in Advance" data-room="escape">
                     </div>
                     <div class="all-thumbnail">
