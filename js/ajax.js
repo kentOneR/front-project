@@ -33,24 +33,33 @@
 
         var thumbOverlayEl = document.getElementById('overlay-thumbnail'),
             mainVisualElS = document.getElementsByClassName('room-visual'),
-            thumbCarousel = document.getElementById('thumbnail-wrapper');
+            thumbCarousel = document.getElementById('thumbnail-wrapper'),
+            thumbCarouselPagination = document.getElementsByClassName('swiper-pagination');
 
         for(let i=0; mainVisualElS[i]; i++) {
             mainVisualElS[i].addEventListener('click', function(e){
                 thumbOverlayEl.style.display = 'block';
                 var imageList = rooms[i].image.big;
                 for(let i=0; imageList[i]; i++){
-                    console.log(imageList[i])
                     var img = imgCreate(imageList[i], 'alt')
                     thumbCarousel.appendChild(img);
                 }
-                mySwiper.init();
+                thumbSwiper.init();
             });
 
         }
 
-        thumbOverlayEl.addEventListener('click', function () {
-            // thumbOverlayEl.style.display = 'none';
+        thumbOverlayEl.addEventListener('click', function (e) {
+            if(e.target === thumbOverlayEl) {
+                thumbOverlayEl.style.display = 'none';
+                while (thumbCarousel.firstChild) {
+                    thumbCarousel.removeChild(thumbCarousel.firstChild);
+                }
+                while (thumbCarouselPagination[0].firstChild) {
+                    thumbCarouselPagination[0].removeChild(thumbCarouselPagination[0].firstChild);
+                }
+                thumbSwiper.destroy(false, true);
+            }
         })
     }
 
@@ -64,7 +73,7 @@
     }
 
     // Configuration du Swiper
-    var mySwiper = new Swiper('#thumbnail-carousel', {
+    var thumbSwiper = new Swiper('#thumbnail-carousel', {
         init: false,
         direction: 'horizontal',
         autoHeight: true,
