@@ -29,28 +29,64 @@
         rooms = JSON.parse(reponse);
     });
 
+    // Création des images
+    function imgCreate(src, alt) {
+        var img = new Image();
+        img.src = src;
+        img.classList.add("swiper-slide");
+        if (alt != null) img.alt = alt;
+        return img;
+    }
+
+    // Configuration du Swiper
+    var thumbSwiper;
+    function initThumbSwiper() {
+        thumbSwiper = new Swiper('#thumbnail-carousel', {
+            init: false,
+            direction: 'horizontal',
+            autoHeight: true,
+            loop: true,
+            speed: 1200,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            watchOverflow: true,
+            autoplay: {
+                delay: 6000
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+        thumbSwiper.init();
+    }
+
     if (window.location.href.indexOf('booking') > -1) {
 
         var thumbOverlayEl = document.getElementById('overlay-thumbnail'),
-            mainVisualElS = document.getElementsByClassName('room-visual'),
+            mainVisualEls = document.getElementsByClassName('room-visual'),
             thumbCarousel = document.getElementById('thumbnail-wrapper'),
             thumbCarouselPagination = document.getElementsByClassName('swiper-pagination');
 
-        for(let i=0; mainVisualElS[i]; i++) {
-            mainVisualElS[i].addEventListener('click', function(e){
+        for (let i = 0; mainVisualEls[i]; i++) {
+            mainVisualEls[i].addEventListener('click', function (e) {
                 thumbOverlayEl.style.display = 'block';
                 var imageList = rooms[i].image.big;
-                for(let i=0; imageList[i]; i++){
+                for (let i = 0; imageList[i]; i++) {
                     var img = imgCreate(imageList[i], 'alt')
                     thumbCarousel.appendChild(img);
                 }
-                thumbSwiper.init();
+                initThumbSwiper();
             });
 
         }
 
         thumbOverlayEl.addEventListener('click', function (e) {
-            if(e.target === thumbOverlayEl) {
+            if (e.target === thumbOverlayEl) {
                 thumbOverlayEl.style.display = 'none';
                 while (thumbCarousel.firstChild) {
                     thumbCarousel.removeChild(thumbCarousel.firstChild);
@@ -58,41 +94,12 @@
                 while (thumbCarouselPagination[0].firstChild) {
                     thumbCarouselPagination[0].removeChild(thumbCarouselPagination[0].firstChild);
                 }
-                thumbSwiper.destroy(false, true);
+                if (thumbSwiper !== undefined) {
+                    thumbSwiper.destroy(false, true);
+                };
             }
         })
     }
 
-    // Création des images
-    function imgCreate(src, alt) {
-        var img = new Image();
-        img.src = src;
-        img.classList.add("swiper-slide");
-        if ( alt != null ) img.alt = alt;
-        return img;
-    }
-
-    // Configuration du Swiper
-    var thumbSwiper = new Swiper('#thumbnail-carousel', {
-        init: false,
-        direction: 'horizontal',
-        autoHeight: true,
-        loop: true,
-        speed: 1200,
-        slidesPerView: 1,
-        spaceBetween: 0,
-        watchOverflow: true,
-        autoplay: {
-            delay: 6000
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        }
-    });
 
 })();
