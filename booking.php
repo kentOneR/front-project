@@ -78,7 +78,7 @@
             <div class="room-detail">
                 <div class="room-visual">
                     <div class="main-visual">
-                        <img src="img/hotel/room/big/room-1.jpg" alt="Intérieur chambre Luxury in Advance" data-room="escape">
+                        <img src="img/hotel/room/big/room-1.jpg" alt="Intérieur chambre Luxury in Advance">
                     </div>
                     <div class="all-thumbnail">
                         <div class="room-thumbnail">
@@ -99,8 +99,8 @@
                     </div>
                 </div>
                 <div class="room-content">
-                    <h4>CHAMBRE : CONFORT</h4>
-                    <h3>Escape Suite</h3>
+                    <h4>CHAMBRE : LUXE</h4>
+                    <h3>Luxury in Advance</h3>
                     <p>TAILLE : 35 - 40 m²</p>
                     <p>à partir de 765 € par nuit</p>
                     <p>Conçues pour des voyageurs modernes en quête de confort absolu, ces chambres font partie des plus spacieuses
@@ -154,7 +154,7 @@
             <div class="room-detail">
                 <div class="room-visual">
                     <div class="main-visual">
-                        <img src="img/hotel/room/big/room-3.jpg" alt="Intérieur chambre Suite Royale">
+                        <img src="img/hotel/room/2-rooftop/06-rooftop.jpg" alt="Terrasse chambre Rooftop Garden">
                     </div>
                     <div class="all-thumbnail">
                         <div class="room-thumbnail">
@@ -175,8 +175,8 @@
                     </div>
                 </div>
                 <div class="room-content">
-                    <h4>CHAMBRE : CONFORT</h4>
-                    <h3>Escape Suite</h3>
+                    <h4>CHAMBRE : DELUXE</h4>
+                    <h3>Rooftop Garden</h3>
                     <p>TAILLE : 35 - 40 m²</p>
                     <p>à partir de 765 € par nuit</p>
                     <p>Conçues pour des voyageurs modernes en quête de confort absolu, ces chambres font partie des plus spacieuses

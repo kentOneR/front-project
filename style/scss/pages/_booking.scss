@@ -161,10 +161,23 @@
         position: relative;
         overflow: hidden;
         width: 70%;
+        max-width: 900px;
         height: auto;
         margin: 0 auto;
+        transform: translateY(50%);
         img{
             width: 100%;
+        }
+        .swiper-pagination-bullet-active {
+            background: #fff;
+        }
+        .swiper-button-next{
+            background-image: url('../../img/asset/next-white.svg');
+            background-size: 40px 44px;
+        }
+        .swiper-button-prev{
+            background-image: url('../../img/asset/prev-white.svg');
+            background-size: 40px 44px;
         }
     }
 }
@@ -174,6 +187,11 @@
     .booking-step{
         top: 50px;
         width: 100%;
+    }
+    #overlay-thumbnail{
+        #thumbnail-carousel{
+            width: 80%;
+        }
     }
 }
 
@@ -194,6 +212,11 @@
         .search-block{
             width: 100%;
             max-width: 100%;
+        }
+    }
+    #overlay-thumbnail{
+        #thumbnail-carousel{
+            width: 90%;
         }
     }
 }
