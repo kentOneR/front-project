@@ -32,22 +32,53 @@
     if (window.location.href.indexOf('booking') > -1) {
 
         var thumbOverlayEl = document.getElementById('overlay-thumbnail'),
-            mainVisualElS = document.getElementsByClassName('main-visual');
+            mainVisualElS = document.getElementsByClassName('room-visual'),
+            thumbCarousel = document.getElementById('thumbnail-wrapper');
 
         for(let i=0; mainVisualElS[i]; i++) {
             mainVisualElS[i].addEventListener('click', function(e){
                 thumbOverlayEl.style.display = 'block';
                 var imageList = rooms[i].image.big;
-                console.log(imageList);
-
-                
+                for(let i=0; imageList[i]; i++){
+                    console.log(imageList[i])
+                    var img = imgCreate(imageList[i], 'alt')
+                    thumbCarousel.appendChild(img);
+                }
+                mySwiper.init();
             });
 
         }
 
         thumbOverlayEl.addEventListener('click', function () {
-            thumbOverlayEl.style.display = 'none';
+            // thumbOverlayEl.style.display = 'none';
         })
     }
+
+    // Création des images
+    function imgCreate(src, alt) {
+        var img = new Image();
+        img.src = src;
+        img.classList.add("swiper-slide");
+        if ( alt != null ) img.alt = alt;
+        return img;
+    }
+
+    // Configuration du Swiper
+    var mySwiper = new Swiper('#thumbnail-carousel', {
+        init: false,
+        direction: 'horizontal',
+        autoHeight: true,
+        loop: true,
+        speed: 1200,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        autoplay: {
+            delay: 6000
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        }
+    });
 
 })();

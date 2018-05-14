@@ -1,7 +1,6 @@
 <div id="scroll-top">
     <img src="img/asset/big-arrow-up.svg" alt="Flèche vers le haut">
 </div>
-<div id="overlay-thumbnail"></div>
 <footer>
     <form action="">
         <label for="newsletter-subscribe">Pour recevoir nos offres spéciales inscrivez-vous à la newsletter</label>

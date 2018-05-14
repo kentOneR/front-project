@@ -193,4 +193,23 @@
     </div>
 
 </main>
+<div id="overlay-thumbnail">
+    <!-- Slider main container -->
+    <div id="thumbnail-carousel">
+        <!-- Additional required wrapper -->
+        <div id="thumbnail-wrapper" class="swiper-wrapper">
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+
+    </div>
+</div>
 <?php include ('footer.php'); ?>
