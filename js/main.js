@@ -153,27 +153,16 @@
             buttonInvEl = document.getElementById('check-invite'),
             buttonNbrInvEl = document.getElementById('check-number-invite');
 
-        // window.addEventListener('click', function (e) {
-        //     e.preventDefault();
-        //     if (e.target == selectInvEl) {
-        //         InvDropdownEl.classList.toggle("visible");
-        //     } else if (e.target == InvDropdownEl || e.target == buttonInvEl) {
-        //         InvDropdownEl.classList.add("visible");
-        //     }
-        //     else {
-        //         InvDropdownEl.classList.remove("visible");
-        //     }
-        // });
-
-        selectInvEl.addEventListener('click', function () {
-            InvDropdownEl.classList.toggle("visible");
+        document.addEventListener('click', function (e) {
+            if (e.target === selectInvEl) {
+                InvDropdownEl.classList.toggle("visible");
+            } else if (e.target !== InvDropdownEl && !InvDropdownEl.contains(e.target)) {
+                InvDropdownEl.classList.remove("visible");
+            }
         });
 
-        buttonInvEl.addEventListener('click', function () {
-            InvDropdownEl.classList.remove("visible");
-        });
-
-        buttonNbrInvEl.addEventListener('click', function () {
+        buttonInvEl.addEventListener('click', function(e){
+            e.preventDefault();
             InvDropdownEl.classList.remove("visible");
         });
 
