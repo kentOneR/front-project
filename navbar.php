@@ -32,6 +32,12 @@
                 </a>
             </div>
         </div>
+        <div class="shopping-cart">
+            <a href="shoppin-cart.php">
+            <i class="fa fa-shopping-bag"></i>
+            <span class="hide-small-desktop">Mon panier</span>
+            </a>
+        </div>
         <div id="navbar-burger">
             <div class="burger-bar bar1"></div>
             <div class="burger-bar bar2"></div>
