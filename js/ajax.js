@@ -75,9 +75,10 @@
         for (let i = 0; mainVisualEls[i]; i++) {
             mainVisualEls[i].addEventListener('click', function (e) {
                 thumbOverlayEl.style.display = 'block';
-                var imageList = rooms[i].image.big;
+                var roomTitle = rooms[i].title,
+                    imageList = rooms[i].image.big;
                 for (let i = 0; imageList[i]; i++) {
-                    var img = imgCreate(imageList[i], 'alt')
+                    var img = imgCreate(imageList[i], roomTitle)
                     thumbCarousel.appendChild(img);
                 }
                 initThumbSwiper();

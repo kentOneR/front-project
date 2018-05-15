@@ -78,23 +78,23 @@
             <div class="room-detail">
                 <div class="room-visual">
                     <div class="main-visual">
-                        <img src="img/hotel/room/big/room-1.jpg" alt="Intérieur chambre Luxury in Advance">
+                        <img src="img/hotel/room/0-luxury/01-luxury.jpg" alt="Intérieur chambre Luxury in Advance">
                     </div>
                     <div class="all-thumbnail">
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="" data-room="escape">
+                            <img src="img/hotel/room/0-luxury/min/02-luxury-min.jpg" alt="Chambre Luxury">
                         </div>
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="" data-room="escape">
+                            <img src="img/hotel/room/0-luxury/min/03-luxury-min.jpg" alt="Chambre Luxury">
                         </div>
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="" data-room="escape">
+                            <img src="img/hotel/room/0-luxury/min/04-luxury-min.jpg" alt="Chambre Luxury">
                         </div>
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="" data-room="escape">
+                            <img src="img/hotel/room/0-luxury/min/05-luxury-min.jpg" alt="Chambre Luxury">
                         </div>
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="" data-room="escape">
+                            <img src="img/hotel/room/0-luxury/min/06-luxury-min.jpg" alt="Chambre Luxury">
                         </div>
                     </div>
                 </div>
@@ -116,29 +116,29 @@
             <div class="room-detail">
                 <div class="room-visual">
                     <div class="main-visual">
-                        <img src="img/hotel/room/big/room-2.jpg" alt="Terrasse chambre Rooftop Garden">
+                        <img src="img/hotel/room/1-royale/01-royale.jpg" alt="Chambre Suite Royale">
                     </div>
                     <div class="all-thumbnail">
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="">
+                            <img src="img/hotel/room/1-royale/min/02-royale-min.jpg" alt="Chambre Suite Royale">
                         </div>
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="">
+                            <img src="img/hotel/room/1-royale/min/03-royale-min.jpg" alt="Chambre Suite Royale">
                         </div>
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="">
+                            <img src="img/hotel/room/1-royale/min/04-royale-min.jpg" alt="Chambre Suite Royale">
                         </div>
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="">
+                            <img src="img/hotel/room/1-royale/min/05-royale-min.jpg" alt="Chambre Suite Royale">
                         </div>
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="">
+                            <img src="img/hotel/room/1-royale/min/06-royale-min.jpg" alt="Chambre Suite Royale">
                         </div>
                     </div>
                 </div>
                 <div class="room-content">
-                    <h4>CHAMBRE : CONFORT</h4>
-                    <h3>Escape Suite</h3>
+                    <h4>CHAMBRE : Suite</h4>
+                    <h3>Suite Royale</h3>
                     <p>TAILLE : 35 - 40 m²</p>
                     <p>à partir de 765 € par nuit</p>
                     <p>Conçues pour des voyageurs modernes en quête de confort absolu, ces chambres font partie des plus spacieuses
@@ -154,23 +154,23 @@
             <div class="room-detail">
                 <div class="room-visual">
                     <div class="main-visual">
-                        <img src="img/hotel/room/2-rooftop/06-rooftop.jpg" alt="Terrasse chambre Rooftop Garden">
+                        <img src="img/hotel/room/2-rooftop/01-rooftop.jpg" alt="Terrasse chambre Rooftop Garden">
                     </div>
                     <div class="all-thumbnail">
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="">
+                            <img src="img/hotel/room/2-rooftop/min/02-rooftop-min.jpg" alt="Chambre Rooftop">
                         </div>
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="">
+                            <img src="img/hotel/room/2-rooftop/min/03-rooftop-min.jpg" alt="Chambre Rooftop">
                         </div>
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="">
+                            <img src="img/hotel/room/2-rooftop/min/04-rooftop-min.jpg" alt="Chambre Rooftop">
                         </div>
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="">
+                            <img src="img/hotel/room/2-rooftop/min/05-rooftop-min.jpg" alt="Chambre Rooftop">
                         </div>
                         <div class="room-thumbnail">
-                            <img src="http://via.placeholder.com/100x70" alt="">
+                            <img src="img/hotel/room/2-rooftop/min/06-rooftop-min.jpg" alt="Chambre Rooftop">
                         </div>
                     </div>
                 </div>
