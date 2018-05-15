@@ -14,6 +14,10 @@ nav.side-navbar{
     .logo{
         img{
             max-width: 130px;
+            transition: all .3s ease-in;
+            &:hover{
+                transform: scale(1.05);
+            }
         }
     }
     ul{
@@ -51,10 +55,11 @@ nav.side-navbar{
         padding: 0 25px;
         background-color: $gold;
         text-align: center;
+        transition: all .3s ease-in;
         a{
             color: #fff;
             i{
-                font-size: 25px;
+                font-size: 22px;
                 line-height: 50px;
             }
             span{
