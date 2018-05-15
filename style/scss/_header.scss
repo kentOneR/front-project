@@ -11,10 +11,18 @@ header{
     background-attachment: fixed;
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
     background-size: cover; /* version standardisée */
-        img{
+        .header-container{
             position: absolute;
             top:  calc(50% - 35px);
             left: calc(50% - 125px);
+            text-align: center;
+            color: #fff;
+            .five-stars{
+                margin-top: 15px;
+                i{
+                    margin: 0 5px;
+                }
+            }
         }
     }
 }
