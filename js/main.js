@@ -14,6 +14,31 @@
         navlistEl.classList.toggle("visible");
     });
 
+    var navbarEl = document.getElementsByClassName('side-navbar')[0],
+        winWidth = window.innerWidth;
+
+    window.addEventListener('resize', function (e) {
+        winWidth = window.innerWidth;
+        showNav();
+    });
+
+    showNav();
+
+    function showNav() {
+        if (winWidth > 768) {
+            navbarEl.style.top = "0";
+        } else {
+            var previous = window.scrollY;
+            window.addEventListener('scroll', function () {
+                if (window.scrollY < previous && winWidth <= 768) {
+                    navbarEl.style.top = "0";
+                } else if (window.scrollY > previous && winWidth <= 768) {
+                    navbarEl.style.top = "-50px";
+                }
+                previous = window.scrollY;
+            });
+        }
+    }
 
     /*------------------------------------*\     
     NAVBAR ACTIVE LINK
@@ -161,7 +186,7 @@
             }
         });
 
-        buttonInvEl.addEventListener('click', function(e){
+        buttonInvEl.addEventListener('click', function (e) {
             e.preventDefault();
             InvDropdownEl.classList.remove("visible");
         });
