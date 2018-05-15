@@ -26,16 +26,21 @@
 
     function showNav() {
         if (winWidth > 768) {
-            navbarEl.style.top = "0";
+            navbarEl.classList.remove('nav-fade-top');
+            navbarEl.classList.remove('nav-fade-down');
         } else {
             var previous = window.scrollY;
             window.addEventListener('scroll', function () {
-                if (window.scrollY < previous && winWidth <= 768) {
-                    navbarEl.style.top = "0";
-                } else if (window.scrollY > previous && winWidth <= 768) {
-                    navbarEl.style.top = "-50px";
+                if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+                    if (window.scrollY < previous && winWidth <= 768) {
+                        navbarEl.classList.remove('nav-fade-top');
+                        navbarEl.classList.add('nav-fade-down');
+                    } else if (window.scrollY > previous && winWidth <= 768) {
+                        navbarEl.classList.remove('nav-fade-down');
+                        navbarEl.classList.add('nav-fade-top');
+                    }
+                    previous = window.scrollY;
                 }
-                previous = window.scrollY;
             });
         }
     }

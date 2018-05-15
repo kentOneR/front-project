@@ -137,6 +137,16 @@ animation: fade-out .6s;
     animation: slide-up .6s normal ease-in;
 }
 
+@keyframes move-up-50 {
+  from {top: 0px;}
+  to {top: -50px;}
+}
+
+@keyframes move-down-50 {
+  from {top: -50px;}
+  to {top: 0px;}
+}
+
 @keyframes fade
 {
   0%   {opacity:1}

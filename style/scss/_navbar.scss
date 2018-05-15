@@ -195,7 +195,16 @@ nav.side-navbar{
             top: 0;
             left: 0;
         }
+        &.nav-fade-top{
+            animation: move-up-50 .4s normal ease-in;
+            top:-50px;
+        }
+        &.nav-fade-down{
+            animation: move-down-50 .4s normal ease-in;
+            top: 0px;
+        }
     }
 }
+
 
 
