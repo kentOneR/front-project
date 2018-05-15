@@ -34,8 +34,7 @@
         </div>
         <div class="shopping-cart">
             <a href="shoppin-cart.php">
-            <i class="fa fa-shopping-bag"></i>
-            <span class="hide-small-desktop">Mon panier</span>
+                <i class="fa fa-user"></i>
             </a>
         </div>
         <div id="navbar-burger">

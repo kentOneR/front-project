@@ -4,7 +4,7 @@ nav.side-navbar{
     top:0;
     left:0;
     height: 100%;
-    padding: 75px 25px 25px;
+    padding: 25px;
     background-color: #fff;
     @include border-shadow-left();
     z-index: 2000;
@@ -47,30 +47,24 @@ nav.side-navbar{
     .shopping-cart{
         position: absolute;
         cursor: pointer;
-        top: 0;
+        bottom: 0;
         right: 0;
         height: 50px;
-        width: 100%;
-        display: flex;
-        padding: 0 25px;
+        width: 50px;
         background-color: $gold;
         text-align: center;
         transition: all .3s ease-in;
         a{
+            width: 100%;
             color: #fff;
             i{
-                font-size: 22px;
+                font-size: 25px;
                 line-height: 50px;
-            }
-            span{
-                line-height: 50px;
-                margin-left: 10px;
             }
         }
         &:hover{
             background-color: #fff;
-            i,
-            span{
+            i{
                 color: $gold;
             }
         }
@@ -125,11 +119,6 @@ nav.side-navbar{
             right: 0;
             width: 50px;
             padding: 0;
-            justify-content: space-around;
-            text-align: center;
-            .hide-small-desktop{
-                display: none;
-            }
         }
     }
 }
