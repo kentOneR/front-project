@@ -70,6 +70,25 @@
         searchBarEl.classList.add('on-home');
     }
 
+    /*------------------------------------*\     
+    USER CONNEXION
+    \*------------------------------------*/
+
+    var connexionUserEl = document.getElementsByClassName('connexion-user--button')[0],
+        connexionOverlayEl = document.getElementsByClassName('overlay-connexion')[0],
+        connexionContainerEl = document.getElementsByClassName('connexion-container')[0];
+
+    connexionUserEl.addEventListener('click', function(){
+        connexionOverlayEl.style.display = 'block';
+    });
+
+    connexionOverlayEl.addEventListener('click', function(e){
+        if (e.target !== connexionContainerEl && !connexionContainerEl.contains(e.target)) {
+            connexionOverlayEl.style.display = 'none';
+        } 
+    });
+
+
 
     /*------------------------------------*\     
     HOME SWIPER

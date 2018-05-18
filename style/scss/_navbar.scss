@@ -44,7 +44,7 @@ nav.side-navbar{
             }
         }
     }
-    .shopping-cart{
+    .connexion-user--button{
         position: absolute;
         cursor: pointer;
         bottom: 0;
@@ -54,14 +54,11 @@ nav.side-navbar{
         background-color: $gold;
         text-align: center;
         transition: all .3s ease-in;
-        a{
-            width: 100%;
-            color: #fff;
+        color: #fff;
             i{
                 font-size: 25px;
                 line-height: 50px;
             }
-        }
         &:hover{
             background-color: #fff;
             i{
@@ -114,7 +111,7 @@ nav.side-navbar{
                 }
             }
         }
-        .shopping-cart{
+        .connexion-user--button{
             top: 0;
             right: 0;
             width: 50px;
@@ -191,7 +188,7 @@ nav.side-navbar{
                 }
             }
         }
-        .shopping-cart{
+        .connexion-user--button{
             top: 0;
             left: 0;
         }
