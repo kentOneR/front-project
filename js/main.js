@@ -64,10 +64,40 @@
     \*------------------------------------*/
 
     var searchBarEl = document.querySelector('#search-bar');
-    var regIndex = /front\-project\/$|index/;
+    var regIndex = /front\-project\/$|index|#/;
     var checkIfIndex = window.location.href.match(regIndex);
     if (checkIfIndex) {
         searchBarEl.classList.add('on-home');
+    }
+
+        /*------------------------------------*\     
+    SEARCH-BAR DROPDOWN
+    \*------------------------------------*/
+
+    if (document.getElementById('search-bar') !== null) {
+        var selectContainerInvEl = document.getElementById('select-invite'),
+            selectInvEl = document.getElementById('who-invite'),
+            InvDropdownEl = document.getElementById('dropdown-invite'),
+            buttonInvEl = document.getElementById('check-invite'),
+            buttonNbrInvEl = document.getElementById('check-number-invite');
+
+        document.addEventListener('click', function (e) {
+            if (e.target === selectInvEl) {
+                InvDropdownEl.classList.toggle("visible");
+            } else if (e.target !== InvDropdownEl && !InvDropdownEl.contains(e.target)) {
+                InvDropdownEl.classList.remove("visible");
+            }
+        });
+
+        buttonInvEl.addEventListener('click', function (e) {
+            e.preventDefault();
+            InvDropdownEl.classList.remove("visible");
+        });
+
+        buttonNbrInvEl.addEventListener('click', function(e){
+            e.preventDefault();
+        });
+
     }
 
     /*------------------------------------*\     
@@ -189,33 +219,6 @@
             customMonths: ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Jui', 'Jui', 'Aou', 'Sep', 'Oct', 'Nov', 'Dec'],
             customDays: ['D', 'L', 'M', 'M', 'J', 'V', 'S']
         });
-
-
-    /*------------------------------------*\     
-    SEARCH-BAR DROPDOWN
-    \*------------------------------------*/
-
-    if (document.getElementById('search-bar') !== null) {
-        var selectContainerInvEl = document.getElementById('select-invite'),
-            selectInvEl = document.getElementById('who-invite'),
-            InvDropdownEl = document.getElementById('dropdown-invite'),
-            buttonInvEl = document.getElementById('check-invite'),
-            buttonNbrInvEl = document.getElementById('check-number-invite');
-
-        document.addEventListener('click', function (e) {
-            if (e.target === selectInvEl) {
-                InvDropdownEl.classList.toggle("visible");
-            } else if (e.target !== InvDropdownEl && !InvDropdownEl.contains(e.target)) {
-                InvDropdownEl.classList.remove("visible");
-            }
-        });
-
-        buttonInvEl.addEventListener('click', function (e) {
-            e.preventDefault();
-            InvDropdownEl.classList.remove("visible");
-        });
-
-    }
 
     /*------------------------------------*\     
     FADE-IN EFFECT

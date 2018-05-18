@@ -57,13 +57,16 @@
                 </label>
                 <input type="password" placeholder="Mot de passe" name="psw" required>
 
-                <button type="submit">Login</button>
+                <button type="submit">Se connecter</button>
             </div>
 
             <div class="container">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot
-                    <a href="#">password?</a>
+                <button type="button" class="cancelbtn">Annuler</button>
+                <span class="psw">
+                    <a href="#">Mot de passe oublié?</a>
+                </span>
+                <span class="psw">
+                    <a href="#">Créer un compte</a>
                 </span>
             </div>
         </form>
