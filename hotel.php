@@ -9,7 +9,7 @@
                 <br>unique et d'exception</h1>
             <p>Situé au cœur de Paris, le
                 <strong>Parimis Hôtel</strong> se distingue par sa décoration intérieure et
-                <stron>sa cuisine renommé</stron> signé par un grand chef. Notre hôtel est
+                <strong>sa cuisine renommé</strong> signé par un grand chef. Notre hôtel est
                 <strong>la quinctessence du luxe et de l'élégance</strong>. Vous apprécierez de flâner à deux pas des Champs-Élysées,de
                 prolonger votre promenade à pied jusqu’à l’
                 <strong>Arc de Triomphe</strong>. A deux pas de la Seine, vous effectuez quelques enjambées pour découvrir la

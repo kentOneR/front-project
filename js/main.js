@@ -63,7 +63,7 @@
     SEARCH BAR
     \*------------------------------------*/
 
-    var searchBarEl = document.querySelector('.search-bar');
+    var searchBarEl = document.querySelector('#search-bar');
     var regIndex = /front\-project\/$|index/;
     var checkIfIndex = window.location.href.match(regIndex);
     if (checkIfIndex) {

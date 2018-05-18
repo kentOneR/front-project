@@ -45,7 +45,7 @@
 </nav>
 <div class="overlay-connexion">
     <div class="connexion-container">
-        <form class="modal-content" action="">
+        <form class="modal-content" action="send-form.php">
             <div class="container">
                 <label for="uname">
                     <b>Email</b>
