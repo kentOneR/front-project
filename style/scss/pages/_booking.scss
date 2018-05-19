@@ -43,10 +43,11 @@
     }
     .search-block{
         display: inline-block;
-        form{
+        .form-container{
             display: flex;
             flex-flow: column nowrap;
             background-color: $grey-lighter;
+            max-width: 500px;
             input, 
             select{
                 cursor: pointer;
@@ -109,7 +110,6 @@
             }
             .room-content{
                 width: 40%;
-                height: 200px;
                 padding: 10px;
                 h3{
                     font-family: 'Playfair Display', serif;
@@ -124,6 +124,9 @@
                     font-size: 14px;
                     line-height: 16px;
                     margin:3px 0;
+                }
+                .star-ratings-sprite{
+                    margin: 10px 0;
                 }
             }
         }
