@@ -1,11 +1,13 @@
 (function() {
+  // First we check if you support touch, otherwise it's click:
+  var touchEvent = "ontouchstart" in window ? "touchstart" : "click";
   /*------------------------------------*\     
     ROOM THUMBNAIL OVERLAY
     \*------------------------------------*/
 
   // Exécute un appel AJAX GET
   // Prend en paramètres l'URL cible et la fonction callback appelée en cas de succès
-  "use strict";
+  ("use strict");
   function ajaxGet(url, callback) {
     var req = new XMLHttpRequest();
     req.open("GET", url);
@@ -34,7 +36,9 @@
     var img = new Image();
     img.src = src;
     img.classList.add("swiper-slide");
-    if (alt != null) {img.alt = alt;}
+    if (alt != null) {
+      img.alt = alt;
+    }
     return img;
   }
 
@@ -75,7 +79,7 @@
       closeThumbCarousel = document.getElementById("close-thumnail");
 
     for (let i = 0; mainVisualEls[i]; i++) {
-      mainVisualEls[i].addEventListener("click", function(e) {
+      mainVisualEls[i].addEventListener(touchEvent, function(e) {
         thumbOverlayEl.style.display = "block";
         var roomTitle = rooms[i].title,
           imageList = rooms[i].image.big;
@@ -87,7 +91,7 @@
       });
     }
 
-    thumbOverlayEl.addEventListener("click", function(e) {
+    thumbOverlayEl.addEventListener(touchEvent, function(e) {
       if (e.target === thumbOverlayEl || e.target === closeThumbCarousel) {
         thumbOverlayEl.style.display = "none";
         while (thumbCarousel.firstChild) {

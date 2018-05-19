@@ -3,6 +3,7 @@
     top: 0;
     padding: 10px 40px;
     min-height: 50px;
+    width: calc(100% - 200px);
     background-color: #000;
     color: #fff;
     z-index: 1000;
@@ -18,7 +19,7 @@
         select{
             cursor: pointer;
             height: 30px;
-            width: 90px;
+            width: 100px;
             margin: 0 10px;
         }
     }
@@ -73,6 +74,7 @@
 @media screen and (max-width: $desktop-small + px){
     #search-bar{
         top: 50px;
+        width: 100%;
     }
 }
 
@@ -82,6 +84,7 @@
         position: static;
         margin-top: 50px;
         &.on-home {
+            position: static;
             margin-top: 0;
         }
         form{
