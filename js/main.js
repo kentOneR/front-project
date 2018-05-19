@@ -31,6 +31,7 @@
         } else {
             var previous = window.scrollY;
             window.addEventListener('scroll', function () {
+                navlistEl.classList.remove("visible");
                 if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
                     if (window.scrollY < previous && winWidth <= 768) {
                         navbarEl.classList.remove('nav-fade-top');
@@ -70,7 +71,7 @@
         searchBarEl.classList.add('on-home');
     }
 
-        /*------------------------------------*\     
+    /*------------------------------------*\     
     SEARCH-BAR DROPDOWN
     \*------------------------------------*/
 

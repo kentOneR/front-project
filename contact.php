@@ -18,13 +18,13 @@
     </div>
     <section class="form-container">
         <form action="">
-            <label for="fname">Prénom</label>
+            <label for="form-fname">Prénom</label>
             <input type="text" id="form-fname" name="firstname" placeholder="Votre prénom...">
 
-            <label for="lname">Nom</label>
+            <label for="form-lname">Nom</label>
             <input type="text" id="form-lname" name="lastname" placeholder="Votre nom...">
 
-            <label for="object">Object</label>
+            <label for="form-object">Object</label>
             <select id="form-object" name="object">
                 <option value="info">Demande d'information</option>
                 <option value="futur-booking">Réservation à venir</option>
@@ -34,7 +34,7 @@
                 <option value="other">Autre</option>
             </select>
 
-            <label for="subject">Message</label>
+            <label for="form-subject">Message</label>
             <textarea id="form-subject" name="subject" placeholder="Votre message..."></textarea>
             <label for="form-file">Fichier joint (zip, pdf) :</label>
             <input id="form-file" type="file" name="form-file">
