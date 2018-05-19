@@ -50,13 +50,13 @@ table {
   * {
     box-sizing: border-box; }
 
-  /* passer body (et tous les ├®l├®ments de largeur fixe) en largeur automatique */
+  /* passer body (et tous les éléments de largeur fixe) en largeur automatique */
   body {
     width: auto;
     margin: 0;
     padding: 0; }
 
-  /* fixer une largeur maximale de 100% aux ├®l├®ments potentiellement probl├®matiques */
+  /* fixer une largeur maximale de 100% aux éléments potentiellement problématiques */
   img,
   table,
   td,
@@ -587,7 +587,7 @@ nav.side-navbar {
       font-size: 12px; }
       nav.side-navbar .select-lang div:last-child {
         border-left: 1px solid grey; }
-  nav.side-navbar .shopping-cart {
+  nav.side-navbar .connexion-user--button {
     position: absolute;
     cursor: pointer;
     bottom: 0;
@@ -596,16 +596,14 @@ nav.side-navbar {
     width: 50px;
     background-color: #A57B1B;
     text-align: center;
-    transition: all .3s ease-in; }
-    nav.side-navbar .shopping-cart a {
-      width: 100%;
-      color: #fff; }
-      nav.side-navbar .shopping-cart a i {
-        font-size: 25px;
-        line-height: 50px; }
-    nav.side-navbar .shopping-cart:hover {
+    transition: all .3s ease-in;
+    color: #fff; }
+    nav.side-navbar .connexion-user--button i {
+      font-size: 25px;
+      line-height: 50px; }
+    nav.side-navbar .connexion-user--button:hover {
       background-color: #fff; }
-      nav.side-navbar .shopping-cart:hover i {
+      nav.side-navbar .connexion-user--button:hover i {
         color: #A57B1B; }
 
 @media screen and (max-width: 1280px) {
@@ -643,7 +641,7 @@ nav.side-navbar {
         nav.side-navbar .select-lang div:last-child {
           border-top: 1px solid grey;
           border-left: none; }
-    nav.side-navbar .shopping-cart {
+    nav.side-navbar .connexion-user--button {
       top: 0;
       right: 0;
       width: 50px;
@@ -696,7 +694,7 @@ nav.side-navbar {
       margin: 10px 20px; }
       nav.side-navbar ul li a {
         font-size: 16px; }
-  nav.side-navbar .shopping-cart {
+  nav.side-navbar .connexion-user--button {
     top: 0;
     left: 0; }
   nav.side-navbar.nav-fade-top {
@@ -705,6 +703,74 @@ nav.side-navbar {
   nav.side-navbar.nav-fade-down {
     animation: move-down-50 .4s normal ease-in;
     top: 0px; } }
+.overlay-connexion {
+  display: none;
+  position: fixed;
+  cursor: pointer;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #231f20;
+  background: rgba(35, 31, 32, 0.8); }
+  .overlay-connexion .connexion-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 320px;
+    min-height: 200px;
+    border-radius: 3px;
+    padding: 20px;
+    padding-top: 40px;
+    transform: translate(-50%, -50%);
+    background: #ededed; }
+    .overlay-connexion .connexion-container form.modal-content {
+      display: flex;
+      flex-flow: column nowrap; }
+      .overlay-connexion .connexion-container form.modal-content .form-input {
+        margin-bottom: 10px;
+        display: flex;
+        flex-flow: row nowrap; }
+        .overlay-connexion .connexion-container form.modal-content .form-input label {
+          height: 30px;
+          width: 40px;
+          text-align: center;
+          background-color: #A57B1B; }
+          .overlay-connexion .connexion-container form.modal-content .form-input label i {
+            font-size: 20px;
+            line-height: 30px;
+            color: #fff; }
+        .overlay-connexion .connexion-container form.modal-content .form-input input {
+          height: 30px;
+          width: calc(100% - 40px);
+          border: none;
+          padding: 0 5px; }
+      .overlay-connexion .connexion-container form.modal-content .form-button {
+        padding-top: 10px; }
+        .overlay-connexion .connexion-container form.modal-content .form-button .button-normal {
+          width: 100%;
+          height: 30px;
+          cursor: pointer;
+          overflow: hidden;
+          text-decoration: none;
+          outline: none;
+          border: none;
+          user-select: none;
+          margin: 0;
+          margin-bottom: 10px;
+          background-color: #A57B1B;
+          color: #fff;
+          transition: all .3s ease-in-out; }
+          .overlay-connexion .connexion-container form.modal-content .form-button .button-normal:hover {
+            opacity: 0.8; }
+    .overlay-connexion .connexion-container .fa-close {
+      color: #A57B1B;
+      font-size: 24px;
+      position: absolute;
+      right: 10px;
+      top: 5px; }
+
 header {
   position: relative;
   margin: 0;
@@ -719,7 +785,7 @@ header {
     -webkit-background-size: cover;
     /* pour anciens Chrome et Safari */
     background-size: cover;
-    /* version standardis├®e */ }
+    /* version standardisée */ }
     header .parimis-head .header-container {
       position: absolute;
       top: calc(50% - 35px);
@@ -759,7 +825,7 @@ header {
   header .parimis-head {
     height: 480px;
     background-attachment: scroll; } }
-.search-bar {
+#search-bar {
   position: sticky;
   top: 0;
   padding: 10px 40px;
@@ -767,13 +833,13 @@ header {
   background-color: #000;
   color: #fff;
   z-index: 1000; }
-  .search-bar form {
+  #search-bar form {
     margin: auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end; }
-    .search-bar form input,
-    .search-bar form select {
+    #search-bar form input,
+    #search-bar form select {
       cursor: pointer;
       height: 30px;
       width: 90px;
@@ -821,24 +887,24 @@ header {
     display: block; }
 
 @media screen and (max-width: 1280px) {
-  .search-bar {
+  #search-bar {
     top: 50px; } }
 @media screen and (max-width: 768px) {
-  .search-bar {
+  #search-bar {
     padding: 10px 20px;
     position: static;
     margin-top: 50px; }
-    .search-bar.on-home {
+    #search-bar.on-home {
       margin-top: 0; }
-    .search-bar form {
+    #search-bar form {
       flex-flow: row wrap;
       justify-content: space-between; }
-      .search-bar form input,
-      .search-bar form select,
-      .search-bar form div#select-invite,
-      .search-bar form button#check-number-invite {
+      #search-bar form input,
+      #search-bar form select,
+      #search-bar form div#select-invite,
+      #search-bar form button#check-number-invite {
         margin: 10px; }
-      .search-bar form button#check-number-invite {
+      #search-bar form button#check-number-invite {
         width: 100%; } }
 .qs-datepicker {
   border-radius: 0; }
@@ -1419,10 +1485,6 @@ footer {
           -moz-transition: all 0.3s;
           -webkit-transition: all 0.3s;
           transition: all 0.3s; }
-        .search-container .room-result .room-detail .room-visual .main-visual:hover img {
-          -moz-transform: scale(1.05);
-          -webkit-transform: scale(1.05);
-          transform: scale(1.05); }
       .search-container .room-result .room-detail .room-visual .all-thumbnail {
         width: 100%;
         display: flex;
@@ -1437,13 +1499,7 @@ footer {
           .search-container .room-result .room-detail .room-visual .all-thumbnail .room-thumbnail img {
             cursor: pointer;
             width: 100%;
-            -moz-transition: all 0.3s;
-            -webkit-transition: all 0.3s;
             transition: all 0.3s; }
-          .search-container .room-result .room-detail .room-visual .all-thumbnail .room-thumbnail:hover img {
-            -moz-transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            transform: scale(1.1); }
     .search-container .room-result .room-detail .room-content {
       width: 40%;
       height: 200px;
@@ -1489,6 +1545,12 @@ footer {
     #overlay-thumbnail #thumbnail-carousel .swiper-button-prev {
       background-image: url("../../img/asset/prev-white.svg");
       background-size: 40px 44px; }
+  #overlay-thumbnail .fa-close {
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    right: 40px;
+    top: 70px; }
 
 @media screen and (max-width: 1280px) {
   .booking-step {
@@ -1497,6 +1559,17 @@ footer {
 
   #overlay-thumbnail #thumbnail-carousel {
     width: 80%; } }
+@media screen and (max-width: 768px) {
+  .search-container {
+    margin-top: 100px; }
+    .search-container .search-block {
+      width: 100%;
+      max-width: 100%; }
+      .search-container .search-block .form-container {
+        display: flex;
+        flex-flow: row wrap; }
+        .search-container .search-block .form-container .form-row {
+          width: calc(50% - 20px); } }
 @media screen and (max-width: 768px) {
   .booking-step {
     position: relative; }
@@ -1508,9 +1581,32 @@ footer {
     .search-container .search-block {
       width: 100%;
       max-width: 100%; }
+      .search-container .search-block .form-container .form-row {
+        width: calc(100% - 20px);
+        flex-flow: row wrap; }
+      .search-container .search-block .form-container #select-invite span {
+        display: block;
+        width: 100%; }
+      .search-container .search-block .form-container #select-invite .invite-wrapper {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between; }
+    .search-container .room-result .room-detail {
+      flex-flow: column nowrap;
+      margin-bottom: 20px; }
+      .search-container .room-result .room-detail .room-visual,
+      .search-container .room-result .room-detail .room-content {
+        width: 100%;
+        height: auto; }
 
   #overlay-thumbnail #thumbnail-carousel {
-    width: 90%; } }
+    width: 90%; }
+  #overlay-thumbnail .fa-close {
+    font-size: 20px;
+    color: #fff;
+    right: 20px;
+    top: 60px; } }
 #loader {
   width: 100%;
   height: 100vh;
