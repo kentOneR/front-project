@@ -25,7 +25,7 @@
 <main>
     <div class="content-container search-container">
         <h1>Réservez la chambre de vos rêves</h1>
-        <aside class="search-block col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+        <aside class="search-block">
             <form class="form-container" action="search-room.php">
                 <div class="form-row">
                     <label for="arrival-date">Date d'arrivée :</label>
@@ -38,7 +38,7 @@
                 <div id="select-invite" class="form-row">
                     <span>Qui participe au séjour :</span>
                     <div class="invite-wrapper">
-                        <div>
+                        <div class="select-adult">
                             <span>Adulte (+12 ans)</span>
                             <select>
                                 <option value="1" selected>1</option>
@@ -47,7 +47,7 @@
                                 <option value="4">4</option>
                             </select>
                         </div>
-                        <div>
+                        <div class="select-child">
                             <span>Enfant</span>
                             <select>
                                 <option value="1" selected>0</option>
@@ -74,7 +74,7 @@
                 </button>
             </form>
         </aside>
-        <section class="room-result col-md-12 col-xl-9">
+        <section class="room-result">
             <div class="room-detail">
                 <div class="room-visual">
                     <div class="main-visual">
