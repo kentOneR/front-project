@@ -45,29 +45,30 @@
 </nav>
 <div class="overlay-connexion">
     <div class="connexion-container">
+        <i id="close-user-login" class="fa fa-close"></i>
         <form class="modal-content" action="send-form.php">
-            <div class="container">
+            <div class="form-input">
                 <label for="uname">
-                    <b>Email</b>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
                 </label>
                 <input type="email" placeholder="Email" name="uname" required>
-
+            </div>
+            <div class="form-input">
                 <label for="psw">
-                    <b>Mot de passe</b>
+                    <i class="fa fa-lock" aria-hidden="true"></i>
                 </label>
                 <input type="password" placeholder="Mot de passe" name="psw" required>
-
-                <button type="submit">Se connecter</button>
             </div>
-
-            <div class="container">
-                <button type="button" class="cancelbtn">Annuler</button>
-                <span class="psw">
-                    <a href="#">Mot de passe oublié?</a>
-                </span>
-                <span class="psw">
-                    <a href="#">Créer un compte</a>
-                </span>
+            <div class="form-button">
+                <button class="button-normal" type="submit" data-hover="SE CONNECTER" data-active="SE CONNECTER">
+                    <span>SE CONNECTER</span>
+                </button>
+                <button class="button-normal" type="button" class="cancelbtn" data-hover="CREER UN COMPTE" data-active="CREER UN COMPTE">
+                    <span>CREER UN COMPTE</span>
+                </button>
+            </div>
+            <div class="form-link">
+                <a href="#">Mot de passe oublié?</a>
             </div>
         </form>
     </div>
