@@ -194,6 +194,7 @@
 
 </main>
 <div id="overlay-thumbnail">
+    <i id="close-thumnail" class="fa fa-close"></i>
     <!-- Slider main container -->
     <div id="thumbnail-carousel">
         <!-- Additional required wrapper -->
