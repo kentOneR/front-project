@@ -87,13 +87,6 @@
                         -webkit-transition: all 0.3s;
                         transition: all 0.3s;
                     }
-                    &:hover{
-                        img{
-                            -moz-transform: scale(1.05);
-                            -webkit-transform: scale(1.05);
-                            transform: scale(1.05);
-                        }
-                    }
                 }
                 .all-thumbnail{
                     width: 100%;
@@ -109,16 +102,7 @@
                         img{
                             cursor: pointer;
                             width: 100%;
-                            -moz-transition: all 0.3s;
-                            -webkit-transition: all 0.3s;
                             transition: all 0.3s;
-                        }
-                        &:hover{
-                            img{
-                                -moz-transform: scale(1.1);
-                                -webkit-transform: scale(1.1);
-                                transform: scale(1.1);
-                            }
                         }
                     }
                 }
@@ -180,6 +164,13 @@
             background-size: 40px 44px;
         }
     }
+    .fa-close{
+        position: absolute;
+        font-size: 30px;
+        color: #fff;
+        right: 40px;
+        top: 70px;
+    }
 }
 
 
@@ -191,6 +182,23 @@
     #overlay-thumbnail{
         #thumbnail-carousel{
             width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-portrait + px) {
+    .search-container {
+        margin-top: 100px;
+        .search-block{
+            width: 100%;
+            max-width: 100%;
+            .form-container{
+                display: flex;
+                flex-flow: row wrap;
+                .form-row{
+                    width: calc(50% - 20px);
+                }
+            }
         }
     }
 }
@@ -212,11 +220,46 @@
         .search-block{
             width: 100%;
             max-width: 100%;
+            .form-container{
+                .form-row{
+                    width: calc(100% - 20px);
+                    flex-flow: row wrap;
+                }
+                #select-invite{
+                    span{
+                        display: block;
+                        width: 100%;
+                    }
+                    .invite-wrapper{
+                        width: 100%;
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+        .room-result{
+            .room-detail{
+                flex-flow: column nowrap;
+                margin-bottom: 20px;
+                .room-visual,
+                .room-content{
+                    width: 100%;
+                    height: auto;
+                }
+            }
         }
     }
     #overlay-thumbnail{
         #thumbnail-carousel{
             width: 90%;
+        }
+        .fa-close{
+            font-size: 20px;
+            color: #fff;
+            right: 20px;
+            top: 60px;
         }
     }
 }

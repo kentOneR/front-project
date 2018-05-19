@@ -1,4 +1,4 @@
-.search-bar{
+#search-bar{
     position: sticky;
     top: 0;
     padding: 10px 40px;
@@ -68,13 +68,13 @@
 }
 
 @media screen and (max-width: $desktop-small + px){
-    .search-bar{
+    #search-bar{
         top: 50px;
     }
 }
 
 @media screen and (max-width: $tablet-portrait + px){
-    .search-bar{
+    #search-bar{
         padding: 10px 20px;
         position: static;
         margin-top: 50px;

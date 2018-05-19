@@ -63,12 +63,64 @@
     SEARCH BAR
     \*------------------------------------*/
 
-    var searchBarEl = document.querySelector('.search-bar');
-    var regIndex = /front\-project\/$|index/;
+    var searchBarEl = document.querySelector('#search-bar');
+    var regIndex = /front\-project\/$|index|#/;
     var checkIfIndex = window.location.href.match(regIndex);
     if (checkIfIndex) {
         searchBarEl.classList.add('on-home');
     }
+
+        /*------------------------------------*\     
+    SEARCH-BAR DROPDOWN
+    \*------------------------------------*/
+
+    if (document.getElementById('search-bar') !== null) {
+        var selectContainerInvEl = document.getElementById('select-invite'),
+            selectInvEl = document.getElementById('who-invite'),
+            InvDropdownEl = document.getElementById('dropdown-invite'),
+            buttonInvEl = document.getElementById('check-invite'),
+            buttonNbrInvEl = document.getElementById('check-number-invite');
+
+        document.addEventListener('click', function (e) {
+            if (e.target === selectInvEl) {
+                InvDropdownEl.classList.toggle("visible");
+            } else if (e.target !== InvDropdownEl && !InvDropdownEl.contains(e.target)) {
+                InvDropdownEl.classList.remove("visible");
+            }
+        });
+
+        buttonInvEl.addEventListener('click', function (e) {
+            e.preventDefault();
+            InvDropdownEl.classList.remove("visible");
+        });
+
+        buttonNbrInvEl.addEventListener('click', function(e){
+            e.preventDefault();
+        });
+
+    }
+
+    /*------------------------------------*\     
+    USER CONNEXION
+    \*------------------------------------*/
+
+    var connexionUserEl = document.getElementsByClassName('connexion-user--button')[0],
+        connexionOverlayEl = document.getElementsByClassName('overlay-connexion')[0],
+        closeOverlayEl = document.getElementById('close-user-login'),
+        connexionContainerEl = document.getElementsByClassName('connexion-container')[0];
+
+    connexionUserEl.addEventListener('click', function(){
+        connexionOverlayEl.style.display = 'block';
+    });
+
+    connexionOverlayEl.addEventListener('click', function(e){
+        if (e.target !== connexionContainerEl && !connexionContainerEl.contains(e.target)) {
+            connexionOverlayEl.style.display = 'none';
+        } else if (e.target == closeOverlayEl) {
+            connexionOverlayEl.style.display = 'none';
+        }
+    });
+
 
 
     /*------------------------------------*\     
@@ -170,33 +222,6 @@
             customMonths: ['Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Jui', 'Jui', 'Aou', 'Sep', 'Oct', 'Nov', 'Dec'],
             customDays: ['D', 'L', 'M', 'M', 'J', 'V', 'S']
         });
-
-
-    /*------------------------------------*\     
-    SEARCH-BAR DROPDOWN
-    \*------------------------------------*/
-
-    if (document.getElementById('search-bar') !== null) {
-        var selectContainerInvEl = document.getElementById('select-invite'),
-            selectInvEl = document.getElementById('who-invite'),
-            InvDropdownEl = document.getElementById('dropdown-invite'),
-            buttonInvEl = document.getElementById('check-invite'),
-            buttonNbrInvEl = document.getElementById('check-number-invite');
-
-        document.addEventListener('click', function (e) {
-            if (e.target === selectInvEl) {
-                InvDropdownEl.classList.toggle("visible");
-            } else if (e.target !== InvDropdownEl && !InvDropdownEl.contains(e.target)) {
-                InvDropdownEl.classList.remove("visible");
-            }
-        });
-
-        buttonInvEl.addEventListener('click', function (e) {
-            e.preventDefault();
-            InvDropdownEl.classList.remove("visible");
-        });
-
-    }
 
     /*------------------------------------*\     
     FADE-IN EFFECT

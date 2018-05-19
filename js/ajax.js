@@ -6,6 +6,7 @@
 
     // Exécute un appel AJAX GET
     // Prend en paramètres l'URL cible et la fonction callback appelée en cas de succès
+    'use strict';
     function ajaxGet(url, callback) {
         var req = new XMLHttpRequest();
         req.open("GET", url);
@@ -70,7 +71,8 @@
         var thumbOverlayEl = document.getElementById('overlay-thumbnail'),
             mainVisualEls = document.getElementsByClassName('room-visual'),
             thumbCarousel = document.getElementById('thumbnail-wrapper'),
-            thumbCarouselPagination = document.getElementsByClassName('swiper-pagination');
+            thumbCarouselPagination = document.getElementsByClassName('swiper-pagination'),
+            closeThumbCarousel = document.getElementById('close-thumnail');
 
         for (let i = 0; mainVisualEls[i]; i++) {
             mainVisualEls[i].addEventListener('click', function (e) {
@@ -87,7 +89,7 @@
         }
 
         thumbOverlayEl.addEventListener('click', function (e) {
-            if (e.target === thumbOverlayEl) {
+            if (e.target === thumbOverlayEl || e.target === closeThumbCarousel) {
                 thumbOverlayEl.style.display = 'none';
                 while (thumbCarousel.firstChild) {
                     thumbCarousel.removeChild(thumbCarousel.firstChild);

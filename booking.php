@@ -25,8 +25,8 @@
 <main>
     <div class="content-container search-container">
         <h1>Réservez la chambre de vos rêves</h1>
-        <aside class="search-block col-xl-3">
-            <form action="">
+        <aside class="search-block col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+            <form class="form-container" action="search-room.php">
                 <div class="form-row">
                     <label for="arrival-date">Date d'arrivée :</label>
                     <input id="first-date-picker" name="arrival-date" type="text">
@@ -36,8 +36,8 @@
                     <input id="second-date-picker" name="depature-date" type="text">
                 </div>
                 <div id="select-invite" class="form-row">
-                    <span>Qui participe au séjour &#8595;</span>
-                    <div>
+                    <span>Qui participe au séjour :</span>
+                    <div class="invite-wrapper">
                         <div>
                             <span>Adulte (+12 ans)</span>
                             <select>
@@ -74,7 +74,7 @@
                 </button>
             </form>
         </aside>
-        <section class="room-result col-xl-9">
+        <section class="room-result col-md-12 col-xl-9">
             <div class="room-detail">
                 <div class="room-visual">
                     <div class="main-visual">
@@ -194,6 +194,7 @@
 
 </main>
 <div id="overlay-thumbnail">
+    <i id="close-thumnail" class="fa fa-close"></i>
     <!-- Slider main container -->
     <div id="thumbnail-carousel">
         <!-- Additional required wrapper -->

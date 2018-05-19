@@ -1,5 +1,5 @@
-        <section id="search-bar" class="search-bar">
-            <form action="">
+        <section id="search-bar">
+            <form action="check-room.php">
                 <input id="first-date-picker" type="text">
                 <input id="second-date-picker" type="text">
                 <select>

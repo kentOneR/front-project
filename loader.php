@@ -9,7 +9,10 @@
         document.addEventListener("DOMContentLoaded", function(event) {
             setTimeout(() => {
                 loaderEl.classList.add('slide-up-element');
-                setTimeout(function(){ loaderEl.classList.add('hidden'); }, 500);
+                setTimeout(function(){ 
+                    loaderEl.classList.add('hidden'); 
+                    loaderEl.classList.remove('visible'); 
+                }, 500);
             }, 200);
         });
     </script>

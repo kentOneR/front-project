@@ -1,0 +1,78 @@
+.overlay-connexion{
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(35, 31,	32);
+    background: rgba(35, 31, 32, 0.8);
+    .connexion-container{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 320px;
+        min-height: 200px;
+        border-radius: 3px;
+        padding: 20px;
+        padding-top: 40px;
+        transform: translate(-50%, -50%);
+        background: $grey-lighter;
+        form.modal-content{
+            display: flex;
+            flex-flow: column nowrap;
+            .form-input{
+                margin-bottom: 10px;
+                display: flex;
+                flex-flow: row nowrap;
+                label{
+                    height: 30px;
+                    width: 40px;
+                    text-align: center;
+                    background-color: $gold;
+                    i{
+                        font-size: 20px;
+                        line-height: 30px;
+                        color: #fff;
+                    }
+                }
+                input{
+                    height: 30px;
+                    width: calc(100% - 40px);
+                    border: none;
+                    padding:0 5px;
+                }
+            }
+            .form-button{
+                padding-top: 10px;
+                .button-normal{
+                    width: 100%;
+                    height: 30px;
+                    cursor: pointer;
+                    overflow: hidden;
+                    text-decoration: none;
+                    outline: none;
+                    border: none;
+                    user-select: none;
+                    margin: 0;
+                    margin-bottom: 10px;
+                    background-color: $gold;
+                    color: #fff;
+                    transition: all .3s ease-in-out;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+        .fa-close {
+            color: $gold;
+            font-size: 24px;
+            position: absolute;
+            right: 10px;
+            top: 5px;
+        }
+    }
+}

@@ -2,9 +2,9 @@
     <img src="img/asset/big-arrow-up.svg" alt="Flèche vers le haut">
 </div>
 <footer>
-    <form action="">
+    <form action="newsletter-subscribe.php">
         <label for="newsletter-subscribe">Pour recevoir nos offres spéciales inscrivez-vous à la newsletter</label>
-        <input type="email" name="newsletter-subscribe" placeholder="Votre adresse mail">
+        <input type="email" name="newsletter-subscribe" id="newsletter-subscribe" placeholder="Votre adresse mail">
         <button class="button-visual" type="submit" data-hover="JE M'INSCRIS" data-active="JE M'INSCRIS">
             <span>INSCRIVEZ-VOUS</span>
         </button>
