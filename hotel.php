@@ -129,7 +129,7 @@
             </div>
         </div>
     </section>
-    <section class="parimis-contact">
+    <div class="parimis-contact">
         <div class="parimis-adress">
             <img src="img/asset/logo/parimis-logo-white.svg" alt="Logo Parimis Blanc">
             <p>1, avenue Montaigne
@@ -140,7 +140,7 @@
             </p>
         </div>
         <div id="map"></div>
-    </section>
+    </div>
     <section class="form-container">
         <form action="">
             <label for="fname">Prénom</label>

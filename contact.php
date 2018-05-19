@@ -3,7 +3,7 @@
 <?php include ('search-bar.php'); ?>
 <main>
 
-    <section class="parimis-contact">
+    <div class="parimis-contact">
         <h1>Nous contacter</h1>
         <div class="parimis-adress">
             <img src="img/asset/logo/parimis-logo-white.svg" alt="Logo Parimis Blanc">
@@ -15,7 +15,7 @@
             </p>
         </div>
         <div id="map"></div>
-    </section>
+    </div>
     <section class="form-container">
         <form action="">
             <label for="fname">Prénom</label>

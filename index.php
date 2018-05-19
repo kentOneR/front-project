@@ -192,7 +192,7 @@
                     </p>
                 </div>
             </section>
-            <section class="parimis-contact">
+            <div class="parimis-contact">
                 <div id="map"></div>
                 <div class="parimis-adress">
                     <img src="img/asset/logo/parimis-logo-white.svg" alt="Logo Parimis Blanc">
@@ -203,6 +203,6 @@
                         <a href="mailto:contact@hotel-parimis.com">contact@hotel-parimis.com</a>
                     </p>
                 </div>
-            </section>
+            </div>
         </main>
         <?php include ('footer-map.php'); ?>

@@ -48,22 +48,22 @@
         <i id="close-user-login" class="fa fa-close"></i>
         <form class="modal-content" action="send-form.php">
             <div class="form-input">
-                <label for="uname">
+                <label for="user-name">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                 </label>
-                <input type="email" placeholder="Email" name="uname" required>
+                <input type="email" placeholder="Email" name="user-name" id="user-name" required>
             </div>
             <div class="form-input">
-                <label for="psw">
+                <label for="user-psw">
                     <i class="fa fa-lock" aria-hidden="true"></i>
                 </label>
-                <input type="password" placeholder="Mot de passe" name="psw" required>
+                <input type="password" placeholder="Mot de passe" name="user-psw" id="user-psw"  required>
             </div>
             <div class="form-button">
                 <button class="button-normal" type="submit" data-hover="SE CONNECTER" data-active="SE CONNECTER">
                     <span>SE CONNECTER</span>
                 </button>
-                <button class="button-normal" type="button" class="cancelbtn" data-hover="CREER UN COMPTE" data-active="CREER UN COMPTE">
+                <button class="button-normal" type="button" data-hover="CREER UN COMPTE" data-active="CREER UN COMPTE">
                     <span>CREER UN COMPTE</span>
                 </button>
             </div>
