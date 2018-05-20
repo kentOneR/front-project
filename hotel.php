@@ -52,25 +52,25 @@
         <div class="all-video-container">
             <div class="col-sm-12 col-lg-6 col-xl-3">
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_mtIU2l6Nqk" frameborder="0" allow="autoplay; encrypted-media"
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_mtIU2l6Nqk" frameborder="0" allow="encrypted-media"
                         allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-sm-12 col-lg-6 col-xl-3">
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pyvqW6X4peI" frameborder="0" allow="autoplay; encrypted-media"
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pyvqW6X4peI" frameborder="0" allow="encrypted-media"
                         allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-sm-12 col-lg-6 col-xl-3">
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wYHbv4Fpx_I" frameborder="0" allow="autoplay; encrypted-media"
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wYHbv4Fpx_I" frameborder="0" allow="encrypted-media"
                         allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-sm-12 col-lg-6 col-xl-3">
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rAOXN35S93s" frameborder="0" allow="autoplay; encrypted-media"
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rAOXN35S93s" frameborder="0" allow="encrypted-media"
                         allowfullscreen></iframe>
                 </div>
             </div>
@@ -129,7 +129,7 @@
             </div>
         </div>
     </section>
-    <section class="parimis-contact">
+    <div class="parimis-contact">
         <div class="parimis-adress">
             <img src="img/asset/logo/parimis-logo-white.svg" alt="Logo Parimis Blanc">
             <p>1, avenue Montaigne
@@ -140,7 +140,7 @@
             </p>
         </div>
         <div id="map"></div>
-    </section>
+    </div>
     <section class="form-container">
         <form action="">
             <label for="fname">Prénom</label>

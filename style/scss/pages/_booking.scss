@@ -43,7 +43,9 @@
     }
     .search-block{
         display: inline-block;
-        form{
+        width: 320px;
+        margin-bottom: 30px;
+        .form-container{
             display: flex;
             flex-flow: column nowrap;
             background-color: $grey-lighter;
@@ -62,11 +64,29 @@
                 justify-content: space-between;
                 margin: 10px;
             }
+            .button-visual{
+                width: 200px;
+                align-self: flex-end;
+            }
+            #select-invite{
+                flex-flow: column nowrap;
+                span{
+                    display: block;
+                    width: 100%;
+                }
+                .invite-wrapper{
+                    width: 100%;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                }
+            }
         }
     }
     .room-result{
+        width: calc(100% - 320px);
         .room-detail{
-            margin:0 0 10px;
+            margin:0 0 20px 20px;
             display: flex;
             flex-flow: row wrap;
             background-color: $grey-lighter;
@@ -109,7 +129,6 @@
             }
             .room-content{
                 width: 40%;
-                height: 200px;
                 padding: 10px;
                 h3{
                     font-family: 'Playfair Display', serif;
@@ -124,6 +143,9 @@
                     font-size: 14px;
                     line-height: 16px;
                     margin:3px 0;
+                }
+                .star-ratings-sprite{
+                    margin: 10px 0;
                 }
             }
         }
@@ -179,6 +201,17 @@
         top: 50px;
         width: 100%;
     }
+    .search-container{
+        .search-block {
+            width: 500px;
+        }
+        .room-result{
+            width: 100%;
+            .room-detail{
+                margin: 0 0 20px;
+            }
+        }
+    }
     #overlay-thumbnail{
         #thumbnail-carousel{
             width: 80%;
@@ -186,22 +219,6 @@
     }
 }
 
-@media screen and (max-width: $tablet-portrait + px) {
-    .search-container {
-        margin-top: 100px;
-        .search-block{
-            width: 100%;
-            max-width: 100%;
-            .form-container{
-                display: flex;
-                flex-flow: row wrap;
-                .form-row{
-                    width: calc(50% - 20px);
-                }
-            }
-        }
-    }
-}
 
 @media screen and (max-width: $tablet-portrait + px) {
 

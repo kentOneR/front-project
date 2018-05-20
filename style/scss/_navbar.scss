@@ -99,15 +99,18 @@ nav.side-navbar{
         .select-lang{
             flex-flow: column nowrap;
             right: 60px;
+            height: 50px;
             top: 18px;
-            bottom: 15px;
+            top: 0;
             width: 26px;
             div{
-                line-height: 17px;
                 padding: 0 5px;
                 &:last-child{
                     border-top: 1px solid grey;
                     border-left: none;
+                }
+                a{
+                    line-height: 25px;
                 }
             }
         }

@@ -1,4 +1,4 @@
-        <section id="search-bar">
+        <div id="search-bar">
             <form action="check-room.php">
                 <input id="first-date-picker" type="text">
                 <input id="second-date-picker" type="text">
@@ -39,4 +39,4 @@
                     <span>RÉSERVER</span>
                 </button>
             </form>
-        </section>
+    </div>

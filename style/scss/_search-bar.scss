@@ -1,11 +1,15 @@
 #search-bar{
-    position: sticky;
+    position: fixed;
     top: 0;
     padding: 10px 40px;
     min-height: 50px;
+    width: 100%;
     background-color: #000;
     color: #fff;
     z-index: 1000;
+    &.on-home{
+        position: sticky;
+    }
     form{
         margin: auto;
         display: flex;
@@ -15,7 +19,7 @@
         select{
             cursor: pointer;
             height: 30px;
-            width: 90px;
+            width: 100px;
             margin: 0 10px;
         }
     }
@@ -36,7 +40,7 @@
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         padding: 12px 16px;
-        z-index: 1;
+        z-index: 10;
         &.visible{
             display: flex;
             flex-flow: column nowrap;
@@ -70,6 +74,7 @@
 @media screen and (max-width: $desktop-small + px){
     #search-bar{
         top: 50px;
+        width: 100%;
     }
 }
 
@@ -79,6 +84,7 @@
         position: static;
         margin-top: 50px;
         &.on-home {
+            position: static;
             margin-top: 0;
         }
         form{

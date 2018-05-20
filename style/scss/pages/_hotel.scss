@@ -87,15 +87,20 @@
         background: #000;
         color: #fff;
         input[type=text], select, textarea {
-            width: 100%; /* Full width */
-            padding: 9px; /* Some padding */  
-            border: 1px solid #ccc; /* Gray border */
-            margin-top: 6px; /* Add a top margin */
-            margin-bottom: 16px; /* Bottom margin */
-            resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+            height: 45px;
+            line-height: 45px;
+            padding: 0 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
         }
-        select{
-            min-height: 35px;
+        #form-object{
+            height: 45px;
+            option{
+                width: 100%;
+                resize: horizontal;
+            }
         }
         textarea{
             height: 150px;
