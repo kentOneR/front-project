@@ -1,6 +1,6 @@
 (function() {
   // First we check if you support touch, otherwise it's click:
-  var touchEvent = "ontouchstart" in window ? "touchstart" : "click";
+  var touchEvent = "click";
   /*------------------------------------*\     
     ROOM THUMBNAIL OVERLAY
     \*------------------------------------*/

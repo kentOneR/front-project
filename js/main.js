@@ -1,6 +1,6 @@
 (function() {
   // First we check if you support touch, otherwise it's click:
-  var touchEvent = "ontouchstart" in window ? "touchstart" : "click";
+  var touchEvent = "click";
   // NAVBAR BURGER //
 
   var burgerEls = document.getElementsByClassName("burger-bar"),
@@ -70,7 +70,7 @@
     \*------------------------------------*/
 
   var searchBarEl = document.querySelector("#search-bar");
-  var regIndex = /front\-project\/$|index|#/;
+  var regIndex = /parimis\-project\/$|index|#/;
   var checkIfIndex = window.location.href.match(regIndex);
   if (checkIfIndex) {
     searchBarEl.classList.add("on-home");
