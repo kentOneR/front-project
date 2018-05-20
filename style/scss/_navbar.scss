@@ -14,10 +14,6 @@ nav.side-navbar{
     .logo{
         img{
             max-width: 130px;
-            transition: all .3s ease-in;
-            &:hover{
-                transform: scale(1.05);
-            }
         }
     }
     ul{
