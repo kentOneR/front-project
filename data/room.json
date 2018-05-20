@@ -1,5 +1,5 @@
 {
-    "0": {
+    "luxury": {
         "title": "Luxury In Adavance",
         "category": "suite",
         "size": "35 - 40m²",
@@ -15,7 +15,7 @@
             ]
         }
     },
-    "1": {
+    "royale": {
         "title": "Suite Royale",
         "category": "suite",
         "size": "30 - 35m²",
@@ -31,7 +31,7 @@
             ]
         }
     },
-    "2": {
+    "rooftop": {
         "title": "Rooftop Garden",
         "category": "deluxe",
         "size": "30 - 35m²",

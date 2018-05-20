@@ -78,16 +78,17 @@
       ),
       closeThumbCarousel = document.getElementById("close-thumnail");
 
-    for (let i = 0; mainVisualEls[i]; i++) {
+    for (var i = 0; mainVisualEls[i]; i++) {
       mainVisualEls[i].addEventListener(touchEvent, function(e) {
-        thumbOverlayEl.style.display = "block";
-        var roomTitle = rooms[i].title,
-          imageList = rooms[i].image.big;
-        for (let i = 0; imageList[i]; i++) {
-          var img = imgCreate(imageList[i], roomTitle);
+        roomName = e.target.getAttribute("room-name");
+        roomTitle = rooms[roomName].title,
+        imageList = rooms[roomName].image.big;
+        for (var y = 0; imageList[y]; y++) {
+          var img = imgCreate(imageList[y], roomTitle);
           thumbCarousel.appendChild(img);
         }
         initThumbSwiper();
+        thumbOverlayEl.style.display = "block";
       });
     }
 
