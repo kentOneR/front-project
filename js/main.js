@@ -398,7 +398,7 @@
     animateScroll();
   }
 
-  scrollTopEl.addEventListener(touchEvent, () => {
+  scrollTopEl.addEventListener(touchEvent, function() {
     scrollTo(0, 800);
   });
 })();

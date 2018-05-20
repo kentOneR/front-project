@@ -65,12 +65,11 @@
                 }
             }
             .swiper-nav{
+                position: relative;
                 width: 100px;
                 .swiper-button-next{
-                    position: relative;
-                    right: 0;
-                    margin-left: 20px;
                     background-image: url('../../img/asset/arrowR.svg');
+                    transform: translateX(30px);
                 }
             }
         }
@@ -79,9 +78,12 @@
 
 @media screen and (max-width: $tablet-portrait + px) {
     .special-offer {
-        padding: 40px 20px;
+        padding: 40px 30px 20px 10px;
         .offer-container{
             width: 100%;
+            .rooms-available{
+                width: 100%;
+            }
         }
     }
 }
