@@ -238,8 +238,12 @@
             width: 100%;
             max-width: 100%;
             .form-container{
+                width: 100%;
                 .form-row{
                     flex-flow: row wrap;
+                }
+                .button-visual{
+                    width: calc(100% - 20px);
                 }
                 #select-invite{
                     span{
