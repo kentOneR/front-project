@@ -215,7 +215,6 @@
   var mySwiper = new Swiper(".swiper-room-container", {
     init: false,
     direction: "horizontal",
-    autoHeight: true,
     loop: true,
     speed: 1200,
     slidesPerView: 1,

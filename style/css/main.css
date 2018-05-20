@@ -1232,11 +1232,11 @@ footer {
         width: 100%;
         height: auto; }
         .room-offer .room-swiper .swiper-room-container .swiper-wrapper .swiper-slide figure img {
-          width: 70%;
+          width: 65%;
           height: auto;
           float: left; }
         .room-offer .room-swiper .swiper-room-container .swiper-wrapper .swiper-slide figure figcaption {
-          width: 30%;
+          width: 35%;
           padding: 20px;
           height: auto;
           float: left; }
@@ -1335,11 +1335,11 @@ footer {
 
 @media screen and (max-width: 1024px) {
   .room-offer .room-swiper .swiper-room-container .swiper-wrapper .swiper-slide figure img {
-    width: 62%;
+    width: 60%;
     height: auto;
     float: left; }
   .room-offer .room-swiper .swiper-room-container .swiper-wrapper .swiper-slide figure figcaption {
-    width: 38%;
+    width: 40%;
     padding: 20px;
     height: auto;
     float: left; }

@@ -24,7 +24,7 @@
         </div>
     </section>
     <section class="room-offer">
-        <h1>Nos offres spéciales</h1>
+        <h1>Nos gammes</h1>
         <div id="room-swiper" class="room-swiper">
             <div class="swiper-room-container">
                 <div class="swiper-wrapper">
@@ -34,13 +34,8 @@
                             <img src="img/hotel/room/big/room-1.jpg" alt="Intérieur chambre Luxury in Advance">
                             <figcaption class="book-room">
                                 <div class="book-name">
-                                    <h4>CHAMBRE : SUITE</h4>
-                                    <h3>Luxury In Advance</h3>
-                                    <p>Conçues pour des voyageurs modernes en quête de confort absolu, ces chambres font partie
-                                        des plus spacieuses de Paris et sont équipées d’une technologie de pointe.</p>
-                                </div>
-                                <div class="booking">
-                                    <a class="underline--magical" href="#">RÉSERVER</a>
+                                    <h3>Suite</h3>
+                                    <p>D'une superficie de 55 à 68m², les chambres Suite sont disponibles jusqu'à 6 personnes. Luxueuses, spacieuses et dôtées d'une terrasse surplombant la ville, elles disposent de 2 grands lits king-size, de 2 lits jumeaux, d'un espace séjour, d'un grand dressing et de deux salles de bain avec douche et baignoire à l'italienne.</p>
                                 </div>
                             </figcaption>
                         </figure>
@@ -50,13 +45,8 @@
                             <img src="img/hotel/room/big/room-2.jpg" alt="Terrasse chambre Rooftop Garden">
                             <figcaption class="book-room">
                                 <div class="book-name">
-                                    <h4>CHAMBRE : DELUXE</h4>
-                                    <h3>Rooftop Garden</h3>
-                                    <p>Conçues pour des voyageurs modernes en quête de confort absolu, ces chambres font partie
-                                        des plus spacieuses de Paris et sont équipées d’une technologie de pointe.</p>
-                                </div>
-                                <div class="booking">
-                                    <a class="underline--magical" href="#">RÉSERVER</a>
+                                    <h3>Deluxe</h3>
+                                    <p>D'une superficie de 47 à 55m², les chambres Deluxe offrent un espace ouvert et spacieux pour 4 personnes. Mariant chic parisien et art de vivre à la française, elles sont dôtées d'un grand lit king-size, de 2 lits jumeaux (ou lit king-size), d'un coin dressing, d'un espace bureau et d'une salle de bain avec douche et baignoire à l'italienne.</p>
                                 </div>
                             </figcaption>
                         </figure>
@@ -66,13 +56,19 @@
                             <img src="img/hotel/room/big/room-3.jpg" alt="Intérieur chambre Suite Royale">
                             <figcaption class="book-room">
                                 <div class="book-name">
-                                    <h4>CHAMBRE : SUITE</h4>
-                                    <h3>Suite Royale</h3>
-                                    <p>Conçues pour des voyageurs modernes en quête de confort absolu, ces chambres font partie
-                                        des plus spacieuses de Paris et sont équipées d’une technologie de pointe.</p>
+                                    <h3>Confort</h3>
+                                    <p>D'une superficie de 39 à 47m², les chambres Confort prônent l'art de vivre à la française. Conçus pour 2 personnes, elles arborent un décor épuré et contemporain, et disposent d'un grand lit king-size avec couettes et oreillers en duvet d'oie, d'un coin dressing, d'un espace bureau et d'une salle de bain avec douche à l'italienne.</p>
                                 </div>
-                                <div class="booking">
-                                    <a class="underline--magical" href="#">RÉSERVER</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure>
+                            <img src="img/hotel/room/big/room-3.jpg" alt="Intérieur chambre Suite Royale">
+                            <figcaption class="book-room">
+                                <div class="book-name">
+                                    <h3>Classique</h3>
+                                    <p>D'une superficie de 32 à 39m², les chambres Classique ont été conçus pour 2 personnes dans un style résolument parisien. Dôtées d'un grand lit king-size, d'une salle de bain avec douche à l'italienne, elles offrent un espace optimal délicieusement meublé et décoré et garantissent le luxe en toute simplicité.</p>
                                 </div>
                             </figcaption>
                         </figure>
