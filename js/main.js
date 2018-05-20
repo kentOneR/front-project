@@ -1,4 +1,4 @@
-(function () {
+(function() {
   // First we check if you support touch, otherwise it's click:
   var touchEvent = "ontouchstart" in window ? "touchstart" : "click";
   // NAVBAR BURGER //
@@ -19,7 +19,7 @@
   var navbarEl = document.getElementsByClassName("side-navbar")[0],
     winWidth = window.innerWidth;
 
-  window.addEventListener("resize", function (e) {
+  window.addEventListener("resize", function(e) {
     winWidth = window.innerWidth;
     showNav();
   });
@@ -32,7 +32,7 @@
       navbarEl.classList.remove("nav-fade-down");
     } else {
       var previous = window.scrollY;
-      window.addEventListener("scroll", function () {
+      window.addEventListener("scroll", function() {
         navlistEl.classList.remove("visible");
         if (
           document.body.scrollTop > 100 ||
@@ -76,13 +76,13 @@
     searchBarEl.classList.add("on-home");
   }
 
-    function showNav() {
+  function showNav() {
     if (winWidth > 768) {
       navbarEl.classList.remove("nav-fade-top");
       navbarEl.classList.remove("nav-fade-down");
     } else {
       var previous = window.scrollY;
-      window.addEventListener("scroll", function () {
+      window.addEventListener("scroll", function() {
         navlistEl.classList.remove("visible");
         if (
           document.body.scrollTop > 100 ||
@@ -112,7 +112,7 @@
       buttonInvEl = document.getElementById("check-invite"),
       buttonNbrInvEl = document.getElementById("check-number-invite");
 
-    document.addEventListener(touchEvent, function (e) {
+    document.addEventListener(touchEvent, function(e) {
       if (e.target === selectInvEl) {
         InvDropdownEl.classList.toggle("visible");
       } else if (
@@ -123,12 +123,12 @@
       }
     });
 
-    buttonInvEl.addEventListener(touchEvent, function (e) {
+    buttonInvEl.addEventListener(touchEvent, function(e) {
       e.preventDefault();
       InvDropdownEl.classList.remove("visible");
     });
 
-    buttonNbrInvEl.addEventListener(touchEvent, function (e) {
+    buttonNbrInvEl.addEventListener(touchEvent, function(e) {
       e.preventDefault();
     });
   }
@@ -148,11 +148,11 @@
       "connexion-container"
     )[0];
 
-  connexionUserEl.addEventListener(touchEvent, function () {
+  connexionUserEl.addEventListener(touchEvent, function() {
     connexionOverlayEl.style.display = "block";
   });
 
-  connexionOverlayEl.addEventListener(touchEvent, function (e) {
+  connexionOverlayEl.addEventListener(touchEvent, function(e) {
     if (
       e.target !== connexionContainerEl &&
       !connexionContainerEl.contains(e.target)
@@ -237,12 +237,19 @@
     DATE PICKER from https://github.com/qodesmith/datepicker
     \*------------------------------------*/
   var today = new Date(),
-    tomorrow = new Date(new Date().setDate(new Date().getDate() + 1));
+    tomorrow = new Date(new Date().setDate(new Date().getDate() + 1)),
+    position = "bl";
+
+  if (window.location.href.indexOf("booking") > -1) {
+    position = "br";
+  }
+
   const firstPicker = datepicker("#first-date-picker", {
+    position: position,
     dateSelected: today,
     minDate: today,
     startDay: 1,
-    formatter: function (el, date) {
+    formatter: function(el, date) {
       el.value = date.toLocaleDateString("fr-FR");
     },
     customMonths: [
@@ -267,7 +274,7 @@
     dateSelected: tomorrow,
     minDate: tomorrow,
     startDay: 1,
-    formatter: function (el, date) {
+    formatter: function(el, date) {
       el.value = date.toLocaleDateString("fr-FR");
     },
     customMonths: [
@@ -331,7 +338,7 @@
     var filter = document.querySelectorAll(".filters > li");
     var roomList = document.querySelectorAll(".room-list");
     for (var i = 0; filter[i]; i++) {
-      filter[i].addEventListener(touchEvent, function (e) {
+      filter[i].addEventListener(touchEvent, function(e) {
         var roomType = e.target.getAttribute("data-roomtype");
         for (var i = 0; roomList[i]; i++) {
           var roomListType = roomList[i].getAttribute("data-roomtype");
@@ -364,7 +371,7 @@
       scrollTopEl.style.display = "none";
     }
   }
-  window.onscroll = function () {
+  window.onscroll = function() {
     showScrollTop();
   };
 
@@ -377,13 +384,13 @@
       // b = start value
       // c = change in value
       // d = duration
-      easeInOutQuad = function (t, b, c, d) {
+      easeInOutQuad = function(t, b, c, d) {
         t /= d / 2;
         if (t < 1) return c / 2 * t * t + b;
         t--;
         return -c / 2 * (t * (t - 2) - 1) + b;
       },
-      animateScroll = function () {
+      animateScroll = function() {
         var currentDate = +new Date();
         var currentTime = currentDate - startDate;
         element.scrollTop = parseInt(
@@ -415,31 +422,39 @@ function initMap() {
       lng: 2.301569
     },
     zoom: 16,
-    styles: [{
+    styles: [
+      {
         featureType: "administrative",
         elementType: "labels.text.fill",
-        stylers: [{
-          color: "#444444"
-        }]
+        stylers: [
+          {
+            color: "#444444"
+          }
+        ]
       },
       {
         featureType: "landscape",
         elementType: "all",
-        stylers: [{
-          color: "#9faeb3"
-        }]
+        stylers: [
+          {
+            color: "#9faeb3"
+          }
+        ]
       },
       {
         featureType: "poi",
         elementType: "all",
-        stylers: [{
-          visibility: "off"
-        }]
+        stylers: [
+          {
+            visibility: "off"
+          }
+        ]
       },
       {
         featureType: "road",
         elementType: "all",
-        stylers: [{
+        stylers: [
+          {
             saturation: -100
           },
           {
@@ -450,28 +465,35 @@ function initMap() {
       {
         featureType: "road.highway",
         elementType: "all",
-        stylers: [{
-          visibility: "simplified"
-        }]
+        stylers: [
+          {
+            visibility: "simplified"
+          }
+        ]
       },
       {
         featureType: "road.arterial",
         elementType: "labels.icon",
-        stylers: [{
-          visibility: "off"
-        }]
+        stylers: [
+          {
+            visibility: "off"
+          }
+        ]
       },
       {
         featureType: "transit",
         elementType: "all",
-        stylers: [{
-          visibility: "off"
-        }]
+        stylers: [
+          {
+            visibility: "off"
+          }
+        ]
       },
       {
         featureType: "water",
         elementType: "all",
-        stylers: [{
+        stylers: [
+          {
             color: "#46bcec"
           },
           {
