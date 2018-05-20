@@ -1144,6 +1144,7 @@ footer {
   .parimis-event .all-video-container {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     margin-top: 40px; }
 
 .content-container {

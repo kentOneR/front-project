@@ -50,25 +50,25 @@
         <h1>Des évènements majestueux
             <br>à l'ambiance contemporaine</h1>
         <div class="all-video-container">
-            <div class="col-sm-12 col-lg-6 col-xl-3">
+            <div class="col-xs-12 col-sm-6 col-lg-5 col-xl-3">
                 <div class="video-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/_mtIU2l6Nqk" frameborder="0" allow="encrypted-media"
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="col-sm-12 col-lg-6 col-xl-3">
+            <div class="col-xs-12 col-sm-6 col-lg-5 col-xl-3">
                 <div class="video-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/pyvqW6X4peI" frameborder="0" allow="encrypted-media"
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="col-sm-12 col-lg-6 col-xl-3">
+            <div class="col-xs-12 col-sm-6 col-lg-5 col-xl-3">
                 <div class="video-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/wYHbv4Fpx_I" frameborder="0" allow="encrypted-media"
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="col-sm-12 col-lg-6 col-xl-3">
+            <div class="col-xs-12 col-sm-6 col-lg-5 col-xl-3">
                 <div class="video-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/rAOXN35S93s" frameborder="0" allow="encrypted-media"
                         allowfullscreen></iframe>

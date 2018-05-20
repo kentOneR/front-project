@@ -35,9 +35,6 @@
         <li class="footer-link">
             <a href="cgvente.php">Conditions Générales de Vente</a>
         </li>
-        <li class="footer-link">
-            <a href="#">Plan du site</a>
-        </li>
         <li>&#169; Parimis hôtel 2018 </li>
     </ul>
 </footer>
