@@ -144,8 +144,18 @@
                     line-height: 16px;
                     margin:3px 0;
                 }
-                .star-ratings-sprite{
+                .room-rating{
+                    display: flex;
                     margin: 10px 0;
+                    .star-ratings-sprite{
+                        margin-right: 8px;
+                    }
+                    a{
+                        line-height: 20px;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
                 }
             }
         }

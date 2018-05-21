@@ -35,8 +35,8 @@
       window.addEventListener("scroll", function() {
         navlistEl.classList.remove("visible");
         if (
-          document.body.scrollTop > 100 ||
-          document.documentElement.scrollTop > 100
+          document.body.scrollTop > 50 ||
+          document.documentElement.scrollTop > 50
         ) {
           if (window.scrollY < previous && winWidth <= 768) {
             navbarEl.classList.remove("nav-fade-top");

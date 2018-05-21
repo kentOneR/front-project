@@ -105,8 +105,11 @@
                     <p>à partir de 765 € par nuit</p>
                     <p>Conçues pour des voyageurs modernes en quête de confort absolu, ces chambres font partie des plus spacieuses
                         de Paris et sont équipées d’une technologie de pointe.</p>
-                    <div class="star-ratings-sprite">
-                        <span style="width:87%" class="star-ratings-sprite-rating"></span>
+                    <div class="room-rating">
+                        <div class="star-ratings-sprite">
+                            <span style="width:92%" class="star-ratings-sprite-rating"></span>
+                        </div>
+                        <a href="">(28 avis)</a>
                     </div>
                     <div class="booking">
                         <a class="underline--magical" href="#">RÉSERVER</a>
@@ -143,8 +146,11 @@
                     <p>à partir de 765 € par nuit</p>
                     <p>Conçues pour des voyageurs modernes en quête de confort absolu, ces chambres font partie des plus spacieuses
                         de Paris et sont équipées d’une technologie de pointe.</p>
-                    <div class="star-ratings-sprite">
-                        <span style="width:87%" class="star-ratings-sprite-rating"></span>
+                    <div class="room-rating">
+                        <div class="star-ratings-sprite">
+                            <span style="width:97%" class="star-ratings-sprite-rating"></span>
+                        </div>
+                        <a href="">(32 avis)</a>
                     </div>
                     <div class="booking">
                         <a class="underline--magical" href="#">RÉSERVER</a>
@@ -181,8 +187,11 @@
                     <p>à partir de 765 € par nuit</p>
                     <p>Conçues pour des voyageurs modernes en quête de confort absolu, ces chambres font partie des plus spacieuses
                         de Paris et sont équipées d’une technologie de pointe.</p>
-                    <div class="star-ratings-sprite">
-                        <span style="width:87%" class="star-ratings-sprite-rating"></span>
+                    <div class="room-rating">
+                        <div class="star-ratings-sprite">
+                            <span style="width:88%" class="star-ratings-sprite-rating"></span>
+                        </div>
+                        <a href="">(17 avis)</a>
                     </div>
                     <div class="booking">
                         <a class="underline--magical" href="#">RÉSERVER</a>
