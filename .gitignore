@@ -1,5 +1,2 @@
 # ignore files
 style/.sass-cache/*
-style/css/*
-style/css/main.css.map
-style/css/main.css

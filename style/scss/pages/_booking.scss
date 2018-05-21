@@ -205,14 +205,6 @@
     }
 }
 
-#overlay-thumbnail .fa-close {
-    position: absolute;
-    font-size: 30px;
-    color: #fff;
-    left: 40px;
-    top: 40px;
-}
-
 
 @media screen and (max-width: $desktop-small + px) {
     .booking-step{
@@ -235,6 +227,7 @@
             width: 80%;
         }
         .fa-close {
+            left: auto;
             right: 40px;
         }
     }
