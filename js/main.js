@@ -1,4 +1,4 @@
-(function() {
+(function () {
   // First we check if you support touch, otherwise it's click:
   var touchEvent = "click";
   // NAVBAR BURGER //
@@ -19,7 +19,7 @@
   var navbarEl = document.getElementsByClassName("side-navbar")[0],
     winWidth = window.innerWidth;
 
-  window.addEventListener("resize", function(e) {
+  window.addEventListener("resize", function (e) {
     winWidth = window.innerWidth;
     showNav();
   });
@@ -32,7 +32,7 @@
       navbarEl.classList.remove("nav-fade-down");
     } else {
       var previous = window.scrollY;
-      window.addEventListener("scroll", function() {
+      window.addEventListener("scroll", function () {
         navlistEl.classList.remove("visible");
         if (
           document.body.scrollTop > 50 ||
@@ -82,7 +82,7 @@
       navbarEl.classList.remove("nav-fade-down");
     } else {
       var previous = window.scrollY;
-      window.addEventListener("scroll", function() {
+      window.addEventListener("scroll", function () {
         navlistEl.classList.remove("visible");
         if (
           document.body.scrollTop > 100 ||
@@ -112,7 +112,7 @@
       buttonInvEl = document.getElementById("check-invite"),
       buttonNbrInvEl = document.getElementById("check-number-invite");
 
-    document.addEventListener(touchEvent, function(e) {
+    document.addEventListener(touchEvent, function (e) {
       if (e.target === selectInvEl) {
         InvDropdownEl.classList.toggle("visible");
       } else if (
@@ -123,12 +123,12 @@
       }
     });
 
-    buttonInvEl.addEventListener(touchEvent, function(e) {
+    buttonInvEl.addEventListener(touchEvent, function (e) {
       e.preventDefault();
       InvDropdownEl.classList.remove("visible");
     });
 
-    buttonNbrInvEl.addEventListener(touchEvent, function(e) {
+    buttonNbrInvEl.addEventListener(touchEvent, function (e) {
       e.preventDefault();
     });
   }
@@ -138,8 +138,8 @@
     \*------------------------------------*/
 
   var connexionUserEl = document.getElementsByClassName(
-      "connexion-user--button"
-    )[0],
+    "connexion-user--button"
+  )[0],
     connexionOverlayEl = document.getElementsByClassName(
       "overlay-connexion"
     )[0],
@@ -148,11 +148,11 @@
       "connexion-container"
     )[0];
 
-  connexionUserEl.addEventListener(touchEvent, function() {
+  connexionUserEl.addEventListener(touchEvent, function () {
     connexionOverlayEl.style.display = "block";
   });
 
-  connexionOverlayEl.addEventListener(touchEvent, function(e) {
+  connexionOverlayEl.addEventListener(touchEvent, function (e) {
     if (
       e.target !== connexionContainerEl &&
       !connexionContainerEl.contains(e.target)
@@ -248,7 +248,7 @@
     dateSelected: today,
     minDate: today,
     startDay: 1,
-    formatter: function(el, date) {
+    formatter: function (el, date) {
       el.value = date.toLocaleDateString("fr-FR");
     },
     customMonths: [
@@ -273,7 +273,7 @@
     dateSelected: tomorrow,
     minDate: tomorrow,
     startDay: 1,
-    formatter: function(el, date) {
+    formatter: function (el, date) {
       el.value = date.toLocaleDateString("fr-FR");
     },
     customMonths: [
@@ -337,7 +337,7 @@
     var filter = document.querySelectorAll(".filters > li");
     var roomList = document.querySelectorAll(".room-list");
     for (var i = 0; filter[i]; i++) {
-      filter[i].addEventListener(touchEvent, function(e) {
+      filter[i].addEventListener(touchEvent, function (e) {
         var roomType = e.target.getAttribute("data-roomtype");
         for (var i = 0; roomList[i]; i++) {
           var roomListType = roomList[i].getAttribute("data-roomtype");
@@ -370,7 +370,7 @@
       scrollTopEl.style.display = "none";
     }
   }
-  window.onscroll = function() {
+  window.onscroll = function () {
     showScrollTop();
   };
 
@@ -383,13 +383,13 @@
       // b = start value
       // c = change in value
       // d = duration
-      easeInOutQuad = function(t, b, c, d) {
+      easeInOutQuad = function (t, b, c, d) {
         t /= d / 2;
         if (t < 1) return c / 2 * t * t + b;
         t--;
         return -c / 2 * (t * (t - 2) - 1) + b;
       },
-      animateScroll = function() {
+      animateScroll = function () {
         var currentDate = +new Date();
         var currentTime = currentDate - startDate;
         element.scrollTop = parseInt(
@@ -404,9 +404,20 @@
     animateScroll();
   }
 
-  scrollTopEl.addEventListener(touchEvent, function() {
+  scrollTopEl.addEventListener(touchEvent, function () {
     scrollTo(0, 800);
   });
+
+
+  // IMPORT AJAX.JS
+  var regRoomOverlay = /parimis\-project\/$|booking|room-detail/,
+    checkIfRoom = window.location.href.match(regRoomOverlay),
+    jsEl = document.createElement("script");
+  if (checkIfRoom) {
+    jsEl.src = "js/ajax.js";
+    document.body.appendChild(jsEl);
+  }
+
 })();
 
 /*------------------------------------*\     

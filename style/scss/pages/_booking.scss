@@ -200,9 +200,17 @@
         position: absolute;
         font-size: 30px;
         color: #fff;
-        right: 40px;
+        left: 40px;
         top: 70px;
     }
+}
+
+#overlay-thumbnail .fa-close {
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    left: 40px;
+    top: 40px;
 }
 
 
