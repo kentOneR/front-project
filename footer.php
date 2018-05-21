@@ -4,7 +4,7 @@
 <footer>
     <form action="">
         <label for="newsletter-subscribe.php">Pour recevoir nos offres spéciales inscrivez-vous à la newsletter</label>
-        <input type="email" name="newsletter-subscribe" id="newsletter-subscribe" placeholder="Votre adresse mail">
+        <input type="email" name="newsletter-subscribe" id="newsletter-subscribe" placeholder="Votre adresse mail" required>
         <button class="button-visual" type="submit" data-hover="JE M'INSCRIS" data-active="JE M'INSCRIS">
             <span>INSCRIVEZ-VOUS</span>
         </button>

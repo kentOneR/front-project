@@ -232,6 +232,7 @@
     mySwiper.init();
   }
 
+
   /*------------------------------------*\     
     DATE PICKER from https://github.com/qodesmith/datepicker
     \*------------------------------------*/
@@ -418,7 +419,64 @@
     document.body.appendChild(jsEl);
   }
 
+  // ROOM DETAIL SWIPER
+  var roomDetailSwiper = new Swiper("#room-luxury-carousel", {
+    init: false,
+    direction: "horizontal",
+    loop: true,
+    speed: 1200,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    watchOverflow: true,
+    autoplay: {
+      delay: 6000
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
+
+  var roomListCatEls = document.getElementsByClassName('room-list-cat'),
+    roomListActiveEl = document.getElementsByClassName("room-list-cat active"),
+    roomDetailEls = document.getElementsByClassName('room-info-detail');
+
+  function addActiveClass(elements, target) {
+    for (var i = 0; elements[i]; i++) {
+      elements[i].addEventListener(touchEvent, function (e) {
+        target[0].classList.remove('active');
+        this.classList.add('active');
+        var targetAttribute = this.getAttribute('room-cat');
+        for (var a = 0; roomDetailEls[a]; a++) {
+          var roomCat = roomDetailEls[a].getAttribute('room-cat');
+          if (roomCat === targetAttribute) {
+            roomDetailEls[a].classList.add('active');
+          } else {
+            roomDetailEls[a].classList.remove('active');
+          }
+        }
+      });
+    }
+  }
+
+  if (document.getElementById("room-luxury-carousel") !== null) {
+    roomDetailSwiper.init();
+    addActiveClass(roomListCatEls, roomListActiveEl);
+  }
+
+  if (document.getElementById('check-number-invite') !== null){
+    document.getElementById('check-number-invite').addEventListener(touchEvent, function(e){
+      e.preventDefault();
+    })
+  }
+
 })();
+
+
 
 /*------------------------------------*\     
 Google Map API

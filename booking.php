@@ -100,7 +100,7 @@
                 </div>
                 <div class="room-content">
                     <h4>CHAMBRE : LUXE</h4>
-                    <h3>Luxury in Advance</h3>
+                    <a href="room-detail.php"><h3>Luxury in Advance</h3></a>
                     <p>TAILLE : 35 - 40 m²</p>
                     <p>à partir de 765 € par nuit</p>
                     <p>Conçues pour des voyageurs modernes en quête de confort absolu, ces chambres font partie des plus spacieuses
@@ -112,7 +112,7 @@
                         <a href="room-detail.php">(28 avis)</a>
                     </div>
                     <div class="booking">
-                        <a class="underline--magical" href="#">RÉSERVER</a>
+                        <a class="underline--magical" href="room-detail.php">RÉSERVER</a>
                     </div>
                 </div>
             </div>
@@ -141,7 +141,7 @@
                 </div>
                 <div class="room-content">
                     <h4>CHAMBRE : Suite</h4>
-                    <h3>Suite Royale</h3>
+                    <a href="room-detail.php"><h3>Suite Royale</h3></a>
                     <p>TAILLE : 35 - 40 m²</p>
                     <p>à partir de 765 € par nuit</p>
                     <p>Conçues pour des voyageurs modernes en quête de confort absolu, ces chambres font partie des plus spacieuses
@@ -153,7 +153,7 @@
                         <a href="room-detail.php">(32 avis)</a>
                     </div>
                     <div class="booking">
-                        <a class="underline--magical" href="#">RÉSERVER</a>
+                        <a class="underline--magical" href="room-detail.php">RÉSERVER</a>
                     </div>
                 </div>
             </div>
@@ -182,7 +182,7 @@
                 </div>
                 <div class="room-content">
                     <h4>CHAMBRE : DELUXE</h4>
-                    <h3>Rooftop Garden</h3>
+                    <a href="room-detail.php"><h3>Rooftop Garden</h3></a>
                     <p>TAILLE : 35 - 40 m²</p>
                     <p>à partir de 765 € par nuit</p>
                     <p>Conçues pour des voyageurs modernes en quête de confort absolu, ces chambres font partie des plus spacieuses
@@ -194,7 +194,7 @@
                         <a href="room-detail.php">(17 avis)</a>
                     </div>
                     <div class="booking">
-                        <a class="underline--magical" href="#">RÉSERVER</a>
+                        <a class="underline--magical" href="room-detail.php">RÉSERVER</a>
                     </div>
                 </div>
             </div>

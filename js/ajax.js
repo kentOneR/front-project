@@ -48,7 +48,6 @@
     thumbSwiper = new Swiper("#thumbnail-carousel", {
       init: false,
       direction: "horizontal",
-      autoHeight: true,
       loop: true,
       speed: 1200,
       slidesPerView: 1,

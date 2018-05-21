@@ -19,10 +19,13 @@
     <section class="form-container">
         <form action="">
             <label for="form-fname">Prénom</label>
-            <input type="text" id="form-fname" name="firstname" placeholder="Votre prénom...">
+            <input type="text" id="form-fname" name="firstname" placeholder="Votre prénom..." required>
 
             <label for="form-lname">Nom</label>
-            <input type="text" id="form-lname" name="lastname" placeholder="Votre nom...">
+            <input type="text" id="form-lname" name="lastname" placeholder="Votre nom..." required>
+
+            <label for="form-email">Email</label>
+            <input type="email" id="form-email" name="form-email" placeholder="Votre email..." required>
 
             <label for="form-object">Object</label>
             <select id="form-object" name="object">
@@ -35,7 +38,7 @@
             </select>
 
             <label for="form-subject">Message</label>
-            <textarea id="form-subject" name="subject" placeholder="Votre message..."></textarea>
+            <textarea id="form-subject" name="subject" placeholder="Votre message..." required></textarea>
             <label for="form-file">Fichier joint (zip, pdf) :</label>
             <input id="form-file" type="file" name="form-file">
 

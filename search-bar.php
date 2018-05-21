@@ -1,7 +1,7 @@
         <div id="search-bar">
             <form action="check-room.php">
-                <input id="first-date-picker" type="text">
-                <input id="second-date-picker" type="text">
+                <input id="first-date-picker" type="text" required>
+                <input id="second-date-picker" type="text" required>
                 <select>
                     <option value="classic">Classique</option>
                     <option value="confort">Confort</option>

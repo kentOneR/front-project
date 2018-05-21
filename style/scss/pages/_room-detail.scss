@@ -1,0 +1,100 @@
+.room-detail-container{
+    .room-wrapper{
+        .room-detail{
+            display: flex;
+            margin-bottom: 60px;
+            #room-luxury-carousel{
+                position: relative;
+                width: 60%;
+                overflow: hidden;
+                .swiper-wrapper{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .swiper-button-next {
+                    background-image: url(../../img/asset/next-white.svg);
+                    background-size: 40px 44px;
+                }
+                .swiper-button-prev {
+                    background-image: url(../../img/asset/prev-white.svg);
+                    background-size: 40px 44px;
+                }
+                .swiper-pagination-bullet-active {
+                    background: #fff;
+                }
+            }
+            .room-content{
+                width: 40%;
+                padding: 20px;
+                background-color: $grey-lighter;
+            }
+        }
+        .room-more-info{
+            .room-list-toggle{
+                display: flex;
+                li{
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    color: $gold;
+                    padding: 10px 20px;
+                    &.active{
+                        background-color: $gold;
+                        color: #fff;
+                    }
+                }
+            }
+            .room-info-detail{
+                border: 1px solid $gold;
+                padding: 20px;
+                display: none;
+                &.active{
+                    display: block;
+                }
+                img{
+                    width: 100%;
+                }
+                .review-wrapper{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $desktop-medium + px) {
+    .room-detail-container{
+        .room-wrapper{
+            .room-detail{
+                #room-luxury-carousel{
+                    width: 65%;
+                }
+                .room-content{
+                    width: 35%;
+                    padding: 20px;
+                    background-color: $grey-lighter;
+                    transform: translateY(-10px);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-landscape + px) {
+    .room-detail-container{
+        .room-wrapper{
+            .room-detail{
+                flex-flow: column nowrap;
+                #room-luxury-carousel{
+                    width: 100%;
+                }
+                .room-content{
+                    width: 100%;
+                    padding: 20px;
+                    background-color: $grey-lighter;
+                }
+            }
+        }
+    }
+}

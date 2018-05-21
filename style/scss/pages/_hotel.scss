@@ -87,7 +87,10 @@
         margin: 0 auto;
         background: #000;
         color: #fff;
-        input[type=text], select, textarea {
+        input[type=text], 
+        input[type=email], 
+        select, 
+        textarea {
             height: 45px;
             line-height: 45px;
             padding: 0 10px;

@@ -35,6 +35,37 @@
     }
 
 }
+.room-content{
+    width: 40%;
+    padding: 10px;
+    h3{
+        font-family: 'Playfair Display', serif;
+        font-size: 18px;
+        padding: 7px 0;
+    }
+    h4{
+        font-size: 14px;
+        color: $gold;
+    }
+    p{
+        font-size: 14px;
+        line-height: 16px;
+        margin:3px 0;
+    }
+    .room-rating{
+        display: flex;
+        margin: 10px 0;
+        .star-ratings-sprite{
+            margin-right: 8px;
+        }
+        a{
+            line-height: 20px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
 .search-container{
     display: flex;
     flex-flow: row wrap;
@@ -123,37 +154,6 @@
                             cursor: pointer;
                             width: 100%;
                             transition: all 0.3s;
-                        }
-                    }
-                }
-            }
-            .room-content{
-                width: 40%;
-                padding: 10px;
-                h3{
-                    font-family: 'Playfair Display', serif;
-                    font-size: 18px;
-                    padding: 7px 0;
-                }
-                h4{
-                    font-size: 14px;
-                    color: $gold;
-                }
-                p{
-                    font-size: 14px;
-                    line-height: 16px;
-                    margin:3px 0;
-                }
-                .room-rating{
-                    display: flex;
-                    margin: 10px 0;
-                    .star-ratings-sprite{
-                        margin-right: 8px;
-                    }
-                    a{
-                        line-height: 20px;
-                        &:hover{
-                            text-decoration: underline;
                         }
                     }
                 }
